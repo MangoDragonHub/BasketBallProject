@@ -1,0 +1,38 @@
+Generating report for minidump
+
+Application version 5.0.3.0
+ ... built from changelist 20979098
+
+OS version Linux 5.15.0-48-generic (network name: DaBingusMachinePlus)
+Running 6 x86_64 processors (12 logical cores)
+Exception was "SIGSEGV: invalid attempt to write memory at address 0x0000000000000003"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-ChaosNiagara.so!TStaticStateRHI<TStaticSamplerState<(ESamplerFilter)0, (ESamplerAddressMode)1, (ESamplerAddressMode)1, (ESamplerAddressMode)1, 0, 1, 0u, (ESamplerCompareFunction)0>, TRefCountPtr<FRHISamplerState>, FRHISamplerState*>::FStaticStateResource::~FStaticStateResource() [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/RHI/Public/RHIStaticStates.h:102]
+libc.so.6!UnknownFunction(0x468a6)
+libc.so.6!exit(+0x1f)
+libX11.so.6!_XDefaultIOError(+0x62)
+libX11.so.6!_XIOError(+0x51)
+libX11.so.6!_XReply(+0x53b)
+libX11.so.6!XSync(+0x50)
+libUnrealEditor-ApplicationCore.so!SDL_UpdateWindowGrab [/SDL-gui-backend/src/video/SDL_video.c:2852]
+libUnrealEditor-ApplicationCore.so!X11_DispatchEvent [/SDL-gui-backend/src/video/x11/SDL_x11events.c:948]
+libUnrealEditor-ApplicationCore.so!X11_PumpEvents [/SDL-gui-backend/src/video/x11/SDL_x11events.c:1797]
+libUnrealEditor-ApplicationCore.so!SDL_PumpEventsInternal [/SDL-gui-backend/src/events/SDL_events.c:821]
+libUnrealEditor-ApplicationCore.so!SDL_WaitEventTimeout_REAL [/SDL-gui-backend/src/events/SDL_events.c:993]
+libUnrealEditor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:426]
+libUnrealEditor-Engine.so!UEngine::UpdateTimeAndHandleMaxTickRate() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/UnrealEngine.cpp:2520]
+UnrealEditor-Cmd!FEngineLoop::Tick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5043]
+UnrealEditor-Cmd!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:185]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:264]
+libc.so.6!__libc_start_main(+0xf2)
+UnrealEditor-Cmd!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!
