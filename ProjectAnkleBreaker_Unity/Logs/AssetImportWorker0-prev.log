@@ -1,7 +1,7 @@
 Using pre-set license
 Pro License: NO
-Gtk-Message: 14:10:30.677: Failed to load module "canberra-gtk-module"
-Gtk-Message: 14:10:30.677: Failed to load module "canberra-gtk-module"
+Gtk-Message: 15:30:41.040: Failed to load module "canberra-gtk-module"
+Gtk-Message: 15:30:41.041: Failed to load module "canberra-gtk-module"
 Desktop is 1920 x 1080 @ 60 Hz
 
  COMMAND LINE ARGUMENTS:
@@ -12,19 +12,19 @@ Unity
 -name
 AssetImportWorker0
 -projectPath
-/home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity
+/home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-33193
-Successfully changed project path to: /home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity
-/home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity
+35199
+Successfully changed project path to: /home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity
+/home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 157.82 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 168.29 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.12f1 (afcadd793de6)
 [Subsystems] Discovering subsystems at path /home/rashad/Unity/Hub/Editor/2021.1.12f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity/Assets
+[Subsystems] Discovering subsystems at path /home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 [vulkan] LoadVulkanLibrary libvulkan.so.1[vulkan] Loaded instance function vkGetInstanceProcAddr
 [vulkan] Loaded instance function vkGetInstanceProcAddr
@@ -118,9 +118,9 @@ Vulkan detection: 2
 [vulkan] Loaded instance function vkGetPhysicalDeviceMemoryProperties2KHR
 [vulkan] Loaded instance function vkGetPhysicalDeviceSparseImageFormatProperties2KHR
 [Vulkan init] SelectPhysicalDevice requestedDeviceIndex=-1 xrDevice=(nil)
-[Vulkan init] Physical Device 0x55a8b4543680 [0]: "NVIDIA GeForce GTX 1660 Ti" deviceType=2 vendorID=10de deviceID=2191
-[Vulkan init] Physical Device 0x55a8b4543660 [1]: "llvmpipe (LLVM 12.0.1, 256 bits)" deviceType=4 vendorID=10005 deviceID=0
-[Vulkan init] Selected physical device 0x55a8b4543680
+[Vulkan init] Physical Device 0x55bf9cc77670 [0]: "NVIDIA GeForce GTX 1660 Ti" deviceType=2 vendorID=10de deviceID=2191
+[Vulkan init] Physical Device 0x55bf9cc77650 [1]: "llvmpipe (LLVM 12.0.1, 256 bits)" deviceType=4 vendorID=10005 deviceID=0
+[Vulkan init] Selected physical device 0x55bf9cc77670
 [Vulkan init] Graphics queue count=1
 [Vulkan init] extensions: count=155
 [Vulkan init] extensions: name=VK_KHR_16bit_storage, enabled=1
@@ -428,94 +428,94 @@ Initialize mono
 Mono path[0] = '/home/rashad/Unity/Hub/Editor/2021.1.12f1/Editor/Data/Managed'
 Mono path[1] = '/home/rashad/Unity/Hub/Editor/2021.1.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/home/rashad/Unity/Hub/Editor/2021.1.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56430
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56215
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/rashad/Unity/Hub/Editor/2021.1.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: /home/rashad/Unity/Hub/Editor/2021.1.12f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.001896 seconds.
+Registered in 0.001699 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 170.76 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 159.29 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.460 seconds
+- Completed reload, in  2.425 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2460ms)
-		BeginReloadAssembly (41ms)
+	ReloadAssembly (2425ms)
+		BeginReloadAssembly (46ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (803ms)
-			LoadAssemblies (39ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (768ms)
+			LoadAssemblies (42ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (251ms)
+			SetupTypeCache (239ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (433ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (417ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (171ms)
+				RefreshPlugins (159ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (205ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004866 seconds.
+Registered in 0.004698 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 182.01 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 159.27 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.006 seconds
+- Completed reload, in  1.898 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2007ms)
-		BeginReloadAssembly (179ms)
+	ReloadAssembly (1899ms)
+		BeginReloadAssembly (178ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (1747ms)
-			LoadAssemblies (96ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (1640ms)
+			LoadAssemblies (92ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (570ms)
+			SetupTypeCache (549ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (92ms)
-			SetupLoadedEditorAssemblies (816ms)
+			RebuildScriptCaches (91ms)
+			SetupLoadedEditorAssemblies (736ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
+				InitializePlatformSupportModulesInManaged (15ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (182ms)
-				BeforeProcessingInitializeOnLoad (143ms)
-				ProcessInitializeOnLoadAttributes (461ms)
+				RefreshPlugins (159ms)
+				BeforeProcessingInitializeOnLoad (130ms)
+				ProcessInitializeOnLoadAttributes (419ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.08 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.01 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4801 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 199.7 MB.
-System memory in use after: 198.2 MB.
+System memory in use before: 199.8 MB.
+System memory in use after: 198.3 MB.
 
 Unloading 54 unused Assets to reduce memory usage. Loaded Objects now: 5218.
-Total: 7.128064 ms (FindLiveObjects: 0.406185 ms CreateObjectMapping: 0.391944 ms MarkObjects: 4.435060 ms  DeleteObjects: 1.893438 ms)
+Total: 7.239735 ms (FindLiveObjects: 0.435301 ms CreateObjectMapping: 0.385375 ms MarkObjects: 4.481332 ms  DeleteObjects: 1.936371 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -528,67 +528,73 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Anklebreaker Assets
-  artifactKey: Guid(bd92f808a0ba5b72f99a507f71d8da8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anklebreaker Assets using Guid(bd92f808a0ba5b72f99a507f71d8da8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20ede43dbb88b034127141d3db974bbc') in 0.008336 seconds 
+  path: Assets/nm_DefaultMaterial.tga
+  artifactKey: Guid(4cc5f622842c7f0f79877a3a1d6316c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/nm_DefaultMaterial.tga using Guid(4cc5f622842c7f0f79877a3a1d6316c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26db7e0054d1ddc33024307c982deef8') in 0.105710 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.075736 seconds.
-  path: Assets/Anklebreaker Assets/M_BasketBallHoop_A.fbx
-  artifactKey: Guid(10bc22f04580affccbadb8c3966285e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anklebreaker Assets/M_BasketBallHoop_A.fbx using Guid(10bc22f04580affccbadb8c3966285e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12e557cdb77d89fd60e252e7c9e13837') in 0.388992 seconds 
+  Time since last request: 0.000168 seconds.
+  path: Assets/Mat_BasketballHoopA_Glass.mat
+  artifactKey: Guid(186d46941185a8086a79ab7812b50dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat_BasketballHoopA_Glass.mat using Guid(186d46941185a8086a79ab7812b50dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '206d9dcdcd125384f1400dd99f9d65e3') in 0.221316 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.379566 seconds.
-  path: Assets/Anklebreaker Assets/Materials
-  artifactKey: Guid(927e169239c7d89afa5441d91f3596cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anklebreaker Assets/Materials using Guid(927e169239c7d89afa5441d91f3596cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c886874304a69754cb7859bc072b8d01') in 0.001386 seconds 
+  Time since last request: 0.000214 seconds.
+  path: Assets/BasketBallHoop_A.fbx
+  artifactKey: Guid(5ce9f6e09cf1c9b6d9cd8d8032bab5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BasketBallHoop_A.fbx using Guid(5ce9f6e09cf1c9b6d9cd8d8032bab5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58fe3b2ea712b0735b515370fae74dba') in 0.046972 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.427116 seconds.
-  path: Assets/Anklebreaker Assets/Materials/Shaders
-  artifactKey: Guid(44a41d829c4979e658c92cb5254e50b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anklebreaker Assets/Materials/Shaders using Guid(44a41d829c4979e658c92cb5254e50b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '073726e651707fc468ab501cfe52e08b') in 0.001551 seconds 
+  Time since last request: 0.000169 seconds.
+  path: Assets/Mat_BasketballHoopA.mat
+  artifactKey: Guid(11cd36dbc104723fe8891fb8c8c144ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat_BasketballHoopA.mat using Guid(11cd36dbc104723fe8891fb8c8c144ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313a9d43d8985db63f01be55e27282ba') in 0.036824 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.438117 seconds.
-  path: Assets/Anklebreaker Assets/Textures
-  artifactKey: Guid(1b07fb50a65d24a469157dbc5db4e27a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anklebreaker Assets/Textures using Guid(1b07fb50a65d24a469157dbc5db4e27a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f55507bc9d46aae9bfbe0ef8388b91c2') in 0.001358 seconds 
+  Time since last request: 0.000172 seconds.
+  path: Assets/orm_DefaultMaterial.tga
+  artifactKey: Guid(73545253d4244e29594dbf060daa9046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/orm_DefaultMaterial.tga using Guid(73545253d4244e29594dbf060daa9046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '077b6255c9bad89e09f5263869a87431') in 0.009399 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.470989 seconds.
-  path: Assets/Anklebreaker Assets/Prefabs
-  artifactKey: Guid(360650a523c74c11f9e0b94fd8f2915c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anklebreaker Assets/Prefabs using Guid(360650a523c74c11f9e0b94fd8f2915c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38863bcca2191ecfca92de2a563661c1') in 0.001762 seconds 
+  Time since last request: 0.000210 seconds.
+  path: Assets/h_DefaultMaterial.tga
+  artifactKey: Guid(d1ab96764443388288c920921e0c46ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/h_DefaultMaterial.tga using Guid(d1ab96764443388288c920921e0c46ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71023689c0304759bbb57f08d10f378f') in 0.006413 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.094607 seconds.
-  path: Assets/Anklebreaker Assets/Meshes
-  artifactKey: Guid(26832491fa09945a58d7a1ffc7790f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anklebreaker Assets/Meshes using Guid(26832491fa09945a58d7a1ffc7790f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddfc19ef1d40d26feabe873c258428d1') in 0.001672 seconds 
+  Time since last request: 0.000140 seconds.
+  path: Assets/d_DefaultMaterial.tga
+  artifactKey: Guid(b3b80b9039fb95281b5a9ac443d1d0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/d_DefaultMaterial.tga using Guid(b3b80b9039fb95281b5a9ac443d1d0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec691a13a3e49475d6c270e3561c8d4') in 0.006883 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.141003 seconds.
-  path: Assets/Anklebreaker Assets/Animations
-  artifactKey: Guid(f55517dba2493321090adf3ffc691b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anklebreaker Assets/Animations using Guid(f55517dba2493321090adf3ffc691b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '899b2a7989714fe3338bd632c5693c8b') in 0.002002 seconds 
+  Time since last request: 0.000145 seconds.
+  path: Assets/m_DefaultMaterial.tga
+  artifactKey: Guid(c54ade83692ef50b8a650bcef491d984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/m_DefaultMaterial.tga using Guid(c54ade83692ef50b8a650bcef491d984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd97ea722af318a2e38b0dc7adbe1f1') in 0.006265 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.854081 seconds.
-  path: Assets/Anklebreaker Assets/M_BasketBallHoop_A.fbx
-  artifactKey: Guid(10bc22f04580affccbadb8c3966285e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anklebreaker Assets/M_BasketBallHoop_A.fbx using Guid(10bc22f04580affccbadb8c3966285e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af9318e3d2f390d38ec7d52f6973675b') in 0.032434 seconds 
+  Time since last request: 0.000152 seconds.
+  path: Assets/M_BasketBallHoop_A.fbx
+  artifactKey: Guid(2ce37f18cab17e0b4a13a3d8aab84d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/M_BasketBallHoop_A.fbx using Guid(2ce37f18cab17e0b4a13a3d8aab84d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6feadd3c36d2c08d45ab181e5bdfff79') in 0.047359 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 51.484373 seconds.
-  path: Assets/Anklebreaker Assets/Textures/d_Basketball.tga
-  artifactKey: Guid(64f4fc70eb6194faeb69f1e61207e9d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anklebreaker Assets/Textures/d_Basketball.tga using Guid(64f4fc70eb6194faeb69f1e61207e9d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1a3246ed8d4e068566c3084bf4307f') in 0.024595 seconds 
+  Time since last request: 0.000142 seconds.
+  path: Assets/ao_DefaultMaterial.tga
+  artifactKey: Guid(6403f8817dea0e06e899bef336e930f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ao_DefaultMaterial.tga using Guid(6403f8817dea0e06e899bef336e930f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a6f11c013ce455e1d1234695266fd0c') in 0.007106 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Anklebreaker Assets/Textures/nm_Basketball.tga
-  artifactKey: Guid(babb65079ffad47988773750ff0129bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Anklebreaker Assets/Textures/nm_Basketball.tga using Guid(babb65079ffad47988773750ff0129bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0c4587d9b6ac6c23fdc2a563617e9ed') in 0.014340 seconds 
+  Time since last request: 0.000173 seconds.
+  path: Assets/r_DefaultMaterial.tga
+  artifactKey: Guid(b975a1b7f948c5bcd9ebdb57055cbcc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/r_DefaultMaterial.tga using Guid(b975a1b7f948c5bcd9ebdb57055cbcc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be034aa251372c2c47fe37ef7db45d30') in 0.006221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/op_DefaultMaterial.tga
+  artifactKey: Guid(5eec0b439bfab1a7da102e2eed470578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/op_DefaultMaterial.tga using Guid(5eec0b439bfab1a7da102e2eed470578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57feb6d89f6ae4ea92bacb824a5d9cc4') in 0.006190 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

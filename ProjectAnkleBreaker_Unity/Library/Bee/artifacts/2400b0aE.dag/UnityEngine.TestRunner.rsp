@@ -107,7 +107,7 @@
 -define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"/home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"/home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 -r:"/home/rashad/Unity/Hub/Editor/2021.1.12f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"/home/rashad/Unity/Hub/Editor/2021.1.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"/home/rashad/Unity/Hub/Editor/2021.1.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"

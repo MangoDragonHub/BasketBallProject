@@ -108,13 +108,13 @@
 -define:USING_PARTICLE_SYSTEM
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"/home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
--r:"/home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/log4netPlastic.dll"
--r:"/home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/unityplastic.dll"
--r:"/home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
--r:"/home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll"
--r:"/home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
--r:"/home/rashad/Documents/Game Dev/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"/home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
+-r:"/home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/log4netPlastic.dll"
+-r:"/home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/unityplastic.dll"
+-r:"/home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
+-r:"/home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll"
+-r:"/home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
+-r:"/home/rashad/Documents/GitHub/BasketBallProject/ProjectAnkleBreaker_Unity/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"/home/rashad/Unity/Hub/Editor/2021.1.12f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"/home/rashad/Unity/Hub/Editor/2021.1.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"/home/rashad/Unity/Hub/Editor/2021.1.12f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
