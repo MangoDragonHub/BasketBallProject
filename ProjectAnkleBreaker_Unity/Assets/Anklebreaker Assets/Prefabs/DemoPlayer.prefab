@@ -9,13 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7199739846227023676}
-  - component: {fileID: 7199739846227023677}
   - component: {fileID: 5472924086690746259}
   - component: {fileID: 4270905038647120868}
   - component: {fileID: 8611705737180506313}
   m_Layer: 0
   m_Name: DemoPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,20 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &7199739846227023677
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7199739846227023679}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.46602952
-  m_Height: 2.7734709
-  m_Direction: 1
-  m_Center: {x: 0, y: 1.233665, z: 0}
 --- !u!114 &5472924086690746259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,7 +58,27 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8d670dd7-9308-4088-b15d-1da8428572d7
+    m_ActionName: Character/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/XInputControllerWindows/leftStick]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 72b0fc97336657047b229ac36b28b69e, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ShootBall
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f9c36089-cfbd-44f5-a052-00bd7fff37eb
+    m_ActionName: Character/Shoot[/Keyboard/enter,/XInputControllerWindows/buttonWest]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Character
@@ -183,6 +188,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 93e87d50e114a6a44b174b39e32c370c, type: 3}
       propertyPath: m_Name
       value: M_TestGuy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665462999245420034, guid: 93e87d50e114a6a44b174b39e32c370c, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2665462999245420034, guid: 93e87d50e114a6a44b174b39e32c370c, type: 3}
+      propertyPath: m_TagString
+      value: HoldBall
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 93e87d50e114a6a44b174b39e32c370c, type: 3}
       propertyPath: m_Controller

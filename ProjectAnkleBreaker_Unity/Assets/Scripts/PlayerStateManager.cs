@@ -49,7 +49,7 @@ public partial class PlayerStateManager : MonoBehaviour
     public void Move()
     {
         Controller.Move(PlayerSpeed * MoveVector * Time.deltaTime);
-        if (Mathf.Abs(MoveVector.x) > 0 || Mathf.Abs(MoveVector.y) > 0)
+        if (Mathf.Abs(MoveVector.x) > 0 || Mathf.Abs(MoveVector.y) > 0 || Mathf.Abs(MoveVector.z) > 0)
         {
             StartRunningAnim();
         }
