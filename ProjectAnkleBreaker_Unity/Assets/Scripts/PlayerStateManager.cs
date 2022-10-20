@@ -6,11 +6,19 @@ using UnityEngine.InputSystem;
 //Got from the video https://www.youtube.com/watch?v=f3IYIvd-1mY
 
 public partial class PlayerStateManager : MonoBehaviour
+
+    
 {
+    //Variables
+    [SerializeField] bool hasBall;
+    //private AnimationSystem animSys;
+
+
     private void Awake()
     {
         Controller = GetComponent<CharacterController>();
         Input = GetComponent<PlayerInput>();
+        //animSys = GetComponent<Animator>();
         PlayerSpeed = 10f;
         PlayerRotateSpeed = 180;
 
@@ -41,7 +49,17 @@ public partial class PlayerStateManager : MonoBehaviour
     public void Move()
     {
         Controller.Move(PlayerSpeed * MoveVector * Time.deltaTime);
+        if (Mathf.Abs(MoveVector.x) > 0 || Mathf.Abs(MoveVector.y) > 0)
+        {
+            StartRunningAnim();
+        }
+        else 
+        {
+            StopRunningAnim();
+        }
     }
+
+    
 
     public void RotateTowardsVector()
     {
@@ -50,6 +68,40 @@ public partial class PlayerStateManager : MonoBehaviour
 
         var rotation = Quaternion.LookRotation(xzDirection);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, PlayerRotateSpeed);
+
+    }
+    #endregion
+
+    #region Actions
+
+    public void ShootBall() 
+    {
+
+        ShootAnim();
+    }
+
+    #endregion
+
+
+    #region Animations
+    //State Variables
+    public Animator animator;
+
+
+    public void StartRunningAnim()
+    {
+        animator.SetBool("isMoving", true);
+    }
+
+    public void StopRunningAnim()
+    {
+        animator.SetBool("isMoving", false);
+
+    }
+
+    public void ShootAnim()
+    {
+        animator.SetTrigger("Shoot");
 
     }
     #endregion

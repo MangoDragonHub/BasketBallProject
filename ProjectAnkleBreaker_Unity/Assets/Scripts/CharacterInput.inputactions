@@ -11,6 +11,14 @@
                     "id": "8d670dd7-9308-4088-b15d-1da8428572d7",
                     "expectedControlType": "Vector2",
                     "processors": "",
+                    "interactions": "Press(behavior=2)"
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "f9c36089-cfbd-44f5-a052-00bd7fff37eb",
+                    "expectedControlType": "Button",
+                    "processors": "",
                     "interactions": ""
                 }
             ],
@@ -78,6 +86,28 @@
                     "processors": "StickDeadzone",
                     "groups": "",
                     "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bc9c9240-6e96-4e82-976b-12e5fe3b49c2",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "131c3f51-90ae-4b95-ac50-13f0f5629d62",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
