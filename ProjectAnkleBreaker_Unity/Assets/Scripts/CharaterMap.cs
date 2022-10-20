@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 
+
 //Got from the video https://www.youtube.com/watch?v=f3IYIvd-1mY
 
 public partial class PlayerStateManager
@@ -17,4 +18,9 @@ public partial class PlayerStateManager
         // Debug.Log($"X move: (MoveVetor.x)");
         //Debug.Log($"Z move: (MoveVector.z)");
     }
+
+    //private void OnShoot() 
+    //{ 
+    //   Input
+    //}
 }
