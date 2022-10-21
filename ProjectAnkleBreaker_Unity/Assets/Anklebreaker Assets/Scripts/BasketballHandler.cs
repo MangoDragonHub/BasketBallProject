@@ -5,8 +5,9 @@ using UnityEngine;
 public class BasketballHandler : MonoBehaviour
 {
     public bool hasBall;
-    public GameObject playerHand;
+    public Transform playerHand;
     public GameObject player;
+    public Rigidbody ballRigidbody;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +35,9 @@ public class BasketballHandler : MonoBehaviour
             Debug.Log($"{player} has the ball");
 
             //Attaches Ball to Player
-            SetParent(playerHand);
+            this.gameObject.transform.SetParent(playerHand.transform);
+            ballRigidbody.isKinematic = true;
+            transform.localPosition = Vector3.zero;
         }
 
     }
