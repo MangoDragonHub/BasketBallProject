@@ -11,11 +11,14 @@ public partial class PlayerStateManager : MonoBehaviour
 {
     //Variables
     [SerializeField] bool hasBall;
+    private InputAction m_shootBall;
+    private int playerID;
     //private AnimationSystem animSys;
 
 
     private void Awake()
     {
+        playerID = 0;
         Controller = GetComponent<CharacterController>();
         Input = GetComponent<PlayerInput>();
         //animSys = GetComponent<Animator>();
@@ -38,6 +41,7 @@ public partial class PlayerStateManager : MonoBehaviour
         Move();
         RotateTowardsVector();
         ApplyGravity();
+        ShootBall();
     }
 
     #region Movement
@@ -76,8 +80,13 @@ public partial class PlayerStateManager : MonoBehaviour
 
     public void ShootBall() 
     {
-
-        ShootAnim();
+        m_shootBall = Input.actions["Shoot"];
+        if (m_shootBall.triggered) 
+        {
+            StartCoroutine(ShootAnim());
+             
+        }
+        
     }
 
     #endregion
@@ -99,10 +108,17 @@ public partial class PlayerStateManager : MonoBehaviour
 
     }
 
-    public void ShootAnim()
+    //Shooting animation is a Coroutine to delay the animation transition
+    IEnumerator ShootAnim()
     {
-        animator.SetTrigger("Shoot");
+        animator.SetBool("isShooting", true);
+        yield return new WaitForSeconds(3);
+        animator.SetBool("hasBall", false);
+        animator.SetBool("isShooting", false);
 
     }
+
     #endregion
+
+
 }

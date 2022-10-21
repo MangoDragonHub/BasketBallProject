@@ -19,8 +19,8 @@ public partial class PlayerStateManager
         //Debug.Log($"Z move: (MoveVector.z)");
     }
 
-    //private void OnShoot() 
-    //{ 
-    //   Input
-    //}
+    private void OnShoot()
+    {
+        //Input.
+    }
 }

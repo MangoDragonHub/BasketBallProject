@@ -180,6 +180,173 @@ public class @CharacterInput : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Character2"",
+            ""id"": ""81806bfc-0bd2-43cf-8ad3-ce17aa2bdfc9"",
+            ""actions"": [
+                {
+                    ""name"": ""Movement"",
+                    ""type"": ""Value"",
+                    ""id"": ""368e0354-636b-459a-a3ec-fc5a6fbbbe7f"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": ""Press(behavior=2)""
+                },
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""48f77b5a-00ec-42dd-aa9a-2fa2b8612507"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""9deb4664-cdd6-49ed-a02f-0324a0803b77"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""9615d249-8f66-47db-b1ec-4678d456c89b"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""19a54940-b9f1-4c25-bfe1-229bd72e2c1d"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""fb95eb9d-004a-4f8a-9171-4812ab87bac1"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""73edc93f-8b17-4fa2-9635-75ec75a67bfd"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b172123d-a68b-4061-ad70-88c941f38916"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": ""StickDeadzone"",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Arrows"",
+                    ""id"": ""2f6f8a05-6087-4d9d-8f30-f6f77870e717"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""b4504b00-1966-4542-9e79-554b963bff20"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""91e3cd48-ba94-4f8f-87cf-e6fd4bc18559"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""fa6fd647-46c9-4b8c-9951-7d22b6d8f676"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""8257f2ab-76e1-430c-8749-e608f4d596a3"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d3ddc5ef-dee5-4324-91f3-b5ca0b4e3cb0"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c98107ed-18a0-4eb4-aaa8-cf823c3e9f1c"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -188,6 +355,10 @@ public class @CharacterInput : IInputActionCollection, IDisposable
         m_Character = asset.FindActionMap("Character", throwIfNotFound: true);
         m_Character_Movement = m_Character.FindAction("Movement", throwIfNotFound: true);
         m_Character_Shoot = m_Character.FindAction("Shoot", throwIfNotFound: true);
+        // Character2
+        m_Character2 = asset.FindActionMap("Character2", throwIfNotFound: true);
+        m_Character2_Movement = m_Character2.FindAction("Movement", throwIfNotFound: true);
+        m_Character2_Shoot = m_Character2.FindAction("Shoot", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -274,7 +445,53 @@ public class @CharacterInput : IInputActionCollection, IDisposable
         }
     }
     public CharacterActions @Character => new CharacterActions(this);
+
+    // Character2
+    private readonly InputActionMap m_Character2;
+    private ICharacter2Actions m_Character2ActionsCallbackInterface;
+    private readonly InputAction m_Character2_Movement;
+    private readonly InputAction m_Character2_Shoot;
+    public struct Character2Actions
+    {
+        private @CharacterInput m_Wrapper;
+        public Character2Actions(@CharacterInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movement => m_Wrapper.m_Character2_Movement;
+        public InputAction @Shoot => m_Wrapper.m_Character2_Shoot;
+        public InputActionMap Get() { return m_Wrapper.m_Character2; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(Character2Actions set) { return set.Get(); }
+        public void SetCallbacks(ICharacter2Actions instance)
+        {
+            if (m_Wrapper.m_Character2ActionsCallbackInterface != null)
+            {
+                @Movement.started -= m_Wrapper.m_Character2ActionsCallbackInterface.OnMovement;
+                @Movement.performed -= m_Wrapper.m_Character2ActionsCallbackInterface.OnMovement;
+                @Movement.canceled -= m_Wrapper.m_Character2ActionsCallbackInterface.OnMovement;
+                @Shoot.started -= m_Wrapper.m_Character2ActionsCallbackInterface.OnShoot;
+                @Shoot.performed -= m_Wrapper.m_Character2ActionsCallbackInterface.OnShoot;
+                @Shoot.canceled -= m_Wrapper.m_Character2ActionsCallbackInterface.OnShoot;
+            }
+            m_Wrapper.m_Character2ActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Movement.started += instance.OnMovement;
+                @Movement.performed += instance.OnMovement;
+                @Movement.canceled += instance.OnMovement;
+                @Shoot.started += instance.OnShoot;
+                @Shoot.performed += instance.OnShoot;
+                @Shoot.canceled += instance.OnShoot;
+            }
+        }
+    }
+    public Character2Actions @Character2 => new Character2Actions(this);
     public interface ICharacterActions
+    {
+        void OnMovement(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
+    }
+    public interface ICharacter2Actions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnShoot(InputAction.CallbackContext context);
