@@ -53,7 +53,11 @@ public class BasketballHandler : MonoBehaviour
     public void DetachFromParent() 
     {
         //Detaches ball from Player's hand
-        transform.parent = null;
+        if (hasBall == false) 
+        {
+            transform.parent = null;
+        }
+       
     }
 
 }
