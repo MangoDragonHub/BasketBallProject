@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Collision Bound
   - HoldBall
+  - EntryCheck
+  - ExitCheck
   layers:
   - Default
   - TransparentFX
