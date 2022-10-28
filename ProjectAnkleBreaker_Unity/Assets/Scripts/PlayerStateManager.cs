@@ -10,6 +10,7 @@ public partial class PlayerStateManager : MonoBehaviour
     
 {
     //Variables
+    [SerializeField] BasketballHandler basketballHandler;
     [SerializeField] bool hasBall;
     private InputAction m_shootBall;
     private int playerID;
@@ -112,8 +113,11 @@ public partial class PlayerStateManager : MonoBehaviour
     IEnumerator ShootAnim()
     {
         animator.SetBool("isShooting", true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2.2f);
         animator.SetBool("hasBall", false);
+        basketballHandler.ShootBall();
+        yield return new WaitForSeconds(.8f);
+        //shoot
         animator.SetBool("isShooting", false);
 
     }
