@@ -21,3 +21,6 @@ Rashad Patterson
 
 # Audio Engineer & Sound Design
 Cristian Salazar
+
+#Special Thanks
+Anatta336 - Driven Decals [Plugin Link](https://github.com/Anatta336/driven-decals)
