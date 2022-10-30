@@ -23,4 +23,3 @@ Rashad Patterson
 Cristian Salazar
 
 # Special Thanks
-Sam Driver - Driven Decals [Plugin Link](https://github.com/Anatta336/driven-decals)
