@@ -28,12 +28,18 @@ namespace Unity.VisualScripting.Generated.Aot
 	// FPSCounter.op_Equality
 	// FPSCounter.op_Implicit
 	// FPSCounter.op_Inequality
+	// GameManager.op_Equality
+	// GameManager.op_Implicit
+	// GameManager.op_Inequality
 	// PlayerStateManager.op_Equality
 	// PlayerStateManager.op_Implicit
 	// PlayerStateManager.op_Inequality
 	// Readme.op_Equality
 	// Readme.op_Implicit
 	// Readme.op_Inequality
+	// ScoreCounter.op_Equality
+	// ScoreCounter.op_Implicit
+	// ScoreCounter.op_Inequality
 	// string.op_Equality
 	// string.op_Inequality
 	// Unity.VisualScripting.AnimatorMessageListener.op_Equality
@@ -884,6 +890,41 @@ namespace Unity.VisualScripting.Generated.Aot
 			optimized.Invoke(default(object[]));
 		}
 		
+		// GameManager.op_Equality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void GameManager_op_Equality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 == arg1);
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// GameManager.op_Implicit
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void GameManager_op_Implicit()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			bool conversion = ((bool)(arg0));
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// GameManager.op_Inequality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void GameManager_op_Inequality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 != arg1);
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
 		// PlayerStateManager.op_Equality
 		[global::UnityEngine.Scripting.PreserveAttribute()]
 		public static void PlayerStateManager_op_Equality()
@@ -945,6 +986,41 @@ namespace Unity.VisualScripting.Generated.Aot
 		// Readme.op_Inequality
 		[global::UnityEngine.Scripting.PreserveAttribute()]
 		public static void Readme_op_Inequality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 != arg1);
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// ScoreCounter.op_Equality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void ScoreCounter_op_Equality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 == arg1);
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// ScoreCounter.op_Implicit
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void ScoreCounter_op_Implicit()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			bool conversion = ((bool)(arg0));
+			global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, bool> optimized = new global::Unity.VisualScripting.StaticFunctionInvoker<UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// ScoreCounter.op_Inequality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void ScoreCounter_op_Inequality()
 		{
 			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
 			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);

@@ -19,8 +19,8 @@ public partial class PlayerStateManager
         //Debug.Log($"Z move: (MoveVector.z)");
     }
 
-    private void OnShoot()
+    private void OnTricks(InputValue value)
     {
-        //Input.
+        Vector2 TrickVector = value.Get<Vector2>();
     }
 }

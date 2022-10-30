@@ -14,7 +14,7 @@ public partial class PlayerStateManager : MonoBehaviour
     [SerializeField] bool hasBall;
     private InputAction m_shootBall;
     private int playerID;
-    //private AnimationSystem animSys;
+    public Animator animator;
 
 
     private void Awake()
@@ -22,7 +22,6 @@ public partial class PlayerStateManager : MonoBehaviour
         playerID = 0;
         Controller = GetComponent<CharacterController>();
         Input = GetComponent<PlayerInput>();
-        //animSys = GetComponent<Animator>();
         PlayerSpeed = 10f;
         PlayerRotateSpeed = 180;
 
@@ -63,6 +62,16 @@ public partial class PlayerStateManager : MonoBehaviour
         {
             StopRunningAnim();
         }
+
+        //Change Animation Layer weight if the player has the ball
+        if (hasBall)
+        {
+            animator.SetLayerWeight(1,1);
+        }
+        else 
+        {
+            animator.SetLayerWeight(1,0);
+        }
     }
 
     
@@ -95,8 +104,6 @@ public partial class PlayerStateManager : MonoBehaviour
 
 
     #region Animations
-    //State Variables
-    public Animator animator;
 
 
     public void StartRunningAnim()
