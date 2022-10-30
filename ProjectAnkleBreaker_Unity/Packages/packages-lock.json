@@ -1,5 +1,6 @@
 {
   "dependencies": {
+<<<<<<< Updated upstream
     "com.unity.animation.rigging": {
       "version": "1.0.3",
       "depth": 0,
@@ -19,6 +20,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> Stashed changes
     "com.unity.cinemachine": {
       "version": "2.7.9",
       "depth": 0,
