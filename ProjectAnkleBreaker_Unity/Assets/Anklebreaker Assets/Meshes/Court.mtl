@@ -1,0 +1,7 @@
+newmtl Mat_PavementA
+bump nm_PavingStones097_modified.png
+disp dp_PavingStones097_modified.png
+map_Kd d_PavingStones097_modified.tga
+Kd 1 1 1
+d 1
+
