@@ -8,6 +8,9 @@ public class BasketballHandler : MonoBehaviour
     public Transform playerHand;
     public GameObject player;
 
+    [SerializeField] private Transform originalSpawn;
+    [SerializeField] private int respawnWaitTime;
+
     [SerializeField]
     Transform _target;
     Rigidbody _rb;
@@ -61,6 +64,7 @@ public class BasketballHandler : MonoBehaviour
             {
                 GameManager.Instance.score += scoreToAdd;
                 Debug.Log($"Player scored, Score: {GameManager.Instance.score}");
+                StartCoroutine(ResetBall());
             }
             shotEntered = false;
         }
@@ -149,6 +153,16 @@ public class BasketballHandler : MonoBehaviour
             transform.parent = null;
         }
        
+    }
+
+    IEnumerator ResetBall() 
+    {
+        if (shotEntered) 
+        {
+            yield return new WaitForSeconds(respawnWaitTime);
+            this.transform.position = originalSpawn.position;
+        }
+    
     }
 
 }
