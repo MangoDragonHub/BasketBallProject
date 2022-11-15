@@ -16,10 +16,20 @@ Rashad Patterson & Herbert Chillis
 # Shooting System Programming
 Duncan McDonald - https://github.com/mcdonaldduncan
 
+# Character Concept Art 
+Angelica Idoko
+
 # 3D Art
 Rashad Patterson
 
 # Audio Engineer & Sound Design
 Cristian Salazar
 
+# Fonts
+Teko - Indian Type Foundation
+
+
 # Special Thanks
+Unity Technologies
+David Antognoli
+Tyrus Goshay
