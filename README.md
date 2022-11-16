@@ -33,3 +33,6 @@ Teko - Indian Type Foundation
 Unity Technologies
 David Antognoli
 Tyrus Goshay
+Yughues - https://assetstore.unity.com/publishers/4986
+DigitalAntichrist - https://assetstore.unity.com/publishers/21223
+
