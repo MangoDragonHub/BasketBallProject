@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2376134279229309790}
   - component: {fileID: 4437660414063275137}
   - component: {fileID: 8216969693360100045}
+  - component: {fileID: 1985299764}
   m_Layer: 0
   m_Name: BasketballHoopA_Rigged
   m_TagString: Untagged
@@ -99,11 +100,24 @@ MeshCollider:
   m_GameObject: {fileID: 700347570592562037}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8396206793870340170, guid: 10bc22f04580affccbadb8c3966285e4, type: 3}
+--- !u!65 &1985299764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700347570592562037}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.014008983, y: 0.0102020865, z: 0.084980644}
+  m_Center: {x: 0.0007528708, y: -0.0017387626, z: 0.037084013}
 --- !u!1 &994952628048084884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,6 +1293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4941283836954087347}
+  - component: {fileID: 633839678}
   m_Layer: 0
   m_Name: BasketBallHoopA_Rigged
   m_TagString: Untagged
@@ -1302,6 +1317,25 @@ Transform:
   m_Father: {fileID: 4220900904263887843}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &633839678
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6264587933365857670}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6396001476554969557
 GameObject:
   m_ObjectHideFlags: 0
