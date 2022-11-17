@@ -1,0 +1,5 @@
+newmtl Mat_Metal
+map_Kd Metal010_2K_Color.png
+Kd 1 1 1
+d 1
+
