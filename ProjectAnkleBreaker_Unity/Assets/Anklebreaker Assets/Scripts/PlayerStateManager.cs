@@ -42,6 +42,7 @@ public partial class PlayerStateManager : MonoBehaviour
         RotateTowardsVector();
         ApplyGravity();
         ShootBall();
+        PauseGame();
     }
 
     #region Movement
@@ -98,6 +99,16 @@ public partial class PlayerStateManager : MonoBehaviour
              
         }
         
+    }
+
+    public void PauseGame() 
+    {
+        InputAction m_pausegame = Input.actions["Pause"];
+        GameObject PauseMenu = GameObject.Find("UI");
+        if (m_pausegame.triggered) 
+        {
+            PauseMenu.GetComponent<MainMenuOptions>().PauseGame();
+        }
     }
 
     #endregion

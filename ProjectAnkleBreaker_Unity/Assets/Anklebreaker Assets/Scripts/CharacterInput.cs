@@ -41,6 +41,14 @@ public class @CharacterInput : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""de1cee77-2749-4b8a-a712-aea477b7c07a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -241,6 +249,28 @@ public class @CharacterInput : IInputActionCollection, IDisposable
                     ""action"": ""Tricks"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0187c7d5-97c9-4fa3-a859-8246714b04d9"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5109be95-451e-41ad-b6af-f8210d16e0b2"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -252,6 +282,7 @@ public class @CharacterInput : IInputActionCollection, IDisposable
         m_Character_Movement = m_Character.FindAction("Movement", throwIfNotFound: true);
         m_Character_Shoot = m_Character.FindAction("Shoot", throwIfNotFound: true);
         m_Character_Tricks = m_Character.FindAction("Tricks", throwIfNotFound: true);
+        m_Character_Pause = m_Character.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -304,6 +335,7 @@ public class @CharacterInput : IInputActionCollection, IDisposable
     private readonly InputAction m_Character_Movement;
     private readonly InputAction m_Character_Shoot;
     private readonly InputAction m_Character_Tricks;
+    private readonly InputAction m_Character_Pause;
     public struct CharacterActions
     {
         private @CharacterInput m_Wrapper;
@@ -311,6 +343,7 @@ public class @CharacterInput : IInputActionCollection, IDisposable
         public InputAction @Movement => m_Wrapper.m_Character_Movement;
         public InputAction @Shoot => m_Wrapper.m_Character_Shoot;
         public InputAction @Tricks => m_Wrapper.m_Character_Tricks;
+        public InputAction @Pause => m_Wrapper.m_Character_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Character; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -329,6 +362,9 @@ public class @CharacterInput : IInputActionCollection, IDisposable
                 @Tricks.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnTricks;
                 @Tricks.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnTricks;
                 @Tricks.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnTricks;
+                @Pause.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_CharacterActionsCallbackInterface = instance;
             if (instance != null)
@@ -342,6 +378,9 @@ public class @CharacterInput : IInputActionCollection, IDisposable
                 @Tricks.started += instance.OnTricks;
                 @Tricks.performed += instance.OnTricks;
                 @Tricks.canceled += instance.OnTricks;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -351,5 +390,6 @@ public class @CharacterInput : IInputActionCollection, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnShoot(InputAction.CallbackContext context);
         void OnTricks(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }
