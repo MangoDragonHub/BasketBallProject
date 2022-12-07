@@ -17,4 +17,14 @@ public class GameManager : Singleton<GameManager>
     {
         
     }
+
+    public void ScoreCheck()
+    {
+        if(score >= 21)
+        {
+            Debug.Log("The Game is Over!");
+        }
+
+    }
+
 }
