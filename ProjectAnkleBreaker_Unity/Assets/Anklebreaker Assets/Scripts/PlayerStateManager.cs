@@ -144,4 +144,16 @@ public partial class PlayerStateManager : MonoBehaviour
     #endregion
 
 
+    #region Audio
+
+    public void PlayFootSound()
+    {
+
+    }
+
+
+
+
+    #endregion
+
 }
