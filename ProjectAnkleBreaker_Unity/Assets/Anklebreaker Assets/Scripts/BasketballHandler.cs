@@ -41,6 +41,7 @@ public class BasketballHandler : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) 
         {
+            this.gameObject.GetComponent<CamerCloseAndFar>().Switch_Cameras(false);
             //Connects to player's Animator to play Dribble Animation
             hasBall = true;
             Animator playerAnims = player.GetComponent<Animator>();
@@ -75,6 +76,7 @@ public class BasketballHandler : MonoBehaviour
     {
         if (!hasBall) return;
         //Shoots the ball
+        this.gameObject.GetComponent<CamerCloseAndFar>().Switch_Cameras(true);
         hasBall = false;
         _rb.isKinematic = false;
         transform.SetParent(null);

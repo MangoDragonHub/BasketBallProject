@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7892224819384503587}
   - component: {fileID: 7892224819384503596}
   - component: {fileID: 7892224819384503599}
+  - component: {fileID: 7767781966628985293}
   m_Layer: 0
   m_Name: Basketball Model
   m_TagString: Untagged
@@ -130,6 +131,8 @@ MonoBehaviour:
   hasBall: 0
   playerHand: {fileID: 0}
   player: {fileID: 0}
+  originalSpawn: {fileID: 0}
+  respawnWaitTime: 0
   _target: {fileID: 0}
   initialAngle: 67
   scoreDistance: 6
@@ -151,3 +154,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7767781966628985293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7892224819384503586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef74c51c0d8cdc46924a31d373e8467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera_far: {fileID: 0}
+  camera_close: {fileID: 0}

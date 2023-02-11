@@ -8,6 +8,8 @@ TagManager:
   - HoldBall
   - EntryCheck
   - ExitCheck
+  - camera_close
+  - camera_far
   layers:
   - Default
   - TransparentFX
