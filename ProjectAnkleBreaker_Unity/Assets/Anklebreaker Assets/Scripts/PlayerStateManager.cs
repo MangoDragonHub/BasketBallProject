@@ -73,13 +73,14 @@ public partial class PlayerStateManager : MonoBehaviour
     //Shooting animation is a Coroutine to delay the animation transition
     IEnumerator ShootAnim()
     {
-        animator.SetBool("isShooting", true);
-        yield return new WaitForSeconds(2.2f);
-        animator.SetBool("hasBall", false);
-        basketballHandler.ShootBall();
-        yield return new WaitForSeconds(.8f);
-        //shoot
-        animator.SetBool("isShooting", false);
+            animator.Play("Shooting");
+            animator.SetBool("isShooting", true);
+            yield return new WaitForSeconds(2.2f);
+            animator.SetBool("hasBall", false);
+            basketballHandler.ShootBall();
+            yield return new WaitForSeconds(.8f);
+            //shoot
+            animator.SetBool("isShooting", false);
 
     }
 
