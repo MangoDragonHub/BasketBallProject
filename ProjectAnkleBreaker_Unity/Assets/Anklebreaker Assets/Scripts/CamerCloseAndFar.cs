@@ -44,8 +44,8 @@ public class CamerCloseAndFar : MonoBehaviour
 
     void FarOut()
     {
-        //camera_far.SetActive(true);
-        //camera_close.SetActive(false);
+        camera_far.SetActive(true);
+        camera_close.SetActive(false);
     }
 
 }
