@@ -13,6 +13,9 @@ Rashad Patterson & Herbert Chillis
 # Programming
 Rashad Patterson & Herbert Chillis
 
+# Movement Code
+Unity Technologies _Starter Assets - Third Person Character Controller_ - https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526
+
 # Shooting System Programming
 Duncan McDonald - https://github.com/mcdonaldduncan
 
@@ -27,9 +30,6 @@ Cristian Salazar
 
 # Fonts
 Teko - Indian Type Foundation
-
-# Movement Code
-Unity Technologies _Starter Assets - Third Person Character Controller_ - https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526
 
 
 # Special Thanks
