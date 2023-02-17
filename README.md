@@ -28,6 +28,9 @@ Cristian Salazar
 # Fonts
 Teko - Indian Type Foundation
 
+# Movement Code
+Unity Technologies _Starter Assets - Third Person Character Controller_ - https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526
+
 
 # Special Thanks
 Unity Technologies
