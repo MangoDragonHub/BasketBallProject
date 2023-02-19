@@ -44,6 +44,7 @@ public partial class PlayerStateManager : MonoBehaviour
 
     public void ShootBall() 
     {
+        basketballHandler.ChangeParentToPlayerHand(); //This method disables the Animator component for the ball and changes its parent to the player's hand instead of the Attach Point.
         StartCoroutine(ShootAnim());
     }
 
@@ -73,8 +74,8 @@ public partial class PlayerStateManager : MonoBehaviour
     //Shooting animation is a Coroutine to delay the animation transition
     IEnumerator ShootAnim()
     {
-            animator.SetBool("isShooting", true);
-            yield return new WaitForSeconds(2.2f);
+        animator.SetBool("isShooting", true);
+            yield return new WaitForSeconds(0.7f);
             animator.SetBool("hasBall", false);
             basketballHandler.ShootBall();
             yield return new WaitForSeconds(.8f);

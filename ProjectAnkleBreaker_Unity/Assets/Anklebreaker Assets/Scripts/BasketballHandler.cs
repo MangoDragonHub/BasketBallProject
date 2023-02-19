@@ -7,6 +7,7 @@ public class BasketballHandler : MonoBehaviour
     public bool hasBall;
     public Transform playerHand;
     public GameObject player;
+    private GameObject attachPoint;
 
     [SerializeField] private Transform originalSpawn;
     [SerializeField] private int respawnWaitTime;
@@ -20,14 +21,19 @@ public class BasketballHandler : MonoBehaviour
     Vector3 initialPos;
 
     bool shotEntered;
+    bool animAlreadyPlayed; //This is the spamproof boolean flag so that methods dont get replayed again when the player does certain actions.
 
     int scoreToAdd;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         hasBall = false;
         _rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
+        attachPoint = GameObject.Find("AttachPoint");
+        anim.enabled = false;
     }
 
     // Update is called once per frame
@@ -50,10 +56,15 @@ public class BasketballHandler : MonoBehaviour
             Debug.Log($"{player} has the ball");
 
             //Attaches Ball to Player
-            this.gameObject.transform.SetParent(playerHand.transform);
             _rb.isKinematic = true;
-            transform.localPosition = Vector3.zero;
             shotEntered = false;
+            if (!animAlreadyPlayed) //To make sure the animator doesnt get played again when shooting the ball.
+            {
+                anim.enabled = true;
+                animAlreadyPlayed = true;
+                transform.localPosition = Vector3.zero;
+                this.gameObject.transform.SetParent(attachPoint.transform);
+            }
         }
         if (other.gameObject.CompareTag("EntryCheck"))
         {
@@ -70,6 +81,13 @@ public class BasketballHandler : MonoBehaviour
             shotEntered = false;
         }
 
+    }
+
+    public void ChangeParentToPlayerHand()
+    {
+        anim.enabled = false;
+        this.gameObject.transform.SetParent(playerHand.transform);
+        transform.localPosition = Vector3.zero;
     }
 
     public void ShootBall()
@@ -137,7 +155,15 @@ public class BasketballHandler : MonoBehaviour
 
         _rb.useGravity = true;
         _rb.velocity = finalVelocity;
+        StartCoroutine(changeSpamproofBool());
     }
+
+    IEnumerator changeSpamproofBool()
+    {
+        yield return new WaitForSeconds(2f);
+        animAlreadyPlayed = false;
+    }
+
 
     public void SetParent(GameObject newParent) 
     {

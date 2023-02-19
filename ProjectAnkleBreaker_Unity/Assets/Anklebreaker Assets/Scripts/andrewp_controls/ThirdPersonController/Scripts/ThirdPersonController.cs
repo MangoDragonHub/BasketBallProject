@@ -165,9 +165,8 @@ using UnityEngine.InputSystem;
             //JumpAndGravity();
             //GroundedCheck();
             Move();
-        transform.position = new Vector3 (transform.position.x, 2.54f, transform.position.z);
-        //bruteforces the character to NOT levitate every time he picks the ball up. Probably not ideal for me to do this.
-        }
+        _verticalVelocity += Gravity * Time.deltaTime;
+    }
 
 
         private void AssignAnimationIDs()
