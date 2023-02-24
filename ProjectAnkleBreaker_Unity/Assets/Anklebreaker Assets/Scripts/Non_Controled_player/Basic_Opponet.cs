@@ -26,12 +26,12 @@ public class Basic_Opponet : MonoBehaviour
         
         if(Check_if_player_has_ball() == true)
         {
-            Harass_noun(player.transform);
+            Harass_noun(player.transform, 0);
             Look_at_area(player.transform);
         }
         else if(Check_if_player_has_ball() == false)
         {
-            Harass_noun(ball.transform);
+            Harass_noun(ball.transform, distance_from_player);
             Look_at_area(ball.transform);
 
         }
@@ -44,9 +44,9 @@ public class Basic_Opponet : MonoBehaviour
         return false;
     }
 
-    void Harass_noun(Transform noun)
+    void Harass_noun(Transform noun, float away_dis)
     {
-        this.transform.position =new Vector3((noun.transform.position.x + distance_from_player), distance_y_axis, noun.transform.position.z);
+        this.transform.position =new Vector3((noun.transform.position.x + away_dis), distance_y_axis, noun.transform.position.z);
     }
 
     void Look_at_area(Transform dirction_goto)
