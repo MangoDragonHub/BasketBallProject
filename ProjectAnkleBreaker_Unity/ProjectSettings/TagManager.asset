@@ -10,6 +10,8 @@ TagManager:
   - ExitCheck
   - camera_close
   - camera_far
+  - CinemachineTarget
+  - basket_ball
   layers:
   - Default
   - TransparentFX
