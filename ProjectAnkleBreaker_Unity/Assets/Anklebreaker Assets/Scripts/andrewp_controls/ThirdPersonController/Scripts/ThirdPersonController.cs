@@ -75,8 +75,6 @@ using UnityEngine.InputSystem;
         [Tooltip("For locking the camera position on all axis")]
         public bool LockCameraPosition = false;
 
-        public bool AllowJump;
-
         // cinemachine
         private float _cinemachineTargetYaw;
         private float _cinemachineTargetPitch;
@@ -170,13 +168,8 @@ using UnityEngine.InputSystem;
         _verticalVelocity += Gravity * Time.deltaTime;
     }
 
-    private void FixedUpdate()
-    {
-        JumpAction();
-    }
 
-
-    private void AssignAnimationIDs()
+        private void AssignAnimationIDs()
         {
             _animIDSpeed = Animator.StringToHash("Speed");
             _animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
@@ -186,15 +179,6 @@ using UnityEngine.InputSystem;
             _animIDFreeFall = Animator.StringToHash("FreeFall");
         _animIDisMoving = Animator.StringToHash("isMoving");
         */
-    }
-
-    public void JumpAction() //The nature of this base code using Floats and not Vectors.
-    {
-        if(AllowJump == true)
-        {
-            _verticalVelocity = Mathf.Sqrt(JumpHeight * -1f * Gravity);
-            AllowJump = false;
-        }
     }
 
     private void Move()
