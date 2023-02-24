@@ -42,7 +42,7 @@
                 {
                     "name": "WASD",
                     "id": "b7594ddb-26c9-4ba2-bd5a-901468929edc",
-                    "path": "2DVector(mode=1)",
+                    "path": "2DVector(mode=2)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -144,7 +144,7 @@
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "StickDeadzone",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -177,7 +177,7 @@
                     "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -188,7 +188,7 @@
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "KeyboardMouse",
                     "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -199,7 +199,7 @@
                     "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "KeyboardMouse",
                     "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
