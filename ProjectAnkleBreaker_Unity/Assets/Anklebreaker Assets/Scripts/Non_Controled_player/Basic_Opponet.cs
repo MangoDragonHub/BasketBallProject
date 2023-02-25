@@ -13,9 +13,12 @@ public class Basic_Opponet : MonoBehaviour
 
     private GameObject ball;
 
+    private Made_up_person person_stat;
+
     // Start is called before the first frame update
     void Start()
     {
+        person_stat = GetComponent<Made_up_person>();
         player = GameObject.FindGameObjectWithTag("Player");
         ball = GameObject.FindGameObjectWithTag("basket_ball");
     }
