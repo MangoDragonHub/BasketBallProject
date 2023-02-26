@@ -76,8 +76,9 @@ public partial class PlayerStateManager : MonoBehaviour
     {
         if (animator.GetBool("hasBall"))
         {
+            basketballHandler.anim.enabled = false;
+            basketballHandler.ChangeParentToPlayerHand();
             pl_input.enabled = false; //Disables the player input completely for a set amount of time. This is so that the player character does not move unrealistically when they shoot. For now, this also disables pausing.
-            basketballHandler.ChangeParentToPlayerHand(); //This method disables the Animator component for the ball and changes its parent to the player's hand instead of the Attach Point.
             animator.SetBool("isShooting", true);
             yield return new WaitForSeconds(0.3f);
             tpc.AllowJump = true; //Do not call JumpAction() as its already in the update. This bool variable can handle when the character jumps.
