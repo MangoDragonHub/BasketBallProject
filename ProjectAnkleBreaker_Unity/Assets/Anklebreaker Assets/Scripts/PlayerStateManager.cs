@@ -54,6 +54,20 @@ public partial class PlayerStateManager : MonoBehaviour
         PauseMenu.GetComponent<MainMenuOptions>().PauseGame();
     }
 
+    public void StealBall()
+    {
+        //When the opponent wants to steal a ball from another, they take the ball immediately and push the opponent away.
+        //This can only be done if the player is possibly, directly in front of the player.
+        Debug.Log("AP DEBUG: STEAL BUTTON has been pushed.");
+    }
+
+    public void DefendBall()
+    {
+        //This is where "Guard frames" will apply and will allow the player to protect the ball from being stolen by the opponent.
+        //There will be a set amount of time where "guard frames" will apply so the player will be invulnerable.
+         Debug.Log("AP DEBUG: DEFENSE BUTTON has been pushed.");
+    }
+
     #endregion
 
 
