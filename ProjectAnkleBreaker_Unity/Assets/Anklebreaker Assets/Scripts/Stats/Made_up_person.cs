@@ -28,6 +28,14 @@ public class Made_up_person : Stat_Dict
         return name;
     }
 
+    private void example()
+    {
+       if ( this.gameObject.GetComponent<Made_up_person>().dunk_chance() == true)
+        {
+            //dunk is succesful
+        }
+    }
+
     public bool dunk_chance()
     {
         int rand = Random.Range(0, chance_pool);
