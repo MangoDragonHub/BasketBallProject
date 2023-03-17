@@ -36,6 +36,11 @@ Jose Palencia
 # Audio Engineer & Sound Design
 Cristian Salazar
 
+# Music
+Djshad
+
+Sebastian Splinter
+
 # Fonts
 Teko - Indian Type Foundation
 
