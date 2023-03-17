@@ -144,7 +144,6 @@ GameObject:
   - component: {fileID: 398168899}
   - component: {fileID: 398168900}
   - component: {fileID: 398168901}
-  - component: {fileID: 7615331356433626209}
   m_Layer: 0
   m_Name: DemoPlayer
   m_TagString: Player
@@ -364,18 +363,6 @@ MonoBehaviour:
   _controller: {fileID: 8611705737180506313}
   _input: {fileID: 398168900}
   _mainCamera: {fileID: 0}
---- !u!114 &7615331356433626209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7199739846227023679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f475125c3a6f154898df82f5c4ceb10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7199739847676911384
 PrefabInstance:
   m_ObjectHideFlags: 0

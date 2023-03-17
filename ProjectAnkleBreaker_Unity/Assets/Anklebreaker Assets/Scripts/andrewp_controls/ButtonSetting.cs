@@ -8,14 +8,12 @@ public class ButtonSetting : MonoBehaviour
     private PlayerInput pl_input;
     private PlayerStateManager psm;
     public Animator animator;
-    private visionLineScript visionLine;
 
 
     private void Awake()
     {
         pl_input = GetComponent<PlayerInput>();
         psm = GetComponent<PlayerStateManager>();
-        visionLine = GetComponent<visionLineScript>();
     }
 
     void OnShoot()
@@ -42,14 +40,7 @@ public class ButtonSetting : MonoBehaviour
 
     void OnVisionAssist()
     {
-        if(visionLine.startCalculating == false)
-        {
-            visionLine.startCalculating = true;
-        }
-        else
-        {
-            visionLine.startCalculating = false;
-        }
+
     }
 
     // Start is called before the first frame update
