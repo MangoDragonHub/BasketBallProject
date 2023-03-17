@@ -10,6 +10,7 @@ TagManager:
   - ExitCheck
   - camera_close
   - camera_far
+  - Camera
   layers:
   - Default
   - TransparentFX
