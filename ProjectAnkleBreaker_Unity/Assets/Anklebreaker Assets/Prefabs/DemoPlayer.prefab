@@ -212,8 +212,8 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: f27f7470-edde-4472-abfe-acd831c6b566
     m_ActionName: Player/PauseButton[/DualShock4GamepadHID/start,/XInputControllerWindows/start,/Keyboard/escape]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
