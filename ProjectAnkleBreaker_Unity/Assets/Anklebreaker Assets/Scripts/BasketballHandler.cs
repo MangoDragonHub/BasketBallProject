@@ -5,8 +5,8 @@ using UnityEngine;
 public class BasketballHandler : MonoBehaviour
 {
     public bool hasBall;
-    public Transform playerHand;
-    public GameObject player;
+    private Transform playerHand;
+    private GameObject player;
     private GameObject attachPoint;
     private MeshCollider Court;
 
@@ -33,7 +33,6 @@ public class BasketballHandler : MonoBehaviour
         hasBall = false;
         _rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
-        attachPoint = GameObject.Find("AttachPoint");
         anim.enabled = false;
         GameObject Court_gameObject = GameObject.Find("Court");
         Court = Court_gameObject.GetComponent<MeshCollider>();
@@ -50,6 +49,10 @@ public class BasketballHandler : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) 
         {
+            player = other.gameObject;
+            attachPoint = player.transform.Find("AttachPoint").gameObject;
+            FindRightHand(); //Goes through the WHOOOOOOOOOOOOOOOOLE hirarchy in the Player prefab to find the hand_r Transform. Is this really the only way? maybe i can do a foreach instead.
+            //playerHand = player.transform.Find("hand_r");
             this.gameObject.GetComponent<CamerCloseAndFar>().Switch_Cameras(false);
             //---Tellopenhasball
             //Connects to player's Animator to play Dribble Animation
@@ -85,6 +88,12 @@ public class BasketballHandler : MonoBehaviour
             shotEntered = false;
         }
 
+    }
+
+    private void FindRightHand()
+    {
+        Transform temp = player.transform.Find("M_TestGuy").transform.Find("Game_engine").transform.Find("Root").transform.Find("pelvis").transform.Find("spine_01").transform.Find("spine_02").transform.Find("spine_03").transform.Find("clavicle_r").transform.Find("upperarm_r").transform.Find("lowerarm_r").transform.Find("hand_r");
+        playerHand = temp;
     }
 
     public void ChangeParentToPlayerHand() //This method disables the Animator component for the ball and changes its parent to the player's hand instead of the Attach Point.
