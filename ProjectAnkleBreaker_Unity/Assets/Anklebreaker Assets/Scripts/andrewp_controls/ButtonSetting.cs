@@ -28,6 +28,21 @@ public class ButtonSetting : MonoBehaviour
         Debug.Log("AP DEBUG: The pause button has been pushed.");
     }
 
+    void OnSteal()
+    {
+        psm.StealBall();
+    }
+
+    void OnDefense()
+    {
+        psm.DefendBall();
+    }
+
+    void OnVisionAssist()
+    {
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {

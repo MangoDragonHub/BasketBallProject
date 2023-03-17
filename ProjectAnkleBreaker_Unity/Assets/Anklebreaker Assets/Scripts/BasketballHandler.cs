@@ -8,6 +8,7 @@ public class BasketballHandler : MonoBehaviour
     public Transform playerHand;
     public GameObject player;
     private GameObject attachPoint;
+    private MeshCollider Court;
 
     [SerializeField] private Transform originalSpawn;
     [SerializeField] private int respawnWaitTime;
@@ -34,12 +35,14 @@ public class BasketballHandler : MonoBehaviour
         anim = GetComponent<Animator>();
         attachPoint = GameObject.Find("AttachPoint");
         anim.enabled = false;
+        GameObject Court_gameObject = GameObject.Find("Court");
+        Court = Court_gameObject.GetComponent<MeshCollider>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Checks if Player has the ball or not.
+        
     }
 
 
@@ -48,6 +51,7 @@ public class BasketballHandler : MonoBehaviour
         if (other.gameObject.CompareTag("Player")) 
         {
             this.gameObject.GetComponent<CamerCloseAndFar>().Switch_Cameras(false);
+            //---Tellopenhasball
             //Connects to player's Animator to play Dribble Animation
             hasBall = true;
             Animator playerAnims = player.GetComponent<Animator>();
@@ -83,7 +87,7 @@ public class BasketballHandler : MonoBehaviour
 
     }
 
-    public void ChangeParentToPlayerHand()
+    public void ChangeParentToPlayerHand() //This method disables the Animator component for the ball and changes its parent to the player's hand instead of the Attach Point.
     {
         anim.enabled = false;
         this.gameObject.transform.SetParent(playerHand.transform);
@@ -95,7 +99,9 @@ public class BasketballHandler : MonoBehaviour
         if (!hasBall) return;
         //Shoots the ball
         this.gameObject.GetComponent<CamerCloseAndFar>().Switch_Cameras(true);
+        //---Tellopenhasnotball
         hasBall = false;
+        ChangeParentToPlayerHand();
         _rb.isKinematic = false;
         transform.SetParent(null);
         Launch(CalculateTarget());
@@ -155,7 +161,7 @@ public class BasketballHandler : MonoBehaviour
 
         _rb.useGravity = true;
         _rb.velocity = finalVelocity;
-        StartCoroutine(changeSpamproofBool());
+        StartCoroutine(changeSpamproofBool()); //resets the animAlreadyPlayed boolean to false
     }
 
     IEnumerator changeSpamproofBool()
