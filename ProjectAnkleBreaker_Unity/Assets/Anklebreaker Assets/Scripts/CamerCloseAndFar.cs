@@ -7,8 +7,8 @@ public class CamerCloseAndFar : MonoBehaviour
 {
     public GameObject camera_far;
     public GameObject camera_close;
-    
 
+    public bool camera_toogle_on = true;
 
     // Start is called before the first frame update
     void Start()
@@ -26,14 +26,22 @@ public class CamerCloseAndFar : MonoBehaviour
 
     public void Switch_Cameras(bool camy)
     {
-        if (camy == false)
+        if (camera_toogle_on == true)
         {
-            Closeup();
+            if (camy == false)
+            {
+                Closeup();
+            }
+            else
+            {
+                FarOut();
+            }
         }
         else
         {
             FarOut();
         }
+
     }
 
     void Closeup()
