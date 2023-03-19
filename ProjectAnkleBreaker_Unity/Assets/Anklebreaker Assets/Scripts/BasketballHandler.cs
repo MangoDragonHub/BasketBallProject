@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class BasketballHandler : MonoBehaviour
@@ -26,6 +27,7 @@ public class BasketballHandler : MonoBehaviour
 
     int scoreToAdd;
     public Animator anim;
+    private GameObject ballTrail;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +38,8 @@ public class BasketballHandler : MonoBehaviour
         anim.enabled = false;
         GameObject Court_gameObject = GameObject.Find("Court");
         Court = Court_gameObject.GetComponent<MeshCollider>();
+        ballTrail = this.gameObject.transform.Find("Trail").gameObject;
+        ballTrail.SetActive(false);
     }
 
     // Update is called once per frame
@@ -49,6 +53,7 @@ public class BasketballHandler : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) 
         {
+            ballTrail.SetActive(false);
             player = other.gameObject;
             attachPoint = player.transform.Find("AttachPoint").gameObject;
             FindRightHand(); //Goes through the WHOOOOOOOOOOOOOOOOLE hirarchy in the Player prefab to find the hand_r Transform. Is this really the only way? maybe i can do a foreach instead.
@@ -76,6 +81,7 @@ public class BasketballHandler : MonoBehaviour
         if (other.gameObject.CompareTag("EntryCheck"))
         {
             shotEntered = true;
+            ballTrail.SetActive(false);
         }
         if (other.gameObject.CompareTag("ExitCheck"))
         {
@@ -86,6 +92,7 @@ public class BasketballHandler : MonoBehaviour
                 StartCoroutine(ResetBall());
             }
             shotEntered = false;
+            ballTrail.SetActive(false);
         }
 
     }
@@ -139,6 +146,7 @@ public class BasketballHandler : MonoBehaviour
 
     void Launch(Vector3 targetPos)
     {
+        ballTrail.SetActive(true);
         initialPos = transform.position;
 
         float gravity = Physics.gravity.magnitude;
