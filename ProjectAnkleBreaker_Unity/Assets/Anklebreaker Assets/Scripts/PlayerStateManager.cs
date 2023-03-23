@@ -13,8 +13,12 @@ public partial class PlayerStateManager : MonoBehaviour
     //Variables
     [SerializeField] BasketballHandler basketballHandler;
 <<<<<<< HEAD
+<<<<<<< HEAD
     [SerializeField] bool hasBall;
     public bool awayTeam;
+=======
+    public bool hasBall;
+>>>>>>> 1473cb04e19b5a0425b752b3c6d890ac3ca6d96a
 =======
     public bool hasBall;
 >>>>>>> 1473cb04e19b5a0425b752b3c6d890ac3ca6d96a
