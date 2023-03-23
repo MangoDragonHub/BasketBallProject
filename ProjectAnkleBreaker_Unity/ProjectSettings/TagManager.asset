@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - basket_ball
+  - camera_close
+  - Collision Bound
+  - camera_far
+  - HoldBall
+  - EntryCheck
+  - ExitCheck
+  - Home
+  - Away
+  - ScoreP1
+  - ScoreP2
+  - Player2
   layers:
   - Default
   - TransparentFX

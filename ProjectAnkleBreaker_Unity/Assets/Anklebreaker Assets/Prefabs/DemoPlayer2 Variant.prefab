@@ -31,6 +31,10 @@ PrefabInstance:
       propertyPath: m_DefaultControlScheme
       value: Gamepad
       objectReference: {fileID: 0}
+    - target: {fileID: 5844057213192724821, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7199739846227023676, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -78,6 +82,10 @@ PrefabInstance:
     - target: {fileID: 7199739846227023679, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
       propertyPath: m_Name
       value: DemoPlayer2 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010765669610873417, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}

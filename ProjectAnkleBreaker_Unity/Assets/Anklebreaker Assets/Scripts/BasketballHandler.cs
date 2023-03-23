@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class BasketballHandler : MonoBehaviour
@@ -9,6 +10,7 @@ public class BasketballHandler : MonoBehaviour
     private GameObject player;
     private GameObject attachPoint;
     private MeshCollider Court;
+    private bool taken;
 
     [SerializeField] private Transform originalSpawn;
     [SerializeField] private int respawnWaitTime;
@@ -22,10 +24,12 @@ public class BasketballHandler : MonoBehaviour
     Vector3 initialPos;
 
     bool shotEntered;
-    bool animAlreadyPlayed; //This is the spamproof boolean flag so that methods dont get replayed again when the player does certain actions.
+    bool animAlreadyPlayed; //This is the spam proof boolean flag so that methods dont get replayed again when the player does certain actions.
+    public bool onAwayTeam; // Checks what Team the Player is on.
 
     int scoreToAdd;
     public Animator anim;
+    private GameObject ballTrail;
 
     // Start is called before the first frame update
     void Start()
@@ -36,28 +40,45 @@ public class BasketballHandler : MonoBehaviour
         anim.enabled = false;
         GameObject Court_gameObject = GameObject.Find("Court");
         Court = Court_gameObject.GetComponent<MeshCollider>();
+<<<<<<< HEAD
+        player = GameObject.FindWithTag("Player");
+=======
+        ballTrail = this.gameObject.transform.Find("Trail").gameObject;
+        ballTrail.SetActive(false);
+>>>>>>> 1473cb04e19b5a0425b752b3c6d890ac3ca6d96a
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        onAwayTeam = player.GetComponent<PlayerStateManager>().awayTeam;
+        WhoHasBall();
     }
 
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player")) 
+        if (other.gameObject.CompareTag("Player") ||other.gameObject.CompareTag("Player2") ) 
         {
+            ballTrail.SetActive(false);
+            if (taken == true)
+            {
+                Debug.Log("Prevented ball ownership because it's in use.");
+                return; //Stops the method immediately because the ball is currently
+                        //in use by another player. This is to prevent multiple players
+                        //having a hasBall param, which makes the ball teleport to
+                        //different players if they decide to Shoot.
+            }
             player = other.gameObject;
+            //Connects to player's Animator to play Dribble Animation
+            Animator playerAnims = player.GetComponent<Animator>();
             attachPoint = player.transform.Find("AttachPoint").gameObject;
             FindRightHand(); //Goes through the WHOOOOOOOOOOOOOOOOLE hirarchy in the Player prefab to find the hand_r Transform. Is this really the only way? maybe i can do a foreach instead.
             //playerHand = player.transform.Find("hand_r");
             this.gameObject.GetComponent<CamerCloseAndFar>().Switch_Cameras(false);
             //---Tellopenhasball
-            //Connects to player's Animator to play Dribble Animation
             hasBall = true;
-            Animator playerAnims = player.GetComponent<Animator>();
+            taken = true;
             playerAnims.SetBool("hasBall", true);
             //Debug to tell who has the ball
             Debug.Log($"{player} has the ball");
@@ -67,26 +88,48 @@ public class BasketballHandler : MonoBehaviour
             shotEntered = false;
             if (!animAlreadyPlayed) //To make sure the animator doesnt get played again when shooting the ball.
             {
-                anim.enabled = true;
-                animAlreadyPlayed = true;
-                transform.localPosition = Vector3.zero;
-                this.gameObject.transform.SetParent(attachPoint.transform);
+                    anim.enabled = true;
+                    animAlreadyPlayed = true;
+                    transform.localPosition = Vector3.zero;
+                    this.gameObject.transform.SetParent(attachPoint.transform);
             }
-        }
-        if (other.gameObject.CompareTag("EntryCheck"))
-        {
-            shotEntered = true;
-        }
-        if (other.gameObject.CompareTag("ExitCheck"))
-        {
-            if (shotEntered)
+            }
+            if (other.gameObject.CompareTag("EntryCheck"))
             {
-                GameManager.Instance.score += scoreToAdd;
-                Debug.Log($"Player scored, Score: {GameManager.Instance.score}");
-                StartCoroutine(ResetBall());
+<<<<<<< HEAD
+                if (onAwayTeam)
+                {
+                    GameManager.Instance.scoreP2 += scoreToAdd;
+                    //GameManager.Instance.Score_player_one(scoreToAdd);
+                    Debug.Log($"Player 2 scored, Score: {GameManager.Instance.scoreP2}");
+                    StartCoroutine(ResetBall());
+                }
+                else if (!onAwayTeam)
+                {
+                    GameManager.Instance.scoreP1 += scoreToAdd;
+                    //GameManager.Instance.Score_player_two(scoreToAdd);
+                    Debug.Log($"Player 1 scored, Score: {GameManager.Instance.scoreP1}");
+                    StartCoroutine(ResetBall());
+                }
+
+
+
+=======
+                shotEntered = true;
+                ballTrail.SetActive(false);
             }
-            shotEntered = false;
-        }
+            if (other.gameObject.CompareTag("ExitCheck"))
+            {
+                if (shotEntered)
+                {
+                    GameManager.Instance.score += scoreToAdd;
+                    Debug.Log($"Player scored, Score: {GameManager.Instance.score}");
+                    StartCoroutine(ResetBall());
+                }
+                shotEntered = false;
+                ballTrail.SetActive(false);
+>>>>>>> 1473cb04e19b5a0425b752b3c6d890ac3ca6d96a
+            }
 
     }
 
@@ -94,6 +137,22 @@ public class BasketballHandler : MonoBehaviour
     {
         Transform temp = player.transform.Find("M_TestGuy").transform.Find("Game_engine").transform.Find("Root").transform.Find("pelvis").transform.Find("spine_01").transform.Find("spine_02").transform.Find("spine_03").transform.Find("clavicle_r").transform.Find("upperarm_r").transform.Find("lowerarm_r").transform.Find("hand_r");
         playerHand = temp;
+    }
+
+    public void WhoHasBall()
+    {
+        //Checks and see who has the bal
+        if(onAwayTeam == true)
+        {
+            //If on Away team, change hoop target
+            _target = GameObject.Find("Away_Target").transform;
+            
+        }
+        else
+        {
+            _target = GameObject.Find("Home_Target").transform;
+            
+        }
     }
 
     public void ChangeParentToPlayerHand() //This method disables the Animator component for the ball and changes its parent to the player's hand instead of the Attach Point.
@@ -114,6 +173,7 @@ public class BasketballHandler : MonoBehaviour
         _rb.isKinematic = false;
         transform.SetParent(null);
         Launch(CalculateTarget());
+        taken = false;
         Debug.Log($"{player} has shot the ball");
     }
 
@@ -139,6 +199,7 @@ public class BasketballHandler : MonoBehaviour
 
     void Launch(Vector3 targetPos)
     {
+        ballTrail.SetActive(true);
         initialPos = transform.position;
 
         float gravity = Physics.gravity.magnitude;

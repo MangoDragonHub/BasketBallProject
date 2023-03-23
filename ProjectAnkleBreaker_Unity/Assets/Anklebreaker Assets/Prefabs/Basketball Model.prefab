@@ -73,7 +73,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 1.5
+  m_Time: 2.5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -430,6 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera_far: {fileID: 0}
   camera_close: {fileID: 0}
+  camera_toogle_on: 1
 --- !u!82 &977089387
 AudioSource:
   m_ObjectHideFlags: 0

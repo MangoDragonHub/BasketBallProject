@@ -12,7 +12,12 @@ public partial class PlayerStateManager : MonoBehaviour
 {
     //Variables
     [SerializeField] BasketballHandler basketballHandler;
+<<<<<<< HEAD
     [SerializeField] bool hasBall;
+    public bool awayTeam;
+=======
+    public bool hasBall;
+>>>>>>> 1473cb04e19b5a0425b752b3c6d890ac3ca6d96a
     private int playerID;
     public Animator animator;
     private ThirdPersonController tpc;
@@ -38,7 +43,7 @@ public partial class PlayerStateManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     #region Actions
