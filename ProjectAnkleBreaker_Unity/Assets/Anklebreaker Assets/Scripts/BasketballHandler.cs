@@ -40,12 +40,9 @@ public class BasketballHandler : MonoBehaviour
         anim.enabled = false;
         GameObject Court_gameObject = GameObject.Find("Court");
         Court = Court_gameObject.GetComponent<MeshCollider>();
-<<<<<<< HEAD
         player = GameObject.FindWithTag("Player");
-=======
         ballTrail = this.gameObject.transform.Find("Trail").gameObject;
         ballTrail.SetActive(false);
->>>>>>> 1473cb04e19b5a0425b752b3c6d890ac3ca6d96a
     }
 
     // Update is called once per frame
@@ -96,7 +93,6 @@ public class BasketballHandler : MonoBehaviour
             }
             if (other.gameObject.CompareTag("EntryCheck"))
             {
-<<<<<<< HEAD
                 if (onAwayTeam)
                 {
                     GameManager.Instance.scoreP2 += scoreToAdd;
@@ -111,10 +107,6 @@ public class BasketballHandler : MonoBehaviour
                     Debug.Log($"Player 1 scored, Score: {GameManager.Instance.scoreP1}");
                     StartCoroutine(ResetBall());
                 }
-
-
-
-=======
                 shotEntered = true;
                 ballTrail.SetActive(false);
             }
@@ -122,13 +114,12 @@ public class BasketballHandler : MonoBehaviour
             {
                 if (shotEntered)
                 {
-                    GameManager.Instance.score += scoreToAdd;
-                    Debug.Log($"Player scored, Score: {GameManager.Instance.score}");
+                    //GameManager.Instance.score += scoreToAdd;
+                    //Debug.Log($"Player scored, Score: {GameManager.Instance.score}");
                     StartCoroutine(ResetBall());
                 }
                 shotEntered = false;
                 ballTrail.SetActive(false);
->>>>>>> 1473cb04e19b5a0425b752b3c6d890ac3ca6d96a
             }
 
     }
