@@ -10,7 +10,7 @@ public class BasketballHandler : MonoBehaviour
     private GameObject player;
     private GameObject attachPoint;
     private MeshCollider Court;
-    private bool taken;
+    public bool taken;
     private PlayerStateManager currentPlayer_psm;
 
     [SerializeField] private Transform originalSpawn;
@@ -263,6 +263,18 @@ public class BasketballHandler : MonoBehaviour
             this.transform.position = originalSpawn.position;
         }
     
+    }
+
+    public void ReleaseFromPlayerHand()
+    {
+        anim.enabled = false;
+        ChangeParentToPlayerHand();
+        transform.parent = null;
+        //transform.position = attachPoint.transform.position;
+        transform.position = new Vector3(attachPoint.transform.position.x, attachPoint.transform.position.y, attachPoint.transform.position.z);
+        _rb.useGravity = true;
+        taken = false;
+        //hasBall = true;
     }
 
 }

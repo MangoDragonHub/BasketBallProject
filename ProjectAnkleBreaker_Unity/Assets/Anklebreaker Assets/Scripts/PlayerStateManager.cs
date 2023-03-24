@@ -60,10 +60,28 @@ public partial class PlayerStateManager : MonoBehaviour
         //When the opponent wants to steal a ball from another, they take the ball immediately and push the opponent away.
         //This can only be done if the player is possibly, directly in front of the player.
         Debug.Log("AP DEBUG: STEAL BUTTON has been pushed.");
+        //Search for the player with the opponent's tag
         if (!hasBall)
         {
             StartCoroutine(tempDisableMovement());
             animator.Play("Offense_push");
+            /*
+            if (this.tag == "Player2")
+            {
+                GameObject player1 = GameObject.FindGameObjectWithTag("Player");
+                float distance = Vector3.Distance(player1.transform.position, transform.position);
+                if (distance < 1.5)
+                {
+                    Animator p1_anim = player1.GetComponent<Animator>();
+                    PlayerStateManager p1_psm = player1.GetComponent<PlayerStateManager>();
+                    p1_anim.Play("Fall");
+                    p1_psm.tempDisableMovementOnFall();
+                    p1_psm.hasBall = false;
+                    p1_anim.SetBool("hasBall", false);
+                    basketballHandler.ReleaseFromPlayerHand();
+                }
+            }
+            */
         }
     }
 
@@ -116,6 +134,13 @@ public partial class PlayerStateManager : MonoBehaviour
     {
         pl_input.enabled = false;
         yield return new WaitForSeconds(0.3f);
+        pl_input.enabled = true;
+    }
+
+    IEnumerator tempDisableMovementOnFall()
+    {
+        pl_input.enabled = false;
+        yield return new WaitForSeconds(1f);
         pl_input.enabled = true;
     }
 
