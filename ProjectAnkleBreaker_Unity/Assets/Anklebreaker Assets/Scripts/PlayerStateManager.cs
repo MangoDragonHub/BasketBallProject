@@ -12,7 +12,7 @@ public partial class PlayerStateManager : MonoBehaviour
 {
     //Variables
     [SerializeField] BasketballHandler basketballHandler;
-    [SerializeField] bool hasBall;
+    public bool hasBall;
     public bool awayTeam;
     private int playerID;
     public Animator animator;
@@ -60,6 +60,11 @@ public partial class PlayerStateManager : MonoBehaviour
         //When the opponent wants to steal a ball from another, they take the ball immediately and push the opponent away.
         //This can only be done if the player is possibly, directly in front of the player.
         Debug.Log("AP DEBUG: STEAL BUTTON has been pushed.");
+        if (!hasBall)
+        {
+            StartCoroutine(tempDisableMovement());
+            animator.Play("Offense_push");
+        }
     }
 
     public void DefendBall()
@@ -105,6 +110,13 @@ public partial class PlayerStateManager : MonoBehaviour
             animator.SetBool("isShooting", false);
             pl_input.enabled = true;
         }
+    }
+
+    IEnumerator tempDisableMovement()
+    {
+        pl_input.enabled = false;
+        yield return new WaitForSeconds(0.3f);
+        pl_input.enabled = true;
     }
 
     #endregion

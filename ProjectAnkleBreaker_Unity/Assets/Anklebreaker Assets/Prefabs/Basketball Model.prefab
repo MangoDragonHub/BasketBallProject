@@ -73,7 +73,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 2.5
+  m_Time: 3
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -111,7 +111,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 7132
+      atime1: 16577
       atime2: 0
       atime3: 0
       atime4: 0
@@ -402,6 +402,7 @@ MonoBehaviour:
   maxZFailure: 1
   threeChance: 0.33
   twoChance: 0.75
+  onAwayTeam: 0
   anim: {fileID: 0}
 --- !u!135 &7892224819384503599
 SphereCollider:

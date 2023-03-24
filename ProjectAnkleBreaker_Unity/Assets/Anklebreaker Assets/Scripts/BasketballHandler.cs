@@ -11,6 +11,7 @@ public class BasketballHandler : MonoBehaviour
     private GameObject attachPoint;
     private MeshCollider Court;
     private bool taken;
+    private PlayerStateManager currentPlayer_psm;
 
     [SerializeField] private Transform originalSpawn;
     [SerializeField] private int respawnWaitTime;
@@ -67,6 +68,8 @@ public class BasketballHandler : MonoBehaviour
                         //different players if they decide to Shoot.
             }
             player = other.gameObject;
+            currentPlayer_psm = player.GetComponent<PlayerStateManager>();
+            currentPlayer_psm.hasBall = true;
             //Connects to player's Animator to play Dribble Animation
             Animator playerAnims = player.GetComponent<Animator>();
             attachPoint = player.transform.Find("AttachPoint").gameObject;
@@ -166,6 +169,8 @@ public class BasketballHandler : MonoBehaviour
         Launch(CalculateTarget());
         taken = false;
         Debug.Log($"{player} has shot the ball");
+        currentPlayer_psm.hasBall = false;
+        currentPlayer_psm = null; //Nulls the current playerStateManager because now it does not belong to anyone.
     }
 
     Vector3 CalculateTarget()
