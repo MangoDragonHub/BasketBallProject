@@ -265,7 +265,7 @@ public class BasketballHandler : MonoBehaviour
     
     }
 
-    public void ReleaseFromPlayerHand()
+    public void ReleaseFromPlayerHand() //How can I make the ball not stay underground? And how can I make the ball not float if I manually place it above the ground despite the rigidbody being active?
     {
         anim.enabled = false;
         ChangeParentToPlayerHand();

@@ -64,7 +64,7 @@ public partial class PlayerStateManager : MonoBehaviour
         if (!hasBall)
         {
             StartCoroutine(tempDisableMovement());
-            animator.Play("Offense_push");
+            animator.Play("Offense_push"); //The code below causes the opponent to release the ball as they do the animation.
             /*
             if (this.tag == "Player2")
             {
