@@ -20,7 +20,7 @@ public class GameManager : Singleton<GameManager>
 
         scoreP1 = 0;
         scoreP2 = 0;
-        _mainMenuOptions = GameObject.Find("UI").GetComponent<MainMenuOptions>();
+        _mainMenuOptions = GameObject.Find("GAME UI").GetComponent<MainMenuOptions>();
 
     }
 

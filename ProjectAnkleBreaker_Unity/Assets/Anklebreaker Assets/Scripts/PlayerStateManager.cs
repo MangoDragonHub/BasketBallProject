@@ -51,7 +51,7 @@ public partial class PlayerStateManager : MonoBehaviour
 
     public void PauseGame()
     {
-        GameObject PauseMenu = GameObject.Find("UI");
+        GameObject PauseMenu = GameObject.Find("GAME UI");
         PauseMenu.GetComponent<MainMenuOptions>().PauseGame();
     }
 
