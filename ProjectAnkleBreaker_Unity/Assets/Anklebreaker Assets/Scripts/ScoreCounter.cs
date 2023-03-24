@@ -22,7 +22,11 @@ public class ScoreCounter : MonoBehaviour
         //basketballHandler = GameObject.Find("Basketball Model").GetComponent<BasketballHandler>();
         GM = GameObject.Find("Game Manager").GetComponent<GameManager>();
         uiScoreCounterP1 = score_p1.GetComponent<TextMeshProUGUI>();
-        uiScoreCounterP2 = score_p2.GetComponent<TextMeshProUGUI>();
+        //uiScoreCounterP2 = score_p2.GetComponent<TextMeshProUGUI>();
+        if(score_p2 != null)
+        {
+            uiScoreCounterP2 = score_p2.GetComponent<TextMeshProUGUI>();
+        }
     }
 
     
@@ -31,7 +35,10 @@ public class ScoreCounter : MonoBehaviour
 
         //Update UI
         uiScoreCounterP1.text = GM.scoreP1.ToString();
-        uiScoreCounterP2.text = GM.scoreP2.ToString();
+        if(score_p2 != null)
+        {
+            uiScoreCounterP2.text = GM.scoreP2.ToString();
+        }
 
     }
 }

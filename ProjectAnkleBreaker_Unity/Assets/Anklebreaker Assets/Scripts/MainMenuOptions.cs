@@ -17,8 +17,9 @@ public class MainMenuOptions : MonoBehaviour
     #region Main Modes
     public void LoadLevel(string LevelName) 
     {
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
         SceneManager.LoadScene(LevelName);
+        Time.timeScale = 1;
         
     }
 
