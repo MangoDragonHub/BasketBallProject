@@ -127,7 +127,7 @@ public class BasketballHandler : MonoBehaviour
 
     }
 
-    private void FindRightHand()
+    public void FindRightHand()
     {
         Transform temp = player.transform.Find("M_TestGuy").transform.Find("Game_engine").transform.Find("Root").transform.Find("pelvis").transform.Find("spine_01").transform.Find("spine_02").transform.Find("spine_03").transform.Find("clavicle_r").transform.Find("upperarm_r").transform.Find("lowerarm_r").transform.Find("hand_r");
         playerHand = temp;
@@ -232,7 +232,7 @@ public class BasketballHandler : MonoBehaviour
 
     IEnumerator changeSpamproofBool()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.2f); //The reason why the ball gets stuck in mid air is because this wait time was too long... leaving the bool True.
         animAlreadyPlayed = false;
     }
 

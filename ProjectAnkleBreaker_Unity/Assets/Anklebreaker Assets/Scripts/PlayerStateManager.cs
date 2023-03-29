@@ -127,6 +127,22 @@ public partial class PlayerStateManager : MonoBehaviour
             //shoot
             animator.SetBool("isShooting", false);
             pl_input.enabled = true;
+            yield return new WaitForSeconds(.3f); //temporary bandaid fix. The coroutine is given 0.3 seconds to see if the player's
+                                                  //animation state is still on "Shooting". If it is, then it will force the player
+                                                  //to change the animation and if hasBall, relocates the ball to the player's
+                                                  //hand.
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Shooting"))
+            {
+                if (animator.GetBool("hasBall"))
+                {
+                    animator.Play("Idle Dribble");
+                    basketballHandler.FindRightHand();
+                }
+                if (!animator.GetBool("hasBall"))
+                {
+                    animator.Play("Idle");
+                }
+            }
         }
     }
 
