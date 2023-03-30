@@ -149,7 +149,7 @@ public class BasketballHandler : MonoBehaviour
         }
     }
 
-    public void ChangeParentToPlayerHand() //This method disables the Animator component for the ball and changes its parent to the player's hand instead of the Attach Point.
+    public void ChangeParentToPlayerHand() //This method disables the Animator component for the ball and changes its parent to the player's hand instead of the Attach Point. ONLY FOR SHOOTING THE BALL
     {
         anim.enabled = false;
         this.gameObject.transform.SetParent(playerHand.transform);
