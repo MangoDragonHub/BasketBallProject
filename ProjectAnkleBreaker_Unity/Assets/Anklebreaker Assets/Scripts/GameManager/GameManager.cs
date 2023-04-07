@@ -18,6 +18,8 @@ public class GameManager : Singleton<GameManager>
             
         }
 
+        
+
         scoreP1 = 0;
         scoreP2 = 0;
         _mainMenuOptions = GameObject.Find("GAME UI").GetComponent<MainMenuOptions>();
@@ -35,8 +37,19 @@ public class GameManager : Singleton<GameManager>
         if(scoreP1 >= gameScoreCap || scoreP2 >= gameScoreCap)
         {
             //Debug.Log("The Game is Over!");
-            _mainMenuOptions.EndGameScreen();
+            if (_mainMenuOptions != null) 
+            {
+                _mainMenuOptions.EndGameScreen();
+            }
+           
             
+        }
+
+        //Double check if score resets and not affect the game.
+        if (scoreP1 >= 21 || scoreP2 >= 21)
+        {
+            scoreP1 = 0;
+            scoreP2 = 0;
         }
 
     }
