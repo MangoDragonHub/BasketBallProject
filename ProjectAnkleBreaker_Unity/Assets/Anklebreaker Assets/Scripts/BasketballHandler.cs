@@ -149,7 +149,7 @@ public class BasketballHandler : MonoBehaviour
         }
     }
 
-    public void ChangeParentToPlayerHand() //This method disables the Animator component for the ball and changes its parent to the player's hand instead of the Attach Point. ONLY FOR SHOOTING THE BALL
+    public void ForceChangeParentToPlayerHand() //This method disables the Animator component for the ball and changes its parent to the player's hand instead of the Attach Point. ONLY FOR SHOOTING THE BALL
     {
         anim.enabled = false;
         this.gameObject.transform.SetParent(playerHand.transform);
@@ -163,7 +163,7 @@ public class BasketballHandler : MonoBehaviour
         this.gameObject.GetComponent<CamerCloseAndFar>().Switch_Cameras(true);
         //---Tellopenhasnotball
         hasBall = false;
-        ChangeParentToPlayerHand();
+        ForceChangeParentToPlayerHand();
         _rb.isKinematic = false;
         transform.SetParent(null);
         Launch(CalculateTarget());
@@ -268,13 +268,14 @@ public class BasketballHandler : MonoBehaviour
     public void ReleaseFromPlayerHand() //How can I make the ball not stay underground? And how can I make the ball not float if I manually place it above the ground despite the rigidbody being active?
     {
         anim.enabled = false;
-        ChangeParentToPlayerHand();
+        ForceChangeParentToPlayerHand();
         transform.parent = null;
-        //transform.position = attachPoint.transform.position;
-        transform.position = new Vector3(attachPoint.transform.position.x, attachPoint.transform.position.y, attachPoint.transform.position.z);
-        _rb.useGravity = true;
+        transform.position = attachPoint.transform.position;
+        //transform.position = new Vector3(attachPoint.transform.position.x, attachPoint.transform.position.y, attachPoint.transform.position.z);
+        _rb.useGravity = true; //Do I need to use this again?
+        _rb.isKinematic = false; //This is so the ball actually falls and does not defy gravity.
         taken = false;
-        //hasBall = true;
+        attachPoint = null;
     }
 
 }
