@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Anklebreaker Assets/Scenes/Scene_AutumnFoutain.unity
     guid: 5528740600ef8894a9bedf2a7fcc5f0d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Anklebreaker Assets/Scenes/andrewp_testing/Scene_AutumnFoutain_ap_testing.unity
     guid: d349c8cba2ee57e46b8e477b0ec9913f
   m_configObjects:

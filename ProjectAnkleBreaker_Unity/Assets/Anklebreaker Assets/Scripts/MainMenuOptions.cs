@@ -76,7 +76,12 @@ public class MainMenuOptions : MonoBehaviour
 
     public void Start()
     {
-        GameplayCanvas.SetActive(true);
-        PauseCanvas.SetActive(false);
+        //GameplayCanvas.SetActive(true);
+        //PauseCanvas.SetActive(false);
+        if(GameplayCanvas != null)
+        {
+            GameplayCanvas.SetActive(true);
+            PauseCanvas.SetActive(false);
+        }
     }
 }
