@@ -115,7 +115,7 @@ public partial class PlayerStateManager : MonoBehaviour
         if (animator.GetBool("hasBall"))
         {
             basketballHandler.anim.enabled = false;
-            basketballHandler.ChangeParentToPlayerHand();
+            basketballHandler.ForceChangeParentToPlayerHand();
             pl_input.enabled = false; //Disables the player input completely for a set amount of time. This is so that the player character does not move unrealistically when they shoot. For now, this also disables pausing.
             animator.SetBool("isShooting", true);
             yield return new WaitForSeconds(0.3f);
