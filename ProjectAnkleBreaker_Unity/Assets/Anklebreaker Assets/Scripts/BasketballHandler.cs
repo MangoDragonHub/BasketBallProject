@@ -84,7 +84,7 @@ public class BasketballHandler : MonoBehaviour
             Debug.Log($"{player} has the ball");
 
             //Attaches Ball to Player
-            _rb.isKinematic = true;
+            _rb.isKinematic = true; //Keep Kinematic property on ONLY when it is attached to the player!!!!
             shotEntered = false;
             if (!animAlreadyPlayed) //To make sure the animator doesnt get played again when shooting the ball.
             {
@@ -131,6 +131,7 @@ public class BasketballHandler : MonoBehaviour
     {
         Transform temp = player.transform.Find("M_TestGuy").transform.Find("Game_engine").transform.Find("Root").transform.Find("pelvis").transform.Find("spine_01").transform.Find("spine_02").transform.Find("spine_03").transform.Find("clavicle_r").transform.Find("upperarm_r").transform.Find("lowerarm_r").transform.Find("hand_r");
         playerHand = temp;
+        transform.position = playerHand.position;
     }
 
     public void WhoHasBall()

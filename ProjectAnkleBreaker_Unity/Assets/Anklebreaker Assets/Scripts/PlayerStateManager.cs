@@ -96,6 +96,13 @@ public partial class PlayerStateManager : MonoBehaviour
          Debug.Log("AP DEBUG: DEFENSE BUTTON has been pushed.");
     }
 
+    private void IgnoreCollisionWithBall()
+    {
+        //Temporarily disable the collision between the player and the ball. Will be useful
+        //when the player does a falling animation, as well as after the shooting if the player
+        //decides to do a close-ramge free throw.
+    }
+
     #endregion
 
 
