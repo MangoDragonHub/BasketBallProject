@@ -58,14 +58,16 @@ public partial class PlayerStateManager : MonoBehaviour
     public void StealBall()
     {
         //When the opponent wants to steal a ball from another, they take the ball immediately and push the opponent away.
-        //This can only be done if the player is possibly, directly in front of the player.
+        //To prevent the player that had the ball from obtaining the ball again the split second after they got pushed,
+        //maybe have the collider of that player ignore the ball's collider for a set amount of time?
         Debug.Log("AP DEBUG: STEAL BUTTON has been pushed.");
+        /*
         //Search for the player with the opponent's tag
         if (!hasBall)
         {
             StartCoroutine(tempDisableMovement());
             animator.Play("Offense_push"); //The code below causes the opponent to release the ball as they do the animation.
-            /*
+            
             if (this.tag == "Player2")
             {
                 GameObject player1 = GameObject.FindGameObjectWithTag("Player");
@@ -81,8 +83,10 @@ public partial class PlayerStateManager : MonoBehaviour
                     basketballHandler.ReleaseFromPlayerHand();
                 }
             }
-            */
+            
         }
+        */
+        
     }
 
     public void DefendBall()

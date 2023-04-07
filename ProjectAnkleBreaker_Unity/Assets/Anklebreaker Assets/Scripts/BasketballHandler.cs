@@ -270,11 +270,12 @@ public class BasketballHandler : MonoBehaviour
         anim.enabled = false;
         ForceChangeParentToPlayerHand();
         transform.parent = null;
-        //transform.position = attachPoint.transform.position;
-        transform.position = new Vector3(attachPoint.transform.position.x, attachPoint.transform.position.y, attachPoint.transform.position.z);
-        _rb.useGravity = true;
+        transform.position = attachPoint.transform.position;
+        //transform.position = new Vector3(attachPoint.transform.position.x, attachPoint.transform.position.y, attachPoint.transform.position.z);
+        _rb.useGravity = true; //Do I need to use this again?
+        _rb.isKinematic = false; //This is so the ball actually falls and does not defy gravity.
         taken = false;
-        //hasBall = true;
+        attachPoint = null;
     }
 
 }
