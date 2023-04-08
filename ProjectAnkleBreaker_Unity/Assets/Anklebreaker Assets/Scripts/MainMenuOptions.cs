@@ -19,7 +19,7 @@ public class MainMenuOptions : MonoBehaviour
     {
         //Time.timeScale = 1;
         SceneManager.LoadScene(LevelName);
-        Time.timeScale = 1;
+        
         
     }
 
