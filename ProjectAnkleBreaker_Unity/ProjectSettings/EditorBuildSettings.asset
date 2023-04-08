@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Anklebreaker Assets/Scenes/Main Menu.unity
     guid: 103a943f08d059147aa93624e1302c79
-  - enabled: 0
+  - enabled: 1
     path: Assets/Anklebreaker Assets/Scenes/NEW_Main Menu.unity
     guid: 9c9df7f954cf94144b7f79a666178749
   - enabled: 1
@@ -17,8 +17,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Anklebreaker Assets/Scenes/andrewp_testing/Scene_AutumnFoutain_ap_testing.unity
     guid: d349c8cba2ee57e46b8e477b0ec9913f
-    path: Assets/Anklebreaker Assets/Scenes/NEW_Main Menu.unity
-    guid: 9c9df7f954cf94144b7f79a666178749
   - enabled: 1
     path: Assets/Anklebreaker Assets/Scenes/Credits.unity
     guid: 7f87827ffc2b1b14091a4a8cef9559a2
