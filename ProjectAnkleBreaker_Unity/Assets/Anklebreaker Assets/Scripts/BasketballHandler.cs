@@ -32,7 +32,7 @@ public class BasketballHandler : MonoBehaviour
     public Animator anim;
     private GameObject ballTrail;
     private enum ballState //Why tf am i using a bunch of booleans when i could have easily done this, i'm a dumbass
-    {OPEN, TAKEN, THROWN}
+    {OPEN, TAKEN, THROWN, DROPPED_BY_OFFENSE}
     private ballState status = ballState.OPEN;
 
     // Start is called before the first frame update
@@ -62,7 +62,6 @@ public class BasketballHandler : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") ||other.gameObject.CompareTag("Player2") ) 
         {
-            ballTrail.SetActive(false);
             if (status == ballState.TAKEN || status == ballState.THROWN)
             {
                 Debug.Log("Prevented ball ownership because it's in use.");
@@ -71,6 +70,7 @@ public class BasketballHandler : MonoBehaviour
                         //having a hasBall param, which makes the ball teleport to
                         //different players if they decide to Shoot.
             }
+            ballTrail.SetActive(false);
             player = other.gameObject;
             currentPlayer_psm = player.GetComponent<PlayerStateManager>();
             currentPlayer_psm.hasBall = true;
@@ -294,7 +294,8 @@ public class BasketballHandler : MonoBehaviour
         //transform.position = new Vector3(attachPoint.transform.position.x, attachPoint.transform.position.y, attachPoint.transform.position.z);
         _rb.useGravity = true; //Do I need to use this again?
         _rb.isKinematic = false; //This is so the ball actually falls and does not defy gravity.
-        status = ballState.OPEN;
+        status = ballState.DROPPED_BY_OFFENSE;
+        Debug.Log("AP DEBUG: ball state is Dropped by offense");
         attachPoint = null;
     }
 
