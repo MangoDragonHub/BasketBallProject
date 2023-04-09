@@ -18,6 +18,9 @@ public partial class PlayerStateManager : MonoBehaviour
     public Animator animator;
     private ThirdPersonController tpc;
     private PlayerInput pl_input;
+    public enum playerStatus
+    {NORMAL, OFFENDED, IN_DEFENSE}
+    public playerStatus status = playerStatus.NORMAL;
 
 
     private void Awake()
@@ -61,32 +64,50 @@ public partial class PlayerStateManager : MonoBehaviour
         //To prevent the player that had the ball from obtaining the ball again the split second after they got pushed,
         //maybe have the collider of that player ignore the ball's collider for a set amount of time?
         Debug.Log("AP DEBUG: STEAL BUTTON has been pushed.");
-        /*
         //Search for the player with the opponent's tag
         if (!hasBall)
         {
             StartCoroutine(tempDisableMovement());
             animator.Play("Offense_push"); //The code below causes the opponent to release the ball as they do the animation.
             
-            if (this.tag == "Player2")
+            if(basketballHandler.status == BasketballHandler.ballState.TAKEN)
             {
-                GameObject player1 = GameObject.FindGameObjectWithTag("Player");
-                float distance = Vector3.Distance(player1.transform.position, transform.position);
-                if (distance < 1.5)
+                if (this.tag == "Player")
                 {
-                    Animator p1_anim = player1.GetComponent<Animator>();
-                    PlayerStateManager p1_psm = player1.GetComponent<PlayerStateManager>();
-                    p1_anim.Play("Fall");
-                    p1_psm.tempDisableMovementOnFall();
-                    p1_psm.hasBall = false;
-                    p1_anim.SetBool("hasBall", false);
-                    basketballHandler.ReleaseFromPlayerHand();
+                    GameObject targetPlayer = GameObject.FindGameObjectWithTag("Player2");
+                    stealBallProcess(targetPlayer); //the local variable is passed to the method
+                }
+                if (this.tag == "Player2")
+                {
+                    GameObject targetPlayer = GameObject.FindGameObjectWithTag("Player");
+                    stealBallProcess(targetPlayer);
                 }
             }
             
         }
-        */
-        
+    }
+    private void stealBallProcess(GameObject targetPlayer)
+    {
+        //this takes the local variable that was just now passed in and takes each component from that GameObject as needed.
+        float distance = Vector3.Distance(targetPlayer.transform.position, transform.position);
+        if (distance < 1.5)
+        {
+            Animator targetPlayer_anim = targetPlayer.GetComponent<Animator>();
+            PlayerStateManager targetPlayer_psm = targetPlayer.GetComponent<PlayerStateManager>();
+            targetPlayer_anim.Play("Fall");
+            StartCoroutine(targetPlayer_psm.tempDisableMovementOnFall());
+            targetPlayer_psm.hasBall = false;
+            targetPlayer_anim.SetBool("hasBall", false);
+            basketballHandler.ReleaseFromPlayerHand();
+            targetPlayer_psm.status = playerStatus.OFFENDED;
+            StartCoroutine(targetPlayer_psm.changePlayerStatusToNormal());
+        }
+    }
+
+    IEnumerator changePlayerStatusToNormal()
+    {
+        yield return new WaitForSeconds(2f);
+        status = playerStatus.NORMAL;
     }
 
     public void DefendBall()
@@ -94,13 +115,6 @@ public partial class PlayerStateManager : MonoBehaviour
         //This is where "Guard frames" will apply and will allow the player to protect the ball from being stolen by the opponent.
         //There will be a set amount of time where "guard frames" will apply so the player will be invulnerable.
          Debug.Log("AP DEBUG: DEFENSE BUTTON has been pushed.");
-    }
-
-    private void IgnoreCollisionWithBall()
-    {
-        //Temporarily disable the collision between the player and the ball. Will be useful
-        //when the player does a falling animation, as well as after the shooting if the player
-        //decides to do a close-ramge free throw.
     }
 
     #endregion

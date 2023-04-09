@@ -31,9 +31,10 @@ public class BasketballHandler : MonoBehaviour
     int scoreToAdd;
     public Animator anim;
     private GameObject ballTrail;
-    private enum ballState //Why tf am i using a bunch of booleans when i could have easily done this, i'm a dumbass
+    [SerializeField]
+    public enum ballState //Why tf am i using a bunch of booleans when i could have easily done this, i'm a dumbass
     {OPEN, TAKEN, THROWN, DROPPED_BY_OFFENSE}
-    private ballState status = ballState.OPEN;
+    public ballState status = ballState.OPEN;
 
     // Start is called before the first frame update
     void Start()
@@ -62,27 +63,26 @@ public class BasketballHandler : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") ||other.gameObject.CompareTag("Player2") ) 
         {
-            if (status == ballState.TAKEN || status == ballState.THROWN)
+            player = other.gameObject;
+            currentPlayer_psm = player.GetComponent<PlayerStateManager>();
+            if (status == ballState.TAKEN || status == ballState.THROWN || currentPlayer_psm.status == PlayerStateManager.playerStatus.OFFENDED)
             {
-                Debug.Log("Prevented ball ownership because it's in use.");
                 return; //Stops the method immediately because the ball is currently
                         //in use by another player. This is to prevent multiple players
                         //having a hasBall param, which makes the ball teleport to
                         //different players if they decide to Shoot.
             }
-            ballTrail.SetActive(false);
-            player = other.gameObject;
-            currentPlayer_psm = player.GetComponent<PlayerStateManager>();
+            ballTrail.SetActive(false); //Turns off the ball's trail.
             currentPlayer_psm.hasBall = true;
             //Connects to player's Animator to play Dribble Animation
             Animator playerAnims = player.GetComponent<Animator>();
             attachPoint = player.transform.Find("AttachPoint").gameObject;
             FindRightHand(); //Goes through the WHOOOOOOOOOOOOOOOOLE hirarchy in the Player prefab to find the hand_r Transform. Is this really the only way? maybe i can do a foreach instead.
-            //playerHand = player.transform.Find("hand_r");
             this.gameObject.GetComponent<CamerCloseAndFar>().Switch_Cameras(false);
             //---Tellopenhasball
             hasBall = true;
             status = ballState.TAKEN;
+            Debug.Log("AP DEBUG: ball state is set from Open -> taken.");
             playerAnims.SetBool("hasBall", true);
             //Debug to tell who has the ball
             Debug.Log($"{player} has the ball");
@@ -172,7 +172,6 @@ public class BasketballHandler : MonoBehaviour
         _rb.isKinematic = false;
         transform.SetParent(null);
         Launch(CalculateTarget());
-        ball_coll.enabled = false;
         status = ballState.THROWN;
         StartCoroutine(changeBallState());
         Debug.Log($"{player} has shot the ball");
@@ -183,12 +182,17 @@ public class BasketballHandler : MonoBehaviour
 
     IEnumerator changeBallState() //The good old switch, case, break State machine method. These are lovely.
     {
+        //ball_coll.enabled = false;
         yield return new WaitForSeconds(0.3f);
         switch (status)
         {
             case ballState.THROWN:
                 status = ballState.OPEN;
                 Debug.Log("AP DEBUG: ball state is set from Thrown -> Open.");
+                break;
+            case ballState.DROPPED_BY_OFFENSE:
+                status = ballState.OPEN;
+                Debug.Log("AP DEBUG: ball state is set from Dropped by offense -> Open.");
                 break;
         }
     }
@@ -289,14 +293,16 @@ public class BasketballHandler : MonoBehaviour
     {
         anim.enabled = false;
         ForceChangeParentToPlayerHand();
+        //transform.position = attachPoint.transform.position;
+        transform.position = new Vector3(transform.position.x, 2.84f, transform.position.z);
         transform.parent = null;
-        transform.position = attachPoint.transform.position;
-        //transform.position = new Vector3(attachPoint.transform.position.x, attachPoint.transform.position.y, attachPoint.transform.position.z);
         _rb.useGravity = true; //Do I need to use this again?
         _rb.isKinematic = false; //This is so the ball actually falls and does not defy gravity.
         status = ballState.DROPPED_BY_OFFENSE;
+        hasBall = false;
         Debug.Log("AP DEBUG: ball state is Dropped by offense");
         attachPoint = null;
+        animAlreadyPlayed = false;
     }
 
 }
