@@ -10,8 +10,8 @@ public class BasketballHandler : MonoBehaviour
     private GameObject player;
     private GameObject attachPoint;
     private MeshCollider Court;
-    public bool taken;
     private PlayerStateManager currentPlayer_psm;
+    private SphereCollider ball_coll;
 
     [SerializeField] private Transform originalSpawn;
     [SerializeField] private int respawnWaitTime;
@@ -31,11 +31,15 @@ public class BasketballHandler : MonoBehaviour
     int scoreToAdd;
     public Animator anim;
     private GameObject ballTrail;
+    private enum ballState //Why tf am i using a bunch of booleans when i could have easily done this, i'm a dumbass
+    {OPEN, TAKEN, THROWN}
+    private ballState status = ballState.OPEN;
 
     // Start is called before the first frame update
     void Start()
     {
         hasBall = false;
+        ball_coll = GetComponent<SphereCollider>();
         _rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         anim.enabled = false;
@@ -59,7 +63,7 @@ public class BasketballHandler : MonoBehaviour
         if (other.gameObject.CompareTag("Player") ||other.gameObject.CompareTag("Player2") ) 
         {
             ballTrail.SetActive(false);
-            if (taken == true)
+            if (status == ballState.TAKEN || status == ballState.THROWN)
             {
                 Debug.Log("Prevented ball ownership because it's in use.");
                 return; //Stops the method immediately because the ball is currently
@@ -78,7 +82,7 @@ public class BasketballHandler : MonoBehaviour
             this.gameObject.GetComponent<CamerCloseAndFar>().Switch_Cameras(false);
             //---Tellopenhasball
             hasBall = true;
-            taken = true;
+            status = ballState.TAKEN;
             playerAnims.SetBool("hasBall", true);
             //Debug to tell who has the ball
             Debug.Log($"{player} has the ball");
@@ -129,7 +133,7 @@ public class BasketballHandler : MonoBehaviour
 
     public void FindRightHand()
     {
-        Transform temp = player.transform.Find("M_TestGuy").transform.Find("Game_engine").transform.Find("Root").transform.Find("pelvis").transform.Find("spine_01").transform.Find("spine_02").transform.Find("spine_03").transform.Find("clavicle_r").transform.Find("upperarm_r").transform.Find("lowerarm_r").transform.Find("hand_r");
+        Transform temp = player.transform.Find("M_NewTestGuy2").transform.Find("Anklebreakerbase").transform.Find("hips").transform.Find("spine").transform.Find("chest").transform.Find("chest1").transform.Find("shoulder.R").transform.Find("upper_arm.R").transform.Find("forearm.R").transform.Find("hand.R");
         playerHand = temp;
         transform.position = playerHand.position;
     }
@@ -168,10 +172,25 @@ public class BasketballHandler : MonoBehaviour
         _rb.isKinematic = false;
         transform.SetParent(null);
         Launch(CalculateTarget());
-        taken = false;
+        ball_coll.enabled = false;
+        status = ballState.THROWN;
+        StartCoroutine(changeBallState());
         Debug.Log($"{player} has shot the ball");
         currentPlayer_psm.hasBall = false;
         currentPlayer_psm = null; //Nulls the current playerStateManager because now it does not belong to anyone.
+        ball_coll.enabled = true;
+    }
+
+    IEnumerator changeBallState() //The good old switch, case, break State machine method. These are lovely.
+    {
+        yield return new WaitForSeconds(0.3f);
+        switch (status)
+        {
+            case ballState.THROWN:
+                status = ballState.OPEN;
+                Debug.Log("AP DEBUG: ball state is set from Thrown -> Open.");
+                break;
+        }
     }
 
     Vector3 CalculateTarget()
@@ -275,7 +294,7 @@ public class BasketballHandler : MonoBehaviour
         //transform.position = new Vector3(attachPoint.transform.position.x, attachPoint.transform.position.y, attachPoint.transform.position.z);
         _rb.useGravity = true; //Do I need to use this again?
         _rb.isKinematic = false; //This is so the ball actually falls and does not defy gravity.
-        taken = false;
+        status = ballState.OPEN;
         attachPoint = null;
     }
 
