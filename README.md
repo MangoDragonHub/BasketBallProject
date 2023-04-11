@@ -31,6 +31,7 @@ Angelica Idoko
 
 # 3D Art
 Rashad Patterson
+
 Jose Palencia
 
 # Audio Engineer & Sound Design
