@@ -45,6 +45,8 @@ public class GameManager : Singleton<GameManager>
             
         }
 
+        Debug.Log(scoreP1);
+
         //Double check if score resets and not affect the game.
         if (scoreP1 >= 21 || scoreP2 >= 21)
         {
@@ -59,6 +61,7 @@ public class GameManager : Singleton<GameManager>
     {
         Debug.Log("Player_One_update");
         scoreP1 = scoreP1 + add_score;
+
     }
 
     public void Score_player_two(int add_score)
