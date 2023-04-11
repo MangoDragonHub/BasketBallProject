@@ -44,6 +44,9 @@ Sebastian Splinter
 # Fonts
 Teko - Indian Type Foundation
 
+# UX Design
+Will Loaiza
+
 
 # Special Thanks
 Unity Technologies
