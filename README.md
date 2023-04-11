@@ -9,12 +9,16 @@ Rashad Patterson
 
 # Game Designers
 Rashad Patterson
+
 Herbert Chillis
 
 # Programming
 Rashad Patterson
+
 Herbert Chillis
+
 Andrew Peterson
+
 Marc Pellegrini
 
 # Movement Code
