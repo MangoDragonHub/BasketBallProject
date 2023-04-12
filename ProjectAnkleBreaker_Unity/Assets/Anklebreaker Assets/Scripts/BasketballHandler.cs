@@ -24,7 +24,7 @@ public class BasketballHandler : MonoBehaviour
     float initialAngle, scoreDistance, maxXFailure, maxYFailure, maxZFailure,  threeChance, twoChance;
     Vector3 initialPos;
 
-    bool shotEntered;
+    public bool shotEntered;
     bool animAlreadyPlayed; //This is the spam proof boolean flag so that methods dont get replayed again when the player does certain actions.
     public bool onAwayTeam; // Checks what Team the Player is on.
 

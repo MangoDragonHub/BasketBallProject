@@ -1,28 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
+
+public enum GameMode
+{
+    ScoreAttack,
+    Competitive,
+    Practice
+}
 
 public class GameManager : Singleton<GameManager>
 {
     [System.NonSerialized] public int scoreP1;
     [System.NonSerialized] public int scoreP2;
     public int gameScoreCap;
+    public int gameClock;
+    private float remainingTime;
     private MainMenuOptions _mainMenuOptions;
+    //private TextMeshProUGUI finalScore;
+    private TextMeshProUGUI clockLabelRef;
+    private TextMeshProUGUI finalScore;
+    public GameMode setGameMode;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (gameScoreCap == null)
-        {
-            gameScoreCap = 21;
-            
-        }
-
-        
-
+        ModeSelection(setGameMode);
         scoreP1 = 0;
         scoreP2 = 0;
+        remainingTime = gameClock;
         _mainMenuOptions = GameObject.Find("GAME UI").GetComponent<MainMenuOptions>();
+        clockLabelRef = GameObject.Find("Clock").GetComponent<TextMeshProUGUI>();
+        finalScore = GameObject.Find("FinalScore").GetComponent<TextMeshProUGUI>();
+        
+
+
+
 
     }
 
@@ -30,6 +45,38 @@ public class GameManager : Singleton<GameManager>
     void Update()
     {
         ScoreCheck();
+        GameClock();
+    }
+
+    private void ModeSelection(GameMode modeSelection) 
+    {
+        switch (modeSelection) 
+        {
+            case GameMode.ScoreAttack:
+                if (gameScoreCap == 0)
+                {
+                    gameScoreCap = 999;
+                }
+                break;
+            case GameMode.Competitive:
+                if (gameScoreCap == 0) 
+                {
+                    gameScoreCap = 21;
+                }
+                break;
+            case GameMode.Practice:
+                if (gameScoreCap == 0)
+                {
+                    gameScoreCap = 9999;
+                }
+                break;
+            default:
+                if (gameScoreCap == null || gameScoreCap == 0)
+                {
+                    gameScoreCap = 21;
+                }
+                break;
+        }
     }
 
     private void ScoreCheck()
@@ -45,20 +92,61 @@ public class GameManager : Singleton<GameManager>
             
         }
 
+
+        //Debug.Log(scoreP1);
         //Double check if score resets and not affect the game.
-        if (scoreP1 >= 21 || scoreP2 >= 21)
+        if (setGameMode == GameMode.Competitive) 
         {
-            scoreP1 = 0;
-            scoreP2 = 0;
+            if (scoreP1 >= 21 || scoreP2 >= 21)
+            {
+                scoreP1 = 0;
+                scoreP2 = 0;
+            }
+
+        }
+        if (setGameMode == GameMode.Practice)
+        {
+            if (scoreP1 >= 9999 || scoreP2 >= 9999)
+            {
+                scoreP1 = 0;
+                scoreP2 = 0;
+            }
+
         }
 
     }
 
+    private void GameClock() 
+    {
+        
 
+        //Check is the game clock is on screen.
+        if (gameClock != null) 
+        {
+            gameClock = 60;
+            remainingTime -= Time.deltaTime;
+            
+            clockLabelRef.text = remainingTime.ToString("F0");
+
+        }
+
+        if (remainingTime <= 0)
+        {
+            //Checks if the end game menu is available
+            if (_mainMenuOptions != null)
+            {
+                _mainMenuOptions.EndGameScreen();
+            }
+            
+            finalScore.text = scoreP1.ToString();
+        }
+
+    }
     public void Score_player_one(int add_score)
     {
         Debug.Log("Player_One_update");
         scoreP1 = scoreP1 + add_score;
+
     }
 
     public void Score_player_two(int add_score)

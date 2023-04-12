@@ -13,6 +13,8 @@ public class MainMenuOptions : MonoBehaviour
     [SerializeField] GameObject PauseCanvas;
     [SerializeField] GameObject GameplayCanvas;
     [SerializeField] GameObject EndGameCanvas;
+    [SerializeField] GameObject gamePlayClock;
+    GameMode gameMode;
 
     #region Main Modes
     public void LoadLevel(string LevelName) 
@@ -83,6 +85,14 @@ public class MainMenuOptions : MonoBehaviour
             GameplayCanvas.SetActive(true);
             PauseCanvas.SetActive(false);
             EndGameCanvas.SetActive(false);
+            if (gameMode == 0)
+            {
+                gamePlayClock.SetActive(true);
+            }
+            else 
+            {
+                gamePlayClock.SetActive(false);
+            }
         }
     }
 }
