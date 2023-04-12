@@ -7,7 +7,8 @@ using TMPro;
 public enum GameMode
 {
     ScoreAttack,
-    Competitive
+    Competitive,
+    Practice
 }
 
 public class GameManager : Singleton<GameManager>
@@ -18,22 +19,26 @@ public class GameManager : Singleton<GameManager>
     public int gameClock;
     private float remainingTime;
     private MainMenuOptions _mainMenuOptions;
-    private TextMeshProUGUI finalScore;
+    //private TextMeshProUGUI finalScore;
     private TextMeshProUGUI clockLabelRef;
+    private TextMeshProUGUI finalScore;
     public GameMode setGameMode;
 
     // Start is called before the first frame update
     void Start()
     {
+        ModeSelection(setGameMode);
         scoreP1 = 0;
         scoreP2 = 0;
         remainingTime = gameClock;
         _mainMenuOptions = GameObject.Find("GAME UI").GetComponent<MainMenuOptions>();
         clockLabelRef = GameObject.Find("Clock").GetComponent<TextMeshProUGUI>();
         finalScore = GameObject.Find("FinalScore").GetComponent<TextMeshProUGUI>();
-        ModeSelection(setGameMode);
+        
 
-       
+
+
+
     }
 
     // Update is called once per frame
@@ -48,15 +53,21 @@ public class GameManager : Singleton<GameManager>
         switch (modeSelection) 
         {
             case GameMode.ScoreAttack:
-                if (gameScoreCap == null || gameScoreCap == 0)
+                if (gameScoreCap == 0)
                 {
                     gameScoreCap = 999;
                 }
                 break;
             case GameMode.Competitive:
-                if (gameScoreCap == null || gameScoreCap == 0) 
+                if (gameScoreCap == 0) 
                 {
                     gameScoreCap = 21;
+                }
+                break;
+            case GameMode.Practice:
+                if (gameScoreCap == 0)
+                {
+                    gameScoreCap = 9999;
                 }
                 break;
             default:
@@ -93,11 +104,22 @@ public class GameManager : Singleton<GameManager>
             }
 
         }
+        if (setGameMode == GameMode.Practice)
+        {
+            if (scoreP1 >= 9999 || scoreP2 >= 9999)
+            {
+                scoreP1 = 0;
+                scoreP2 = 0;
+            }
+
+        }
 
     }
 
     private void GameClock() 
     {
+        
+
         //Check is the game clock is on screen.
         if (gameClock != null) 
         {
