@@ -28,7 +28,7 @@ Unity Technologies _Starter Assets - Third Person Character Controller_ - https:
 Duncan McDonald - https://github.com/mcdonaldduncan
 
 # Animator
-Brian Keley
+Raymond Smithee
 
 # Character Concept Art 
 Angelica Idoko
