@@ -1,0 +1,3742 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc2ed02d687be441900a594634b1437, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: a2a185ed98565b4d804733550a23ade6
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: a2a185ed98565b4d804733550a23ade6
+    GuidInternal: 
+    m_lastTime: -8585315962201429428
+    List: []
+  - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Factory Acoustic Textures
+      ObjectType: 12
+      guid: 6b663d46a83ca54f8b4a5fef12b883f6
+    ParentPath: Virtual Acoustics\Factory Acoustic Textures
+    guid: 6b663d46a83ca54f8b4a5fef12b883f6
+    GuidInternal: 
+    m_lastTime: -8585315962201349642
+    List:
+    - name: Acoustic_Banner
+      guid: f2532d2fccda8e408b8898b1b52a26d6
+      id: 4168643977
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Acoustic_Banner
+        ObjectType: 15
+        guid: f2532d2fccda8e408b8898b1b52a26d6
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Acoustic_Banner
+    - name: Anechoic
+      guid: 32c20a8be202de4ebeacfdd1a900e3ed
+      id: 1873957695
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Anechoic
+        ObjectType: 15
+        guid: 32c20a8be202de4ebeacfdd1a900e3ed
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Anechoic
+    - name: Brick
+      guid: a9a586b004f2534ca838bdb18b18f6d6
+      id: 504532776
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Brick
+        ObjectType: 15
+        guid: a9a586b004f2534ca838bdb18b18f6d6
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Brick
+    - name: Carpet
+      guid: 8975223456dc604296c4b9f4b669092b
+      id: 2412606308
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Carpet
+        ObjectType: 15
+        guid: 8975223456dc604296c4b9f4b669092b
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Carpet
+    - name: Concrete
+      guid: 001cf85c9628e04aaf7c3080bdaba682
+      id: 841620460
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Concrete
+        ObjectType: 15
+        guid: 001cf85c9628e04aaf7c3080bdaba682
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Concrete
+    - name: Cork_Tiles
+      guid: 19c9d2305f92434189063dbb3c4ae5e2
+      id: 3195498748
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Cork_Tiles
+        ObjectType: 15
+        guid: 19c9d2305f92434189063dbb3c4ae5e2
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Cork_Tiles
+    - name: Curtains
+      guid: 339ee6f8975c6849b508a1535f2d66e8
+      id: 2928161104
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Curtains
+        ObjectType: 15
+        guid: 339ee6f8975c6849b508a1535f2d66e8
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Curtains
+    - name: Drywall
+      guid: f4e3a4680b4c8746a8b8a84db93dbc8f
+      id: 3670307564
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Drywall
+        ObjectType: 15
+        guid: f4e3a4680b4c8746a8b8a84db93dbc8f
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Drywall
+    - name: Fabric
+      guid: 32d581836edbed4ea7a3bc7b0a0b8ba8
+      id: 1970351858
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Fabric
+        ObjectType: 15
+        guid: 32d581836edbed4ea7a3bc7b0a0b8ba8
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Fabric
+    - name: Mountain
+      guid: 313793c51a00b44a98dd9b033a8c8eab
+      id: 513139656
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Mountain
+        ObjectType: 15
+        guid: 313793c51a00b44a98dd9b033a8c8eab
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Mountain
+    - name: Textures
+      guid: a3121e7828e3df4a8bba5fb89c74031d
+      id: 1276632493
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures
+    - name: Tile
+      guid: c4da82a82a13b747ba9db9907ba29cc0
+      id: 2637588553
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Tile
+        ObjectType: 15
+        guid: c4da82a82a13b747ba9db9907ba29cc0
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Tile
+    - name: Wood
+      guid: 96bcff1fe76f9e48ba6c7c14a71391ae
+      id: 2058049674
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Wood
+        ObjectType: 15
+        guid: 96bcff1fe76f9e48ba6c7c14a71391ae
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Wood
+    - name: Wood_Bright
+      guid: e5d1857ba2c1634e9a13cec54b641adc
+      id: 4262522749
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Wood_Bright
+        ObjectType: 15
+        guid: e5d1857ba2c1634e9a13cec54b641adc
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Wood_Bright
+    - name: Wood_Deep
+      guid: 8e474652dac50c4ea0dec98d1479529a
+      id: 1755085759
+      PathAndIcons:
+      - ElementName: Virtual Acoustics
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Acoustic Textures
+        ObjectType: 12
+        guid: 6b663d46a83ca54f8b4a5fef12b883f6
+      - ElementName: Textures
+        ObjectType: 4
+        guid: a3121e7828e3df4a8bba5fb89c74031d
+      - ElementName: Wood_Deep
+        ObjectType: 15
+        guid: 8e474652dac50c4ea0dec98d1479529a
+      Path: Virtual Acoustics\Factory Acoustic Textures\Textures\Wood_Deep
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: e8c608706bafb048bf6620b6fdfd670d
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: e8c608706bafb048bf6620b6fdfd670d
+    GuidInternal: 
+    m_lastTime: -8585310645356028293
+    List:
+    - name: 2DAmbientBeds
+      guid: 001cf70d104d7f46aa34857817c465b7
+      id: 4152869693
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AmbientMaster
+        ObjectType: 2
+        guid: 58a9f363a63c744abdc7f31f1fd28b4a
+      - ElementName: AmbientBeds
+        ObjectType: 2
+        guid: b27813bcab280d428fc9295f44a4c240
+      - ElementName: 2DAmbientBeds
+        ObjectType: 2
+        guid: 001cf70d104d7f46aa34857817c465b7
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\2DAmbientBeds
+    - name: 3DAmbientBeds
+      guid: 5d5d25933a9f9542a615c2ff55ce3507
+      id: 2100284100
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AmbientMaster
+        ObjectType: 2
+        guid: 58a9f363a63c744abdc7f31f1fd28b4a
+      - ElementName: AmbientBeds
+        ObjectType: 2
+        guid: b27813bcab280d428fc9295f44a4c240
+      - ElementName: 3DAmbientBeds
+        ObjectType: 2
+        guid: 5d5d25933a9f9542a615c2ff55ce3507
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\3DAmbientBeds
+    - name: AmbientBeds
+      guid: b27813bcab280d428fc9295f44a4c240
+      id: 1182634443
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AmbientMaster
+        ObjectType: 2
+        guid: 58a9f363a63c744abdc7f31f1fd28b4a
+      - ElementName: AmbientBeds
+        ObjectType: 2
+        guid: b27813bcab280d428fc9295f44a4c240
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds
+    - name: AmbientMaster
+      guid: 58a9f363a63c744abdc7f31f1fd28b4a
+      id: 1459460693
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AmbientMaster
+        ObjectType: 2
+        guid: 58a9f363a63c744abdc7f31f1fd28b4a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster
+    - name: AnnouncerCom
+      guid: 203371f884394b49a49e328683669034
+      id: 2257304325
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom
+    - name: AnnouncerFirstGame
+      guid: b4b0edfb7b13d8468faf4a3646ad23ea
+      id: 2754560386
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerTime
+        ObjectType: 2
+        guid: b8e4b451125d8b40b161cf915a45a715
+      - ElementName: AnnouncerFirstGame
+        ObjectType: 2
+        guid: b4b0edfb7b13d8468faf4a3646ad23ea
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerTime\AnnouncerFirstGame
+    - name: AnnouncerFirstGameEnds
+      guid: c4bca3773a98c0458433cc9e7b2dce36
+      id: 432666480
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerTime
+        ObjectType: 2
+        guid: b8e4b451125d8b40b161cf915a45a715
+      - ElementName: AnnouncerFirstGame
+        ObjectType: 2
+        guid: b4b0edfb7b13d8468faf4a3646ad23ea
+      - ElementName: AnnouncerFirstGameEnds
+        ObjectType: 2
+        guid: c4bca3773a98c0458433cc9e7b2dce36
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerTime\AnnouncerFirstGame\AnnouncerFirstGameEnds
+    - name: AnnouncerFirstGameStarts
+      guid: e24c97d3d8a8484bbd32f5baf0915027
+      id: 1531331029
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerTime
+        ObjectType: 2
+        guid: b8e4b451125d8b40b161cf915a45a715
+      - ElementName: AnnouncerFirstGame
+        ObjectType: 2
+        guid: b4b0edfb7b13d8468faf4a3646ad23ea
+      - ElementName: AnnouncerFirstGameStarts
+        ObjectType: 2
+        guid: e24c97d3d8a8484bbd32f5baf0915027
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerTime\AnnouncerFirstGame\AnnouncerFirstGameStarts
+    - name: AnnouncerMaster
+      guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      id: 2420123468
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster
+    - name: AnnouncerNPC
+      guid: cbb199fe76a471489c8fc8a795a2e803
+      id: 1735079571
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC
+    - name: AnnouncerNPCAttemptScore
+      guid: dc73a7c7cfd7494ca6d470ce5d15df22
+      id: 4130640920
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      - ElementName: AnnouncerNPCAttemptScore
+        ObjectType: 2
+        guid: dc73a7c7cfd7494ca6d470ce5d15df22
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC\AnnouncerNPCAttemptScore
+    - name: AnnouncerNPCCharge
+      guid: 1133607d927ceb478b7a37db0fb00d2b
+      id: 3781288871
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      - ElementName: AnnouncerRefCallsNPC
+        ObjectType: 2
+        guid: d81aedb2706b2c45a83a6fc0efbef5a3
+      - ElementName: AnnouncerNPCCharge
+        ObjectType: 2
+        guid: 1133607d927ceb478b7a37db0fb00d2b
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC\AnnouncerRefCallsNPC\AnnouncerNPCCharge
+    - name: AnnouncerNPCGuarding
+      guid: 38948e3a91a3954a97df66cf9a783c31
+      id: 2511415834
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      - ElementName: AnnouncerRefCallsNPC
+        ObjectType: 2
+        guid: d81aedb2706b2c45a83a6fc0efbef5a3
+      - ElementName: AnnouncerNPCGuarding
+        ObjectType: 2
+        guid: 38948e3a91a3954a97df66cf9a783c31
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC\AnnouncerRefCallsNPC\AnnouncerNPCGuarding
+    - name: AnnouncerNPCHasSpecial
+      guid: 57cb0bc3dbd79d40a51e3ec97296a650
+      id: 313113466
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      - ElementName: AnnouncerNPCHasSpecial
+        ObjectType: 2
+        guid: 57cb0bc3dbd79d40a51e3ec97296a650
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC\AnnouncerNPCHasSpecial
+    - name: AnnouncerNPCLostBall
+      guid: dfcab036c5da3e43b73f6dba94a59491
+      id: 682789374
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      - ElementName: AnnouncerNPCLostBall
+        ObjectType: 2
+        guid: dfcab036c5da3e43b73f6dba94a59491
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC\AnnouncerNPCLostBall
+    - name: AnnouncerNPCMiss
+      guid: e20905b10845ad498895f12fdb15913c
+      id: 57376471
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      - ElementName: AnnouncerNPCAttemptScore
+        ObjectType: 2
+        guid: dc73a7c7cfd7494ca6d470ce5d15df22
+      - ElementName: AnnouncerNPCMiss
+        ObjectType: 2
+        guid: e20905b10845ad498895f12fdb15913c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC\AnnouncerNPCAttemptScore\AnnouncerNPCMiss
+    - name: AnnouncerNPCScore
+      guid: 711317b82f07074688da811fb3a4b668
+      id: 2461363755
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      - ElementName: AnnouncerNPCAttemptScore
+        ObjectType: 2
+        guid: dc73a7c7cfd7494ca6d470ce5d15df22
+      - ElementName: AnnouncerNPCScore
+        ObjectType: 2
+        guid: 711317b82f07074688da811fb3a4b668
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC\AnnouncerNPCAttemptScore\AnnouncerNPCScore
+    - name: AnnouncerNPCShock
+      guid: 2ee7190e2964e349a94b40b33d01ef7b
+      id: 2172621671
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      - ElementName: AnnouncerRefCallsNPC
+        ObjectType: 2
+        guid: d81aedb2706b2c45a83a6fc0efbef5a3
+      - ElementName: AnnouncerNPCShock
+        ObjectType: 2
+        guid: 2ee7190e2964e349a94b40b33d01ef7b
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC\AnnouncerRefCallsNPC\AnnouncerNPCShock
+    - name: AnnouncerNPCStealsBall
+      guid: e27568466c96f440b94e861ca67cbf26
+      id: 1556671244
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      - ElementName: AnnouncerNPCStealsBall
+        ObjectType: 2
+        guid: e27568466c96f440b94e861ca67cbf26
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC\AnnouncerNPCStealsBall
+    - name: AnnouncerNPCTraveling
+      guid: 6e98b721f6082c4da5475ed20caa7be2
+      id: 1034216849
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      - ElementName: AnnouncerRefCallsNPC
+        ObjectType: 2
+        guid: d81aedb2706b2c45a83a6fc0efbef5a3
+      - ElementName: AnnouncerNPCTraveling
+        ObjectType: 2
+        guid: 6e98b721f6082c4da5475ed20caa7be2
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC\AnnouncerRefCallsNPC\AnnouncerNPCTraveling
+    - name: AnnouncerPlayer
+      guid: 4410b21b9e54ff4f98b64620043efa73
+      id: 3160718893
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer
+    - name: AnnouncerPlayerAttemptScore
+      guid: 40e5a07062fde048a75b080c216a6bd8
+      id: 3647111098
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      - ElementName: AnnouncerPlayerAttemptScore
+        ObjectType: 2
+        guid: 40e5a07062fde048a75b080c216a6bd8
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer\AnnouncerPlayerAttemptScore
+    - name: AnnouncerPlayerCharge
+      guid: 760a264b9fcd8e42b4db3e2762d639c5
+      id: 2193867965
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      - ElementName: AnnouncerRefCallsPlayer
+        ObjectType: 2
+        guid: cee18f0870261f499e48f0cc87012029
+      - ElementName: AnnouncerPlayerCharge
+        ObjectType: 2
+        guid: 760a264b9fcd8e42b4db3e2762d639c5
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer\AnnouncerRefCallsPlayer\AnnouncerPlayerCharge
+    - name: AnnouncerPlayerGuarding
+      guid: f7cc3789371ccc4c8038fd085a8f68a9
+      id: 3592201100
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      - ElementName: AnnouncerRefCallsPlayer
+        ObjectType: 2
+        guid: cee18f0870261f499e48f0cc87012029
+      - ElementName: AnnouncerPlayerGuarding
+        ObjectType: 2
+        guid: f7cc3789371ccc4c8038fd085a8f68a9
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer\AnnouncerRefCallsPlayer\AnnouncerPlayerGuarding
+    - name: AnnouncerPlayerHasSpecial
+      guid: fd1a5bfd879f02419e29234e928bb8af
+      id: 1958094592
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      - ElementName: AnnouncerPlayerHasSpecial
+        ObjectType: 2
+        guid: fd1a5bfd879f02419e29234e928bb8af
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer\AnnouncerPlayerHasSpecial
+    - name: AnnouncerPlayerLostBall
+      guid: 9bdc2d26ef6a054b97df5f7d66bac08f
+      id: 2879641716
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      - ElementName: AnnouncerPlayerLostBall
+        ObjectType: 2
+        guid: 9bdc2d26ef6a054b97df5f7d66bac08f
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer\AnnouncerPlayerLostBall
+    - name: AnnouncerPlayerMiss
+      guid: fa688ca6870bc048892125e68a57e396
+      id: 3551937105
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      - ElementName: AnnouncerPlayerAttemptScore
+        ObjectType: 2
+        guid: 40e5a07062fde048a75b080c216a6bd8
+      - ElementName: AnnouncerPlayerMiss
+        ObjectType: 2
+        guid: fa688ca6870bc048892125e68a57e396
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer\AnnouncerPlayerAttemptScore\AnnouncerPlayerMiss
+    - name: AnnouncerPlayerScore
+      guid: 0a38bcd0e6aa1f4cb10985b2bd61615b
+      id: 455463145
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      - ElementName: AnnouncerPlayerAttemptScore
+        ObjectType: 2
+        guid: 40e5a07062fde048a75b080c216a6bd8
+      - ElementName: AnnouncerPlayerScore
+        ObjectType: 2
+        guid: 0a38bcd0e6aa1f4cb10985b2bd61615b
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer\AnnouncerPlayerAttemptScore\AnnouncerPlayerScore
+    - name: AnnouncerPlayerShock
+      guid: 8ac0abbba7bdf44a86cd3e5fc065c86b
+      id: 2273181349
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      - ElementName: AnnouncerRefCallsPlayer
+        ObjectType: 2
+        guid: cee18f0870261f499e48f0cc87012029
+      - ElementName: AnnouncerPlayerShock
+        ObjectType: 2
+        guid: 8ac0abbba7bdf44a86cd3e5fc065c86b
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer\AnnouncerRefCallsPlayer\AnnouncerPlayerShock
+    - name: AnnouncerPlayerStealBall
+      guid: 095b788b392c8d4d996df21899c4b154
+      id: 2170091353
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      - ElementName: AnnouncerPlayerStealBall
+        ObjectType: 2
+        guid: 095b788b392c8d4d996df21899c4b154
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer\AnnouncerPlayerStealBall
+    - name: AnnouncerPlayerTraveling
+      guid: 55e90f4763506f4a8c099721dd1ea3f4
+      id: 4099881327
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      - ElementName: AnnouncerRefCallsPlayer
+        ObjectType: 2
+        guid: cee18f0870261f499e48f0cc87012029
+      - ElementName: AnnouncerPlayerTraveling
+        ObjectType: 2
+        guid: 55e90f4763506f4a8c099721dd1ea3f4
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer\AnnouncerRefCallsPlayer\AnnouncerPlayerTraveling
+    - name: AnnouncerRefCallsNPC
+      guid: d81aedb2706b2c45a83a6fc0efbef5a3
+      id: 1154472729
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      - ElementName: AnnouncerRefCallsNPC
+        ObjectType: 2
+        guid: d81aedb2706b2c45a83a6fc0efbef5a3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC\AnnouncerRefCallsNPC
+    - name: AnnouncerRefCallsPlayer
+      guid: cee18f0870261f499e48f0cc87012029
+      id: 3509084883
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      - ElementName: AnnouncerRefCallsPlayer
+        ObjectType: 2
+        guid: cee18f0870261f499e48f0cc87012029
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer\AnnouncerRefCallsPlayer
+    - name: AnnouncerSecondGame
+      guid: 57f9e5ee209b5245b5dada0eedef4143
+      id: 1939814568
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerTime
+        ObjectType: 2
+        guid: b8e4b451125d8b40b161cf915a45a715
+      - ElementName: AnnouncerSecondGame
+        ObjectType: 2
+        guid: 57f9e5ee209b5245b5dada0eedef4143
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerTime\AnnouncerSecondGame
+    - name: AnnouncerSecondGameEnds
+      guid: 63e51742d7dc724bac05bf08471be2eb
+      id: 1840648430
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerTime
+        ObjectType: 2
+        guid: b8e4b451125d8b40b161cf915a45a715
+      - ElementName: AnnouncerSecondGame
+        ObjectType: 2
+        guid: 57f9e5ee209b5245b5dada0eedef4143
+      - ElementName: AnnouncerSecondGameEnds
+        ObjectType: 2
+        guid: 63e51742d7dc724bac05bf08471be2eb
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerTime\AnnouncerSecondGame\AnnouncerSecondGameEnds
+    - name: AnnouncerSecondGameStarts
+      guid: 212cd3d6fd2b9b4683e688da4a32879e
+      id: 1834059383
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerTime
+        ObjectType: 2
+        guid: b8e4b451125d8b40b161cf915a45a715
+      - ElementName: AnnouncerSecondGame
+        ObjectType: 2
+        guid: 57f9e5ee209b5245b5dada0eedef4143
+      - ElementName: AnnouncerSecondGameStarts
+        ObjectType: 2
+        guid: 212cd3d6fd2b9b4683e688da4a32879e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerTime\AnnouncerSecondGame\AnnouncerSecondGameStarts
+    - name: AnnouncerThirdGame
+      guid: 307fd13d97fdcd4886711069787a3a6a
+      id: 3069688719
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerTime
+        ObjectType: 2
+        guid: b8e4b451125d8b40b161cf915a45a715
+      - ElementName: AnnouncerThirdGame
+        ObjectType: 2
+        guid: 307fd13d97fdcd4886711069787a3a6a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerTime\AnnouncerThirdGame
+    - name: AnnouncerThirdGameEnds
+      guid: dea98611b0a92e48801b853ae8639f43
+      id: 2101212241
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerTime
+        ObjectType: 2
+        guid: b8e4b451125d8b40b161cf915a45a715
+      - ElementName: AnnouncerThirdGame
+        ObjectType: 2
+        guid: 307fd13d97fdcd4886711069787a3a6a
+      - ElementName: AnnouncerThirdGameEnds
+        ObjectType: 2
+        guid: dea98611b0a92e48801b853ae8639f43
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerTime\AnnouncerThirdGame\AnnouncerThirdGameEnds
+    - name: AnnouncerThirdGameStarts
+      guid: 3a4dbb43e13f444aa8b9b458f7137800
+      id: 3033570228
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerTime
+        ObjectType: 2
+        guid: b8e4b451125d8b40b161cf915a45a715
+      - ElementName: AnnouncerThirdGame
+        ObjectType: 2
+        guid: 307fd13d97fdcd4886711069787a3a6a
+      - ElementName: AnnouncerThirdGameStarts
+        ObjectType: 2
+        guid: 3a4dbb43e13f444aa8b9b458f7137800
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerTime\AnnouncerThirdGame\AnnouncerThirdGameStarts
+    - name: AnnouncerTime
+      guid: b8e4b451125d8b40b161cf915a45a715
+      id: 1520141117
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerTime
+        ObjectType: 2
+        guid: b8e4b451125d8b40b161cf915a45a715
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerTime
+    - name: Birds
+      guid: 9fda001557de6c45a940e4ec511361c9
+      id: 352130103
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AmbientMaster
+        ObjectType: 2
+        guid: 58a9f363a63c744abdc7f31f1fd28b4a
+      - ElementName: AmbientBeds
+        ObjectType: 2
+        guid: b27813bcab280d428fc9295f44a4c240
+      - ElementName: 2DAmbientBeds
+        ObjectType: 2
+        guid: 001cf70d104d7f46aa34857817c465b7
+      - ElementName: Birds
+        ObjectType: 2
+        guid: 9fda001557de6c45a940e4ec511361c9
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\2DAmbientBeds\Birds
+    - name: BirdsChripping
+      guid: 1b0cb36407a330449d426d22c0c378c4
+      id: 2235389587
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AmbientMaster
+        ObjectType: 2
+        guid: 58a9f363a63c744abdc7f31f1fd28b4a
+      - ElementName: AmbientBeds
+        ObjectType: 2
+        guid: b27813bcab280d428fc9295f44a4c240
+      - ElementName: 2DAmbientBeds
+        ObjectType: 2
+        guid: 001cf70d104d7f46aa34857817c465b7
+      - ElementName: Birds
+        ObjectType: 2
+        guid: 9fda001557de6c45a940e4ec511361c9
+      - ElementName: BirdsChripping
+        ObjectType: 2
+        guid: 1b0cb36407a330449d426d22c0c378c4
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\2DAmbientBeds\Birds\BirdsChripping
+    - name: CallChargeNPC
+      guid: c4ca2be4c8f3df4f94c0698abf67341a
+      id: 924577466
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      - ElementName: RefCallCharge
+        ObjectType: 2
+        guid: a9706653c16ce5448a6f123c7116cd2a
+      - ElementName: CallChargeNPC
+        ObjectType: 2
+        guid: c4ca2be4c8f3df4f94c0698abf67341a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls\RefCallCharge\CallChargeNPC
+    - name: CallChargePlayer
+      guid: 565da9e5043f274e9090084aa7284832
+      id: 1065835706
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      - ElementName: RefCallCharge
+        ObjectType: 2
+        guid: a9706653c16ce5448a6f123c7116cd2a
+      - ElementName: CallChargePlayer
+        ObjectType: 2
+        guid: 565da9e5043f274e9090084aa7284832
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls\RefCallCharge\CallChargePlayer
+    - name: CallGuardingNPC
+      guid: 9366e1b1ac33f4458f2addf53d9876ef
+      id: 668636561
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      - ElementName: RefCallGuarding
+        ObjectType: 2
+        guid: 2bed1ed35d244a4a98ddf75ea05c43b0
+      - ElementName: CallGuardingNPC
+        ObjectType: 2
+        guid: 9366e1b1ac33f4458f2addf53d9876ef
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls\RefCallGuarding\CallGuardingNPC
+    - name: CallGuardingPlayer
+      guid: ab9cdf99201ab74c91125705e877bced
+      id: 393447531
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      - ElementName: RefCallGuarding
+        ObjectType: 2
+        guid: 2bed1ed35d244a4a98ddf75ea05c43b0
+      - ElementName: CallGuardingPlayer
+        ObjectType: 2
+        guid: ab9cdf99201ab74c91125705e877bced
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls\RefCallGuarding\CallGuardingPlayer
+    - name: CallShockNPC
+      guid: 8bd67c7129e3844392c78388a105dd56
+      id: 3275558386
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      - ElementName: RefCallShock
+        ObjectType: 2
+        guid: e986fd7109326845ab4ee264e3f1fca8
+      - ElementName: CallShockNPC
+        ObjectType: 2
+        guid: 8bd67c7129e3844392c78388a105dd56
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls\RefCallShock\CallShockNPC
+    - name: CallShockPlayer
+      guid: feb47a24b6c55b4ea8060486317e9df6
+      id: 3036746834
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      - ElementName: RefCallShock
+        ObjectType: 2
+        guid: e986fd7109326845ab4ee264e3f1fca8
+      - ElementName: CallShockPlayer
+        ObjectType: 2
+        guid: feb47a24b6c55b4ea8060486317e9df6
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls\RefCallShock\CallShockPlayer
+    - name: CallTravelingNPC
+      guid: 2b03679bc07e8a4d825779d2a1e613a5
+      id: 887509536
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      - ElementName: RefCallTraveling
+        ObjectType: 2
+        guid: f08458da3244c24c92bb7f6f3ceff20c
+      - ElementName: CallTravelingNPC
+        ObjectType: 2
+        guid: 2b03679bc07e8a4d825779d2a1e613a5
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls\RefCallTraveling\CallTravelingNPC
+    - name: CallTravelingPlayer
+      guid: 6b6ad2d2c112074897bfc10a4d093a71
+      id: 41959888
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      - ElementName: RefCallTraveling
+        ObjectType: 2
+        guid: f08458da3244c24c92bb7f6f3ceff20c
+      - ElementName: CallTravelingPlayer
+        ObjectType: 2
+        guid: 6b6ad2d2c112074897bfc10a4d093a71
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls\RefCallTraveling\CallTravelingPlayer
+    - name: CarHonking
+      guid: a7c718562d8acf43b859e7ac6191ee2d
+      id: 4195351773
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AmbientMaster
+        ObjectType: 2
+        guid: 58a9f363a63c744abdc7f31f1fd28b4a
+      - ElementName: AmbientBeds
+        ObjectType: 2
+        guid: b27813bcab280d428fc9295f44a4c240
+      - ElementName: 2DAmbientBeds
+        ObjectType: 2
+        guid: 001cf70d104d7f46aa34857817c465b7
+      - ElementName: Cars
+        ObjectType: 2
+        guid: 2b6da87ed9891345abf56283286a42c9
+      - ElementName: CarHonking
+        ObjectType: 2
+        guid: a7c718562d8acf43b859e7ac6191ee2d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\2DAmbientBeds\Cars\CarHonking
+    - name: Cars
+      guid: 2b6da87ed9891345abf56283286a42c9
+      id: 4189504244
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AmbientMaster
+        ObjectType: 2
+        guid: 58a9f363a63c744abdc7f31f1fd28b4a
+      - ElementName: AmbientBeds
+        ObjectType: 2
+        guid: b27813bcab280d428fc9295f44a4c240
+      - ElementName: 2DAmbientBeds
+        ObjectType: 2
+        guid: 001cf70d104d7f46aa34857817c465b7
+      - ElementName: Cars
+        ObjectType: 2
+        guid: 2b6da87ed9891345abf56283286a42c9
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\2DAmbientBeds\Cars
+    - name: Crowd
+      guid: 2bfddaa4b683b445a7096a1153fa18ca
+      id: 2848349012
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AmbientMaster
+        ObjectType: 2
+        guid: 58a9f363a63c744abdc7f31f1fd28b4a
+      - ElementName: AmbientBeds
+        ObjectType: 2
+        guid: b27813bcab280d428fc9295f44a4c240
+      - ElementName: 2DAmbientBeds
+        ObjectType: 2
+        guid: 001cf70d104d7f46aa34857817c465b7
+      - ElementName: Crowd
+        ObjectType: 2
+        guid: 2bfddaa4b683b445a7096a1153fa18ca
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\2DAmbientBeds\Crowd
+    - name: CrowdBoo
+      guid: 34f79ab518eaba48bca6c7e088284b9c
+      id: 2076451040
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AmbientMaster
+        ObjectType: 2
+        guid: 58a9f363a63c744abdc7f31f1fd28b4a
+      - ElementName: AmbientBeds
+        ObjectType: 2
+        guid: b27813bcab280d428fc9295f44a4c240
+      - ElementName: 2DAmbientBeds
+        ObjectType: 2
+        guid: 001cf70d104d7f46aa34857817c465b7
+      - ElementName: Crowd
+        ObjectType: 2
+        guid: 2bfddaa4b683b445a7096a1153fa18ca
+      - ElementName: CrowdBoo
+        ObjectType: 2
+        guid: 34f79ab518eaba48bca6c7e088284b9c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\2DAmbientBeds\Crowd\CrowdBoo
+    - name: CrowdCheer
+      guid: d1362855783ba647ad1752d3b5bc9a18
+      id: 345454243
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AmbientMaster
+        ObjectType: 2
+        guid: 58a9f363a63c744abdc7f31f1fd28b4a
+      - ElementName: AmbientBeds
+        ObjectType: 2
+        guid: b27813bcab280d428fc9295f44a4c240
+      - ElementName: 2DAmbientBeds
+        ObjectType: 2
+        guid: 001cf70d104d7f46aa34857817c465b7
+      - ElementName: Crowd
+        ObjectType: 2
+        guid: 2bfddaa4b683b445a7096a1153fa18ca
+      - ElementName: CrowdCheer
+        ObjectType: 2
+        guid: d1362855783ba647ad1752d3b5bc9a18
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\2DAmbientBeds\Crowd\CrowdCheer
+    - name: DrivingPass
+      guid: 00ae8e67f15e344f9a2fbaf1bb500c28
+      id: 344412725
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AmbientMaster
+        ObjectType: 2
+        guid: 58a9f363a63c744abdc7f31f1fd28b4a
+      - ElementName: AmbientBeds
+        ObjectType: 2
+        guid: b27813bcab280d428fc9295f44a4c240
+      - ElementName: 2DAmbientBeds
+        ObjectType: 2
+        guid: 001cf70d104d7f46aa34857817c465b7
+      - ElementName: Cars
+        ObjectType: 2
+        guid: 2b6da87ed9891345abf56283286a42c9
+      - ElementName: DrivingPass
+        ObjectType: 2
+        guid: 00ae8e67f15e344f9a2fbaf1bb500c28
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AmbientMaster\AmbientBeds\2DAmbientBeds\Cars\DrivingPass
+    - name: Far
+      guid: f5170376b3ae2a4bb267c6700e43375e
+      id: 1183803292
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Range
+        ObjectType: 1
+        guid: 852affff24a8914d8f75465d1b6419b6
+      - ElementName: Far
+        ObjectType: 1
+        guid: f5170376b3ae2a4bb267c6700e43375e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Range\Far
+    - name: Fast
+      guid: 940215c1a52ee54faa6af0a80773c186
+      id: 2965380179
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Speed
+        ObjectType: 1
+        guid: f7560f29a027ba4f92d262da0a9df14d
+      - ElementName: Fast
+        ObjectType: 1
+        guid: 940215c1a52ee54faa6af0a80773c186
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Speed\Fast
+    - name: HighPassFilter
+      guid: 13ccefd53e1f5a418b1e4ff09497f3dd
+      id: 2647461264
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PassFilters
+        ObjectType: 1
+        guid: 420d5a0c5a5c0d4b82f4293f290eeb60
+      - ElementName: HighPassFilter
+        ObjectType: 1
+        guid: 13ccefd53e1f5a418b1e4ff09497f3dd
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PassFilters\HighPassFilter
+    - name: LargeRoom
+      guid: 9681e62bb8417549974123c56e43826a
+      id: 187046019
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverbs
+        ObjectType: 1
+        guid: 1cec0c0568da934b9ba2bfe3330365f5
+      - ElementName: LargeRoom
+        ObjectType: 1
+        guid: 9681e62bb8417549974123c56e43826a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\LargeRoom
+    - name: LowPassFilter
+      guid: ad90cf8449b47344ac157c94f7c5b123
+      id: 2223055028
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PassFilters
+        ObjectType: 1
+        guid: 420d5a0c5a5c0d4b82f4293f290eeb60
+      - ElementName: LowPassFilter
+        ObjectType: 1
+        guid: ad90cf8449b47344ac157c94f7c5b123
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PassFilters\LowPassFilter
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Motion Factory Bus
+      guid: c6b9f92af16ee946b5f2e30c9e602c74
+      id: 985987111
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Motion Factory Bus
+        ObjectType: 2
+        guid: c6b9f92af16ee946b5f2e30c9e602c74
+      Path: Master-Mixer Hierarchy\Default Work Unit\Motion Factory Bus
+    - name: Near
+      guid: d0120b99e612e94cb8b39ab5480689eb
+      id: 1133794587
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Range
+        ObjectType: 1
+        guid: 852affff24a8914d8f75465d1b6419b6
+      - ElementName: Near
+        ObjectType: 1
+        guid: d0120b99e612e94cb8b39ab5480689eb
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Range\Near
+    - name: NormalSpeed
+      guid: d6d2b7b3312c764f9b67f92d75888752
+      id: 1616487537
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Speed
+        ObjectType: 1
+        guid: f7560f29a027ba4f92d262da0a9df14d
+      - ElementName: NormalSpeed
+        ObjectType: 1
+        guid: d6d2b7b3312c764f9b67f92d75888752
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Speed\NormalSpeed
+    - name: NPCDialogue
+      guid: 014e7093b62edb4d9f335faa32b3ce79
+      id: 1141413220
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCDialogue
+        ObjectType: 2
+        guid: 014e7093b62edb4d9f335faa32b3ce79
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCDialogue
+    - name: NPCDribbing
+      guid: bba2d49da398b94d829a8b93a24a4adf
+      id: 2847964619
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCDribbing
+        ObjectType: 2
+        guid: bba2d49da398b94d829a8b93a24a4adf
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCDribbing
+    - name: NPCFastFeet
+      guid: fb73c703a3e25b4782fc61b2fe1b995f
+      id: 2453072
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCFootsteps
+        ObjectType: 2
+        guid: a830e36877fa1b428e61b403c475ff27
+      - ElementName: NPCFastFeet
+        ObjectType: 2
+        guid: fb73c703a3e25b4782fc61b2fe1b995f
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCFootsteps\NPCFastFeet
+    - name: NPCFootsteps
+      guid: a830e36877fa1b428e61b403c475ff27
+      id: 1160921759
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCFootsteps
+        ObjectType: 2
+        guid: a830e36877fa1b428e61b403c475ff27
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCFootsteps
+    - name: NPCHasBall
+      guid: 467694bf44402046b12f687eafa4460e
+      id: 2030691093
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCDribbing
+        ObjectType: 2
+        guid: bba2d49da398b94d829a8b93a24a4adf
+      - ElementName: NPCHasBall
+        ObjectType: 2
+        guid: 467694bf44402046b12f687eafa4460e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCDribbing\NPCHasBall
+    - name: NPCLocomotion
+      guid: b571613833bc4949bfe5e4353416a87d
+      id: 1217116541
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion
+    - name: NPCLosesBall
+      guid: aa0afab106369b4b85770d7d2f1d762e
+      id: 287107931
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCDribbing
+        ObjectType: 2
+        guid: bba2d49da398b94d829a8b93a24a4adf
+      - ElementName: NPCLosesBall
+        ObjectType: 2
+        guid: aa0afab106369b4b85770d7d2f1d762e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCDribbing\NPCLosesBall
+    - name: NPCMaster
+      guid: 74955d86b4a7f947b6236e95340c092f
+      id: 2033911932
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster
+    - name: NPCMiss
+      guid: b1d0c4550ab62d4d89439daf07ccfc76
+      id: 3408377274
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCShooting
+        ObjectType: 2
+        guid: 35a0d7f31965da43b6a27e0569b132bd
+      - ElementName: NPCMiss
+        ObjectType: 2
+        guid: b1d0c4550ab62d4d89439daf07ccfc76
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCShooting\NPCMiss
+    - name: NPCNormalFeet
+      guid: a8e849750880154ebcf14a7b06acb60c
+      id: 1817287151
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCFootsteps
+        ObjectType: 2
+        guid: a830e36877fa1b428e61b403c475ff27
+      - ElementName: NPCNormalFeet
+        ObjectType: 2
+        guid: a8e849750880154ebcf14a7b06acb60c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCFootsteps\NPCNormalFeet
+    - name: NPCScore
+      guid: efca74e3fdb0454dac1d332c0175e9bc
+      id: 3141233188
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCShooting
+        ObjectType: 2
+        guid: 35a0d7f31965da43b6a27e0569b132bd
+      - ElementName: NPCScore
+        ObjectType: 2
+        guid: efca74e3fdb0454dac1d332c0175e9bc
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCShooting\NPCScore
+    - name: NPCShooting
+      guid: 35a0d7f31965da43b6a27e0569b132bd
+      id: 2418798049
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCShooting
+        ObjectType: 2
+        guid: 35a0d7f31965da43b6a27e0569b132bd
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCShooting
+    - name: NPCSpecialFeet
+      guid: c1ba585174177545aa2638ac9746097d
+      id: 1350949087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCFootsteps
+        ObjectType: 2
+        guid: a830e36877fa1b428e61b403c475ff27
+      - ElementName: NPCSpecialFeet
+        ObjectType: 2
+        guid: c1ba585174177545aa2638ac9746097d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCFootsteps\NPCSpecialFeet
+    - name: NPCSpecialFire
+      guid: 1f4555f010e1ac449942a966981a52e1
+      id: 1569749531
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      - ElementName: AnnouncerNPCHasSpecial
+        ObjectType: 2
+        guid: 57cb0bc3dbd79d40a51e3ec97296a650
+      - ElementName: NPCSpecialFire
+        ObjectType: 2
+        guid: 1f4555f010e1ac449942a966981a52e1
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC\AnnouncerNPCHasSpecial\NPCSpecialFire
+    - name: NPCSpecialFireFeet
+      guid: 40ed2232dbc61b4981d5d594e4253951
+      id: 678883147
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCFootsteps
+        ObjectType: 2
+        guid: a830e36877fa1b428e61b403c475ff27
+      - ElementName: NPCSpecialFeet
+        ObjectType: 2
+        guid: c1ba585174177545aa2638ac9746097d
+      - ElementName: NPCSpecialFireFeet
+        ObjectType: 2
+        guid: 40ed2232dbc61b4981d5d594e4253951
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCFootsteps\NPCSpecialFeet\NPCSpecialFireFeet
+    - name: NPCSpecialIce
+      guid: f38bb04bf3e375419da7e00ba5c91318
+      id: 4088992936
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerNPC
+        ObjectType: 2
+        guid: cbb199fe76a471489c8fc8a795a2e803
+      - ElementName: AnnouncerNPCHasSpecial
+        ObjectType: 2
+        guid: 57cb0bc3dbd79d40a51e3ec97296a650
+      - ElementName: NPCSpecialIce
+        ObjectType: 2
+        guid: f38bb04bf3e375419da7e00ba5c91318
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerNPC\AnnouncerNPCHasSpecial\NPCSpecialIce
+    - name: NPCSpecialIceFeet
+      guid: 66356f285064a74191a2d65a1b266b93
+      id: 2223042380
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCFootsteps
+        ObjectType: 2
+        guid: a830e36877fa1b428e61b403c475ff27
+      - ElementName: NPCSpecialFeet
+        ObjectType: 2
+        guid: c1ba585174177545aa2638ac9746097d
+      - ElementName: NPCSpecialIceFeet
+        ObjectType: 2
+        guid: 66356f285064a74191a2d65a1b266b93
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCFootsteps\NPCSpecialFeet\NPCSpecialIceFeet
+    - name: NPCSuper
+      guid: d0346d21e75c8745819a9a9c08c632f6
+      id: 4144200247
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCSuper
+        ObjectType: 2
+        guid: d0346d21e75c8745819a9a9c08c632f6
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCSuper
+    - name: NPCSuperFire
+      guid: 4a0fd1bc21a21046884ff5722c55f148
+      id: 2840618227
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCSuper
+        ObjectType: 2
+        guid: d0346d21e75c8745819a9a9c08c632f6
+      - ElementName: NPCSuperFire
+        ObjectType: 2
+        guid: 4a0fd1bc21a21046884ff5722c55f148
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCSuper\NPCSuperFire
+    - name: NPCSuperIce
+      guid: 41ebcc50fce7474e92c1a9796d2b305a
+      id: 1508030992
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: NPCMaster
+        ObjectType: 2
+        guid: 74955d86b4a7f947b6236e95340c092f
+      - ElementName: NPCLocomotion
+        ObjectType: 2
+        guid: b571613833bc4949bfe5e4353416a87d
+      - ElementName: NPCSuper
+        ObjectType: 2
+        guid: d0346d21e75c8745819a9a9c08c632f6
+      - ElementName: NPCSuperIce
+        ObjectType: 2
+        guid: 41ebcc50fce7474e92c1a9796d2b305a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NPCMaster\NPCLocomotion\NPCSuper\NPCSuperIce
+    - name: Outside
+      guid: e77c8480ccbd874ca703ce26dda4eeb4
+      id: 438105790
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverbs
+        ObjectType: 1
+        guid: 1cec0c0568da934b9ba2bfe3330365f5
+      - ElementName: Outside
+        ObjectType: 1
+        guid: e77c8480ccbd874ca703ce26dda4eeb4
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\Outside
+    - name: PassFilters
+      guid: 420d5a0c5a5c0d4b82f4293f290eeb60
+      id: 176605583
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PassFilters
+        ObjectType: 1
+        guid: 420d5a0c5a5c0d4b82f4293f290eeb60
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PassFilters
+    - name: PlayerDialoge
+      guid: 7b741d18b39c5246b30a4a175b5f68ad
+      id: 3466977067
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerDialoge
+        ObjectType: 2
+        guid: 7b741d18b39c5246b30a4a175b5f68ad
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerDialoge
+    - name: PlayerDribbing
+      guid: 86af3d4a4a9bbe4f9fb88fd6b8436bc0
+      id: 3281469931
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerDribbing
+        ObjectType: 2
+        guid: 86af3d4a4a9bbe4f9fb88fd6b8436bc0
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerDribbing
+    - name: PlayerFastFeet
+      guid: f5b2190d74453e4fa4ed591f7a9cad35
+      id: 4030941808
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerFootsteps
+        ObjectType: 2
+        guid: 49af6bb752df7c42aa49522c92396101
+      - ElementName: PlayerFastFeet
+        ObjectType: 2
+        guid: f5b2190d74453e4fa4ed591f7a9cad35
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerFootsteps\PlayerFastFeet
+    - name: PlayerFootsteps
+      guid: 49af6bb752df7c42aa49522c92396101
+      id: 1681012287
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerFootsteps
+        ObjectType: 2
+        guid: 49af6bb752df7c42aa49522c92396101
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerFootsteps
+    - name: PlayerHasBall
+      guid: 355a1f0481ca804881aed0491feb3780
+      id: 3402816949
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerDribbing
+        ObjectType: 2
+        guid: 86af3d4a4a9bbe4f9fb88fd6b8436bc0
+      - ElementName: PlayerHasBall
+        ObjectType: 2
+        guid: 355a1f0481ca804881aed0491feb3780
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerDribbing\PlayerHasBall
+    - name: PlayerLocomotion
+      guid: 1a9f431473ead74e925d8a6a7f8e5092
+      id: 2343802269
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion
+    - name: PlayerLosesBall
+      guid: ede33bbd4c664144aa852eccb2b61af6
+      id: 2254194171
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerDribbing
+        ObjectType: 2
+        guid: 86af3d4a4a9bbe4f9fb88fd6b8436bc0
+      - ElementName: PlayerLosesBall
+        ObjectType: 2
+        guid: ede33bbd4c664144aa852eccb2b61af6
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerDribbing\PlayerLosesBall
+    - name: PlayerMaster
+      guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      id: 3538689948
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster
+    - name: PlayerMiss
+      guid: 4bb0536d857d1c45aa509eb72a713518
+      id: 2216281818
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerShooting
+        ObjectType: 2
+        guid: 44c3704dba19c5488148849305ed7f5d
+      - ElementName: PlayerMiss
+        ObjectType: 2
+        guid: 4bb0536d857d1c45aa509eb72a713518
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerShooting\PlayerMiss
+    - name: PlayerNormalFeet
+      guid: 02d154c652cbe34b93ed1f0dcb355d54
+      id: 1024960527
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerFootsteps
+        ObjectType: 2
+        guid: 49af6bb752df7c42aa49522c92396101
+      - ElementName: PlayerNormalFeet
+        ObjectType: 2
+        guid: 02d154c652cbe34b93ed1f0dcb355d54
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerFootsteps\PlayerNormalFeet
+    - name: PlayerScore
+      guid: 71e61d6fcfafa74bb34647bfd919b61f
+      id: 5005252
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerShooting
+        ObjectType: 2
+        guid: 44c3704dba19c5488148849305ed7f5d
+      - ElementName: PlayerScore
+        ObjectType: 2
+        guid: 71e61d6fcfafa74bb34647bfd919b61f
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerShooting\PlayerScore
+    - name: PlayerShooting
+      guid: 44c3704dba19c5488148849305ed7f5d
+      id: 1212593153
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerShooting
+        ObjectType: 2
+        guid: 44c3704dba19c5488148849305ed7f5d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerShooting
+    - name: PlayerSpecialFeet
+      guid: d53857df04eec04ab3f8bc758217b7a8
+      id: 366296959
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerFootsteps
+        ObjectType: 2
+        guid: 49af6bb752df7c42aa49522c92396101
+      - ElementName: PlayerSpecialFeet
+        ObjectType: 2
+        guid: d53857df04eec04ab3f8bc758217b7a8
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerFootsteps\PlayerSpecialFeet
+    - name: PlayerSpecialFire
+      guid: 39de25b44c171347b55283d5bbc38169
+      id: 585097403
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      - ElementName: AnnouncerPlayerHasSpecial
+        ObjectType: 2
+        guid: fd1a5bfd879f02419e29234e928bb8af
+      - ElementName: PlayerSpecialFire
+        ObjectType: 2
+        guid: 39de25b44c171347b55283d5bbc38169
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer\AnnouncerPlayerHasSpecial\PlayerSpecialFire
+    - name: PlayerSpecialFireFeet
+      guid: e011d68d14643a42bf768f7930b9ac5f
+      id: 68593387
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerFootsteps
+        ObjectType: 2
+        guid: 49af6bb752df7c42aa49522c92396101
+      - ElementName: PlayerSpecialFeet
+        ObjectType: 2
+        guid: d53857df04eec04ab3f8bc758217b7a8
+      - ElementName: PlayerSpecialFireFeet
+        ObjectType: 2
+        guid: e011d68d14643a42bf768f7930b9ac5f
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerFootsteps\PlayerSpecialFeet\PlayerSpecialFireFeet
+    - name: PlayerSpecialIce
+      guid: b6a49f1379a33942a68811a09ba802da
+      id: 3296666568
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AnnouncerMaster
+        ObjectType: 2
+        guid: 7c7bea5e3431da4c93f3382ba7437d2c
+      - ElementName: AnnouncerCom
+        ObjectType: 2
+        guid: 203371f884394b49a49e328683669034
+      - ElementName: AnnouncerPlayer
+        ObjectType: 2
+        guid: 4410b21b9e54ff4f98b64620043efa73
+      - ElementName: AnnouncerPlayerHasSpecial
+        ObjectType: 2
+        guid: fd1a5bfd879f02419e29234e928bb8af
+      - ElementName: PlayerSpecialIce
+        ObjectType: 2
+        guid: b6a49f1379a33942a68811a09ba802da
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AnnouncerMaster\AnnouncerCom\AnnouncerPlayer\AnnouncerPlayerHasSpecial\PlayerSpecialIce
+    - name: PlayerSpecialIceFeet
+      guid: 4e5d6db4c3ce8c4185fc958342980037
+      id: 858460012
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerFootsteps
+        ObjectType: 2
+        guid: 49af6bb752df7c42aa49522c92396101
+      - ElementName: PlayerSpecialFeet
+        ObjectType: 2
+        guid: d53857df04eec04ab3f8bc758217b7a8
+      - ElementName: PlayerSpecialIceFeet
+        ObjectType: 2
+        guid: 4e5d6db4c3ce8c4185fc958342980037
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerFootsteps\PlayerSpecialFeet\PlayerSpecialIceFeet
+    - name: PlayerSuper
+      guid: 61ed174717731e48af79f0b80514d32c
+      id: 1007972311
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerSuper
+        ObjectType: 2
+        guid: 61ed174717731e48af79f0b80514d32c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerSuper
+    - name: PlayerSuperFire
+      guid: ca7ac61f8cff68408f62bdae0ca76bb0
+      id: 880882067
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerSuper
+        ObjectType: 2
+        guid: 61ed174717731e48af79f0b80514d32c
+      - ElementName: PlayerSuperFire
+        ObjectType: 2
+        guid: ca7ac61f8cff68408f62bdae0ca76bb0
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerSuper\PlayerSuperFire
+    - name: PlayerSuperIce
+      guid: 2dedb0792dcc4a488807c297511a3ba5
+      id: 2642290224
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: PlayerMaster
+        ObjectType: 2
+        guid: 022d5b3f7408324b8ffdb3ba3e5279e3
+      - ElementName: PlayerLocomotion
+        ObjectType: 2
+        guid: 1a9f431473ead74e925d8a6a7f8e5092
+      - ElementName: PlayerSuper
+        ObjectType: 2
+        guid: 61ed174717731e48af79f0b80514d32c
+      - ElementName: PlayerSuperIce
+        ObjectType: 2
+        guid: 2dedb0792dcc4a488807c297511a3ba5
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\PlayerMaster\PlayerLocomotion\PlayerSuper\PlayerSuperIce
+    - name: Range
+      guid: 852affff24a8914d8f75465d1b6419b6
+      id: 1911674748
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Range
+        ObjectType: 1
+        guid: 852affff24a8914d8f75465d1b6419b6
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Range
+    - name: RangeNormal
+      guid: ba2f8a04b8179b4b961836fe1491c351
+      id: 1888164653
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Range
+        ObjectType: 1
+        guid: 852affff24a8914d8f75465d1b6419b6
+      - ElementName: RangeNormal
+        ObjectType: 1
+        guid: ba2f8a04b8179b4b961836fe1491c351
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Range\RangeNormal
+    - name: RefCallCharge
+      guid: a9706653c16ce5448a6f123c7116cd2a
+      id: 3728054964
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      - ElementName: RefCallCharge
+        ObjectType: 2
+        guid: a9706653c16ce5448a6f123c7116cd2a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls\RefCallCharge
+    - name: RefCallGuarding
+      guid: 2bed1ed35d244a4a98ddf75ea05c43b0
+      id: 3624656873
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      - ElementName: RefCallGuarding
+        ObjectType: 2
+        guid: 2bed1ed35d244a4a98ddf75ea05c43b0
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls\RefCallGuarding
+    - name: RefCallShock
+      guid: e986fd7109326845ab4ee264e3f1fca8
+      id: 1055600302
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      - ElementName: RefCallShock
+        ObjectType: 2
+        guid: e986fd7109326845ab4ee264e3f1fca8
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls\RefCallShock
+    - name: RefCallTraveling
+      guid: f08458da3244c24c92bb7f6f3ceff20c
+      id: 3212300172
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      - ElementName: RefCallTraveling
+        ObjectType: 2
+        guid: f08458da3244c24c92bb7f6f3ceff20c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls\RefCallTraveling
+    - name: RefereeCalls
+      guid: 17563067652ab0458555aedb6cf36549
+      id: 3599530446
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls
+    - name: RefereeMaster
+      guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      id: 579179733
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster
+    - name: RefereeWhistleBlow
+      guid: 2d41425d84b48644aa0a008d0fd5cf40
+      id: 3466582523
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: RefereeMaster
+        ObjectType: 2
+        guid: 54ee7a0f4ba29d4f80704391f11a95b1
+      - ElementName: RefereeCalls
+        ObjectType: 2
+        guid: 17563067652ab0458555aedb6cf36549
+      - ElementName: RefereeWhistleBlow
+        ObjectType: 2
+        guid: 2d41425d84b48644aa0a008d0fd5cf40
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RefereeMaster\RefereeCalls\RefereeWhistleBlow
+    - name: Reverbs
+      guid: 1cec0c0568da934b9ba2bfe3330365f5
+      id: 3545700988
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverbs
+        ObjectType: 1
+        guid: 1cec0c0568da934b9ba2bfe3330365f5
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs
+    - name: Slow
+      guid: a9ce6531ed5bd24581f83ce4af5b9410
+      id: 787604482
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Speed
+        ObjectType: 1
+        guid: f7560f29a027ba4f92d262da0a9df14d
+      - ElementName: Slow
+        ObjectType: 1
+        guid: a9ce6531ed5bd24581f83ce4af5b9410
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Speed\Slow
+    - name: SmallRoom
+      guid: 0c86b0fe7eb0fb41a10c8cfc00b28906
+      id: 2933838247
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverbs
+        ObjectType: 1
+        guid: 1cec0c0568da934b9ba2bfe3330365f5
+      - ElementName: SmallRoom
+        ObjectType: 1
+        guid: 0c86b0fe7eb0fb41a10c8cfc00b28906
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverbs\SmallRoom
+    - name: Speed
+      guid: f7560f29a027ba4f92d262da0a9df14d
+      id: 640949982
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e8c608706bafb048bf6620b6fdfd670d
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Speed
+        ObjectType: 1
+        guid: f7560f29a027ba4f92d262da0a9df14d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Speed
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: cd232da5b4517747b05f5503ffd81fdc
+    ParentPath: SoundBanks\Default Work Unit
+    guid: cd232da5b4517747b05f5503ffd81fdc
+    GuidInternal: 
+    m_lastTime: -8585315927076813036
+    List: []
+  - PhysicalPath: SoundBanks\Main.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: cd232da5b4517747b05f5503ffd81fdc
+    - ElementName: Main
+      ObjectType: 12
+      guid: 17b993406add754f902d5393d90e0a89
+    ParentPath: SoundBanks\Default Work Unit\Main
+    guid: 17b993406add754f902d5393d90e0a89
+    GuidInternal: 
+    m_lastTime: -8585315927077052371
+    List: []
+  - PhysicalPath: SoundBanks\Player.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: cd232da5b4517747b05f5503ffd81fdc
+    - ElementName: Main
+      ObjectType: 12
+      guid: 17b993406add754f902d5393d90e0a89
+    - ElementName: Player
+      ObjectType: 12
+      guid: fc2abf4d0668ae4da252e639aa0b9d98
+    ParentPath: SoundBanks\Default Work Unit\Main\Player
+    guid: fc2abf4d0668ae4da252e639aa0b9d98
+    GuidInternal: 
+    m_lastTime: -8585315924864446551
+    List:
+    - name: Footsteps
+      guid: 17d4ec4a31662c459922a6e66c2bb01a
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: cd232da5b4517747b05f5503ffd81fdc
+      - ElementName: Main
+        ObjectType: 12
+        guid: 17b993406add754f902d5393d90e0a89
+      - ElementName: Player
+        ObjectType: 12
+        guid: fc2abf4d0668ae4da252e639aa0b9d98
+      - ElementName: Footsteps
+        ObjectType: 7
+        guid: 17d4ec4a31662c459922a6e66c2bb01a
+      Path: SoundBanks\Default Work Unit\Main\Player\Footsteps
+  EventWwu:
+  - PhysicalPath: Events\Announcer.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 2474f2be8e014d49bd7ee433bb4d5ce3
+    - ElementName: Announcer
+      ObjectType: 12
+      guid: a3de94bf70755b439471e37a29fb5d2c
+    ParentPath: Events\Default Work Unit\Announcer
+    guid: a3de94bf70755b439471e37a29fb5d2c
+    GuidInternal: 
+    m_lastTime: -8585315962201190064
+    List: []
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 2474f2be8e014d49bd7ee433bb4d5ce3
+    ParentPath: Events\Default Work Unit
+    guid: 2474f2be8e014d49bd7ee433bb4d5ce3
+    GuidInternal: 
+    m_lastTime: -8585315962201050425
+    List: []
+  - PhysicalPath: Events\Locomotion.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 2474f2be8e014d49bd7ee433bb4d5ce3
+    - ElementName: Locomotion
+      ObjectType: 12
+      guid: 6c40dbf8ea66de4f95ff01f19cb20076
+    ParentPath: Events\Default Work Unit\Locomotion
+    guid: 6c40dbf8ea66de4f95ff01f19cb20076
+    GuidInternal: 
+    m_lastTime: -8585315962200741542
+    List: []
+  - PhysicalPath: Events\NPC.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 2474f2be8e014d49bd7ee433bb4d5ce3
+    - ElementName: NPC
+      ObjectType: 12
+      guid: 874077ed0b41f04c8f693c3f148ec914
+    ParentPath: Events\Default Work Unit\NPC
+    guid: 874077ed0b41f04c8f693c3f148ec914
+    GuidInternal: 
+    m_lastTime: -8585315962201070387
+    List: []
+  - PhysicalPath: Events\Player.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 2474f2be8e014d49bd7ee433bb4d5ce3
+    - ElementName: Player
+      ObjectType: 12
+      guid: c195a27223bfd848899639f730ea2523
+    ParentPath: Events\Default Work Unit\Player
+    guid: c195a27223bfd848899639f730ea2523
+    GuidInternal: 
+    m_lastTime: -8585315929890220803
+    List:
+    - name: Footsteps
+      guid: 9b745f4d206e8d4fb77ed9e070ff3826
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2474f2be8e014d49bd7ee433bb4d5ce3
+      - ElementName: Player
+        ObjectType: 12
+        guid: c195a27223bfd848899639f730ea2523
+      - ElementName: Footsteps
+        ObjectType: 3
+        guid: 9b745f4d206e8d4fb77ed9e070ff3826
+      Path: Events\Default Work Unit\Player\Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Referee.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 2474f2be8e014d49bd7ee433bb4d5ce3
+    - ElementName: Referee
+      ObjectType: 12
+      guid: 9b820b6f17dbb54e8dc69ddf447e9cc4
+    ParentPath: Events\Default Work Unit\Referee
+    guid: 9b820b6f17dbb54e8dc69ddf447e9cc4
+    GuidInternal: 
+    m_lastTime: -8585315962200193013
+    List: []
+  - PhysicalPath: Events\Time.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 2474f2be8e014d49bd7ee433bb4d5ce3
+    - ElementName: Time
+      ObjectType: 12
+      guid: 1d330abda2f5fb468017d581238a5dab
+    ParentPath: Events\Default Work Unit\Time
+    guid: 1d330abda2f5fb468017d581238a5dab
+    GuidInternal: 
+    m_lastTime: -8585315962201329691
+    List: []
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 3d99ad865919d649a1663d4a28e7a91b
+    ParentPath: Game Parameters\Default Work Unit
+    guid: 3d99ad865919d649a1663d4a28e7a91b
+    GuidInternal: 
+    m_lastTime: -8585315962201289801
+    List: []
+  - PhysicalPath: Game Parameters\Factory Motion.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Factory Motion
+      ObjectType: 12
+      guid: 225213d7dbd1d042adc0930743567776
+    ParentPath: Game Parameters\Factory Motion
+    guid: 225213d7dbd1d042adc0930743567776
+    GuidInternal: 
+    m_lastTime: -8585315962201269852
+    List:
+    - name: Playback_Rate
+      guid: e37e38283ac11643b9c3db5c521624af
+      id: 1524500807
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Motion
+        ObjectType: 12
+        guid: 225213d7dbd1d042adc0930743567776
+      - ElementName: Playback_Rate
+        ObjectType: 13
+        guid: e37e38283ac11643b9c3db5c521624af
+      Path: Game Parameters\Factory Motion\Playback_Rate
+    - name: RPM
+      guid: 05aa129177f5fd449f4e4424158129e6
+      id: 796049864
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory Motion
+        ObjectType: 12
+        guid: 225213d7dbd1d042adc0930743567776
+      - ElementName: RPM
+        ObjectType: 13
+        guid: 05aa129177f5fd449f4e4424158129e6
+      Path: Game Parameters\Factory Motion\RPM
+  - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Factory SoundSeed Air Game Syncs
+      ObjectType: 12
+      guid: 5577163b42fb8b4598bf96f557afb3b9
+    ParentPath: Game Parameters\Factory SoundSeed Air Game Syncs
+    guid: 5577163b42fb8b4598bf96f557afb3b9
+    GuidInternal: 
+    m_lastTime: -8585315962201090327
+    List:
+    - name: SS_Air_Fear
+      guid: 59062ef746431c4ea1b1dab46a05101e
+      id: 1351367891
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+        guid: 5577163b42fb8b4598bf96f557afb3b9
+      - ElementName: SS_Air_Fear
+        ObjectType: 13
+        guid: 59062ef746431c4ea1b1dab46a05101e
+      Path: Game Parameters\Factory SoundSeed Air Game Syncs\SS_Air_Fear
+    - name: SS_Air_Freefall
+      guid: 37fe2d2f9e4f944d83d853cca39781ad
+      id: 3002758120
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+        guid: 5577163b42fb8b4598bf96f557afb3b9
+      - ElementName: SS_Air_Freefall
+        ObjectType: 13
+        guid: 37fe2d2f9e4f944d83d853cca39781ad
+      Path: Game Parameters\Factory SoundSeed Air Game Syncs\SS_Air_Freefall
+    - name: SS_Air_Fury
+      guid: dc79aea23acaba4696529986c322a87b
+      id: 1029930033
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+        guid: 5577163b42fb8b4598bf96f557afb3b9
+      - ElementName: SS_Air_Fury
+        ObjectType: 13
+        guid: dc79aea23acaba4696529986c322a87b
+      Path: Game Parameters\Factory SoundSeed Air Game Syncs\SS_Air_Fury
+    - name: SS_Air_Month
+      guid: 45b4e209a3c47f44b3ca818a1d925ef7
+      id: 2648548617
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+        guid: 5577163b42fb8b4598bf96f557afb3b9
+      - ElementName: SS_Air_Month
+        ObjectType: 13
+        guid: 45b4e209a3c47f44b3ca818a1d925ef7
+      Path: Game Parameters\Factory SoundSeed Air Game Syncs\SS_Air_Month
+    - name: SS_Air_Presence
+      guid: 1a81b7e32f7b0f49b44f5fe51b468041
+      id: 3847924954
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+        guid: 5577163b42fb8b4598bf96f557afb3b9
+      - ElementName: SS_Air_Presence
+        ObjectType: 13
+        guid: 1a81b7e32f7b0f49b44f5fe51b468041
+      Path: Game Parameters\Factory SoundSeed Air Game Syncs\SS_Air_Presence
+    - name: SS_Air_RPM
+      guid: ab9048a3d5b92645a64d5290c43ef2dc
+      id: 822163944
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+        guid: 5577163b42fb8b4598bf96f557afb3b9
+      - ElementName: SS_Air_RPM
+        ObjectType: 13
+        guid: ab9048a3d5b92645a64d5290c43ef2dc
+      Path: Game Parameters\Factory SoundSeed Air Game Syncs\SS_Air_RPM
+    - name: SS_Air_Size
+      guid: efeb291393a12e47a38c64668b494879
+      id: 3074696722
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+        guid: 5577163b42fb8b4598bf96f557afb3b9
+      - ElementName: SS_Air_Size
+        ObjectType: 13
+        guid: efeb291393a12e47a38c64668b494879
+      Path: Game Parameters\Factory SoundSeed Air Game Syncs\SS_Air_Size
+    - name: SS_Air_Storm
+      guid: db8c3fe9d1063747acaf7cd44bbed783
+      id: 3715662592
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+        guid: 5577163b42fb8b4598bf96f557afb3b9
+      - ElementName: SS_Air_Storm
+        ObjectType: 13
+        guid: db8c3fe9d1063747acaf7cd44bbed783
+      Path: Game Parameters\Factory SoundSeed Air Game Syncs\SS_Air_Storm
+    - name: SS_Air_TimeOfDay
+      guid: 2ca76f537e8c8b4cae03ef34fdadc314
+      id: 3203397129
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+        guid: 5577163b42fb8b4598bf96f557afb3b9
+      - ElementName: SS_Air_TimeOfDay
+        ObjectType: 13
+        guid: 2ca76f537e8c8b4cae03ef34fdadc314
+      Path: Game Parameters\Factory SoundSeed Air Game Syncs\SS_Air_TimeOfDay
+    - name: SS_Air_Turbulence
+      guid: 197ba8edaa73a0409f192073606db710
+      id: 4160247818
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+        guid: 5577163b42fb8b4598bf96f557afb3b9
+      - ElementName: SS_Air_Turbulence
+        ObjectType: 13
+        guid: 197ba8edaa73a0409f192073606db710
+      Path: Game Parameters\Factory SoundSeed Air Game Syncs\SS_Air_Turbulence
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: c4979b05648a4e4db07be7215370b0ce
+    ParentPath: States\Default Work Unit
+    guid: c4979b05648a4e4db07be7215370b0ce
+    GuidInternal: 
+    m_lastTime: -8585315962200312295
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: e60b69d7c4ab8f4db3e462a5fd7a5b83
+    ParentPath: Switches\Default Work Unit
+    guid: e60b69d7c4ab8f4db3e462a5fd7a5b83
+    GuidInternal: 
+    m_lastTime: -8585315934233050870
+    List:
+    - name: Footsteps
+      guid: ee761a707ddb1f498a42ed031baf0b03
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e60b69d7c4ab8f4db3e462a5fd7a5b83
+      - ElementName: Footsteps
+        ObjectType: 11
+        guid: ee761a707ddb1f498a42ed031baf0b03
+      Path: Switches\Default Work Unit\Footsteps
+      values:
+      - name: Asphalt
+        guid: 2a3488bd29676e47a33b26256b3b65a8
+        id: 4169408098
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e60b69d7c4ab8f4db3e462a5fd7a5b83
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: ee761a707ddb1f498a42ed031baf0b03
+        - ElementName: Asphalt
+          ObjectType: 10
+          guid: 2a3488bd29676e47a33b26256b3b65a8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 1afb3a71ec5cae43809efbad83a2388b
+    ParentPath: Triggers\Default Work Unit
+    guid: 1afb3a71ec5cae43809efbad83a2388b
+    GuidInternal: 
+    m_lastTime: -8585315962201618922
+    List: []
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 
+  AutoSyncSelection: 0
+  autoPopulateEnabled: 1
+  currentDataSource: 0
+  CurrentPluginConfig: 
