@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 977089385}
   - component: {fileID: 977089379}
   - component: {fileID: 977089386}
+  - component: {fileID: 5110513817527415635}
   m_Layer: 0
   m_Name: Basketball Model
   m_TagString: basket_ball
@@ -402,8 +403,10 @@ MonoBehaviour:
   maxZFailure: 1
   threeChance: 0.33
   twoChance: 0.75
+  shotEntered: 0
   onAwayTeam: 0
   anim: {fileID: 0}
+  status: 0
 --- !u!135 &7892224819384503599
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -576,3 +579,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a051cf3a141a0243b8cb44dbcd646ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5110513817527415635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7892224819384503586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d798364f4525fcb4e90032ae389f4a66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BasketballScore:
+  - {fileID: 8300000, guid: 01f365a194751d54db79c6649a1836ed, type: 3}
+  - {fileID: 8300000, guid: 1e9542caddde97846a5fc8468bae44d6, type: 3}
+  - {fileID: 8300000, guid: 5d13962bf57d30e4494e335202826e71, type: 3}
+  BasketBallMissed:
+  - {fileID: 8300000, guid: 764d330e8817d1e41a114b91e4ea98b9, type: 3}
+  - {fileID: 8300000, guid: 1e56c2f6ad869a4428eaaacc1cb98c41, type: 3}
+  - {fileID: 8300000, guid: f5c3fa964f9c62b4288165cb674b9e2c, type: 3}
+  clip: {fileID: 0}
+  source: {fileID: 977089387}

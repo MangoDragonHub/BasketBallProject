@@ -106,6 +106,7 @@ public class BasketballHandler : MonoBehaviour
                     //GameManager.Instance.Score_player_one(scoreToAdd);
                     Debug.Log($"Player 2 scored, Score: {GameManager.Instance.scoreP2}");
                     StartCoroutine(ResetBall());
+                this.gameObject.GetComponent<AudioScoreBehavior>().PlaySoundScore();
                 }
                 else if (!onAwayTeam)
                 {
@@ -113,7 +114,8 @@ public class BasketballHandler : MonoBehaviour
                     //GameManager.Instance.Score_player_two(scoreToAdd);
                     Debug.Log($"Player 1 scored, Score: {GameManager.Instance.scoreP1}");
                     StartCoroutine(ResetBall());
-                }
+                    this.gameObject.GetComponent<AudioScoreBehavior>().PlaySoundScore();
+            }
                 shotEntered = true;
                 ballTrail.SetActive(false);
             }
@@ -124,7 +126,8 @@ public class BasketballHandler : MonoBehaviour
                     //GameManager.Instance.score += scoreToAdd;
                     //Debug.Log($"Player scored, Score: {GameManager.Instance.score}");
                     StartCoroutine(ResetBall());
-                }
+                    this.gameObject.GetComponent<AudioScoreBehavior>().PlaySoundMissed();
+            }
                 shotEntered = false;
                 ballTrail.SetActive(false);
             }
