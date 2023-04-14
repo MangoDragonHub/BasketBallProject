@@ -177,11 +177,13 @@ public partial class PlayerStateManager : MonoBehaviour
         GameObject temp_hoop = null;
         if (!awayTeam)
         {
-            temp_hoop = GameObject.Find("BasketballHoop Home");
+            //temp_hoop = GameObject.Find("BasketballHoop Home");
+            temp_hoop = GameObject.FindGameObjectWithTag("Home");
         }
         else
         {
-            temp_hoop = GameObject.Find("BasketballHoop Away");
+            //temp_hoop = GameObject.Find("BasketballHoop Away");
+            temp_hoop = GameObject.FindGameObjectWithTag("Away");
         }
         //Makes a LookAt at the basketball hoop, but only the Y axis is applied.
         Vector3 hoopPos = new Vector3(temp_hoop.transform.position.x, transform.position.y, temp_hoop.transform.position.z);
