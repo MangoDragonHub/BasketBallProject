@@ -33,8 +33,8 @@ public class GameManager : Singleton<GameManager>
         remainingTime = gameClock;
         _mainMenuOptions = GameObject.Find("GAME UI").GetComponent<MainMenuOptions>();
         clockLabelRef = GameObject.Find("Clock").GetComponent<TextMeshProUGUI>();
-        finalScore = GameObject.Find("FinalScore").GetComponent<TextMeshProUGUI>();
-        
+        //finalScore = GameObject.Find("FinalScore").GetComponent<TextMeshProUGUI>();
+
 
 
 
@@ -118,7 +118,7 @@ public class GameManager : Singleton<GameManager>
 
     private void GameClock() 
     {
-        
+       
 
         //Check is the game clock is on screen.
         if (gameClock != null) 

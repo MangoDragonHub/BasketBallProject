@@ -297,7 +297,16 @@ public class BasketballHandler : MonoBehaviour
         anim.enabled = false;
         ForceChangeParentToPlayerHand();
         //transform.position = attachPoint.transform.position;
-        transform.position = new Vector3(transform.position.x, 2.84f, transform.position.z);
+        if(currentPlayer_psm.status == PlayerStateManager.playerStatus.IN_SP_ACTION)
+        {
+            Debug.Log("AP DEBUG : in sp action, dopping ball from the hoop.");
+            //transform.position = new Vector3(transform.position.x, [y-coordinate for the basketball hoop], transform.position.z);
+        }
+        else
+        {
+            Debug.Log("AP DEBUG : Not in sp action, dopping ball normally.");
+            transform.position = new Vector3(transform.position.x, 2.84f, transform.position.z);
+        }
         transform.parent = null;
         _rb.useGravity = true; //Do I need to use this again?
         _rb.isKinematic = false; //This is so the ball actually falls and does not defy gravity.
