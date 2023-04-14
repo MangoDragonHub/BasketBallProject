@@ -1085,7 +1085,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309124268}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd9dbd290ecbc32408cdae05832b9dd4, type: 3}
   m_Name: 
@@ -1095,6 +1095,7 @@ MonoBehaviour:
   PauseCanvas: {fileID: 0}
   GameplayCanvas: {fileID: 892635434}
   EndGameCanvas: {fileID: 0}
+  gamePlayClock: {fileID: 0}
 --- !u!1 &1442585746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,7 +1136,7 @@ AudioSource:
   m_GameObject: {fileID: 1442585746}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 26def0460289b1541a779766c11e0813, type: 2}
   m_audioClip: {fileID: 8300000, guid: a8df2a8f5ac442c53999b5915a5c111a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2467,7 +2468,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -1055, y: 107}
+  m_AnchoredPosition: {x: -982, y: 172}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1915201403
@@ -2658,7 +2659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1915201401}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &2127563553
@@ -2682,7 +2683,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127563550}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd9dbd290ecbc32408cdae05832b9dd4, type: 3}
   m_Name: 
@@ -2692,6 +2693,7 @@ MonoBehaviour:
   PauseCanvas: {fileID: 1108097416}
   GameplayCanvas: {fileID: 892635434}
   EndGameCanvas: {fileID: 1453048657}
+  gamePlayClock: {fileID: 0}
 --- !u!1 &2136620440
 GameObject:
   m_ObjectHideFlags: 0

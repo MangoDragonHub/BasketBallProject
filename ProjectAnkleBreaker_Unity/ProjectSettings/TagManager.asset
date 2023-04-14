@@ -16,6 +16,7 @@ TagManager:
   - ScoreP1
   - ScoreP2
   - Player2
+  - ToTheMenus
   layers:
   - Default
   - TransparentFX
