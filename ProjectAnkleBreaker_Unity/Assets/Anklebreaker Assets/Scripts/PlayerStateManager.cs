@@ -143,6 +143,7 @@ public partial class PlayerStateManager : MonoBehaviour
             basketballHandler.ForceChangeParentToPlayerHand();
             pl_input.enabled = false; //Disables the player input completely for a set amount of time. This is so that the player character does not move unrealistically when they shoot. For now, this also disables pausing.
             animator.SetBool("isShooting", true);
+            FaceHoop();
             yield return new WaitForSeconds(0.3f);
             tpc.AllowJump = true; //Do not call JumpAction() as its already in the update. This bool variable can handle when the character jumps.
             yield return new WaitForSeconds(0.4f);
@@ -169,6 +170,22 @@ public partial class PlayerStateManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void FaceHoop()
+    {
+        GameObject temp_hoop = null;
+        if (!awayTeam)
+        {
+            temp_hoop = GameObject.Find("BasketballHoop Home");
+        }
+        else
+        {
+            temp_hoop = GameObject.Find("BasketballHoop Away");
+        }
+        //Makes a LookAt at the basketball hoop, but only the Y axis is applied.
+        Vector3 hoopPos = new Vector3(temp_hoop.transform.position.x, transform.position.y, temp_hoop.transform.position.z);
+        this.transform.LookAt(hoopPos);
     }
 
     IEnumerator tempDisableMovement()
