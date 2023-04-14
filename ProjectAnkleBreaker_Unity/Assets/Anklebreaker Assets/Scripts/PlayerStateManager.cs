@@ -19,7 +19,7 @@ public partial class PlayerStateManager : MonoBehaviour
     private ThirdPersonController tpc;
     private PlayerInput pl_input;
     public enum playerStatus
-    {NORMAL, OFFENDED, IN_DEFENSE}
+    { NORMAL, OFFENDED, IN_DEFENSE, SP_READY, IN_SP_ACTION }
     public playerStatus status = playerStatus.NORMAL;
 
 
