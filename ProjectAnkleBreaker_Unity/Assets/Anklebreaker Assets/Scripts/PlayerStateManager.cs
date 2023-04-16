@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -18,8 +20,19 @@ public partial class PlayerStateManager : MonoBehaviour
     public Animator animator;
     private ThirdPersonController tpc;
     private PlayerInput pl_input;
+    private GameObject HomeOrAwayHoop;
+    private CharacterController characterController;
+
+    /// <summary>
+    /// Variables pertaining to auto movement for sp action
+    /// </summary>
+    private float Speed = 0.3f;
+    //private float Xing;
+    //private float Zing;
+    /// end variables.
+
     public enum playerStatus
-    { NORMAL, OFFENDED, IN_DEFENSE, SP_READY, IN_SP_ACTION }
+    { NORMAL, OFFENDED, IN_DEFENSE, SP_READY, IN_SP_ACTION, SP_DONE}
     public playerStatus status = playerStatus.NORMAL;
 
 
@@ -30,20 +43,42 @@ public partial class PlayerStateManager : MonoBehaviour
         Input = GetComponent<PlayerInput>();
         tpc = GetComponent<ThirdPersonController>();
         pl_input = GetComponent<PlayerInput>();
+        characterController = GetComponent<CharacterController>();
     }
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        if (!awayTeam)
+        {
+            HomeOrAwayHoop = GameObject.FindGameObjectWithTag("Home");
+        }
+        else
+        {
+            HomeOrAwayHoop = GameObject.FindGameObjectWithTag("Away");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
+    /*
+    private void FixedUpdate()
+    {
+        if (status == playerStatus.IN_SP_ACTION)
+        {
+            transform.Translate(test_box.transform.position * Time.deltaTime * Speed);
+            if(this.transform.position == test_box.transform.position)
+            {
+                status = playerStatus.SP_DONE;
+            }
+        }
+    }
+    */
 
     #region Actions
 
@@ -172,21 +207,26 @@ public partial class PlayerStateManager : MonoBehaviour
         }
     }
 
+    public void performSPAction()
+    {
+        switch (status)
+        {
+            case playerStatus.SP_READY:
+                status = playerStatus.IN_SP_ACTION;
+                FaceHoop();
+                float originalJumpHeight = tpc.JumpHeight;
+                tpc.JumpHeight = 4.5f;
+                tpc.AllowJump = true;
+                StartCoroutine(SpAction_SlamDunk(originalJumpHeight));
+                break;
+        }
+        return;
+    }
+
     private void FaceHoop()
     {
-        GameObject temp_hoop = null;
-        if (!awayTeam)
-        {
-            //temp_hoop = GameObject.Find("BasketballHoop Home");
-            temp_hoop = GameObject.FindGameObjectWithTag("Home");
-        }
-        else
-        {
-            //temp_hoop = GameObject.Find("BasketballHoop Away");
-            temp_hoop = GameObject.FindGameObjectWithTag("Away");
-        }
         //Makes a LookAt at the basketball hoop, but only the Y axis is applied.
-        Vector3 hoopPos = new Vector3(temp_hoop.transform.position.x, transform.position.y, temp_hoop.transform.position.z);
+        Vector3 hoopPos = new Vector3(HomeOrAwayHoop.transform.position.x, transform.position.y, HomeOrAwayHoop.transform.position.z);
         this.transform.LookAt(hoopPos);
     }
 
@@ -202,6 +242,21 @@ public partial class PlayerStateManager : MonoBehaviour
         pl_input.enabled = false;
         yield return new WaitForSeconds(1f);
         pl_input.enabled = true;
+    }
+
+    IEnumerator SpAction_SlamDunk(float originalJumpHeight) //The slam dunk action
+    {
+        basketballHandler.anim.enabled = false;
+        basketballHandler.ForceChangeParentToPlayerHand();
+        pl_input.enabled = false;
+        animator.Play("SP_SlamDunk1");
+        yield return new WaitForSeconds(0.5f);
+        basketballHandler.ShootBall();
+        animator.SetBool("hasBall", false);
+        yield return new WaitForSeconds(1f);
+        pl_input.enabled = true;
+        tpc.JumpHeight = originalJumpHeight;
+        status = playerStatus.NORMAL;
     }
 
     #endregion

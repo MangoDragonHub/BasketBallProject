@@ -52,6 +52,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "SpAction",
+                    "type": "Button",
+                    "id": "0bab1c42-7f64-46a6-94c9-e83c19138a72",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -239,6 +247,17 @@
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "Steal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9cfc26b-3874-46bc-925d-2eca765fe1b1",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpAction",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -7,46 +7,47 @@ public class CameraButtons : MonoBehaviour
 
 
 
-    public CamSpotInfo[] spots;
-    [Range(0.1f, 3.0f)] public float animSpeed = 0.3f;
-    protected uint idx = 0;
-    protected float t = 0.0f;
+    public Camera MainCamera;
+    public GameObject TargetPosition;
+    public int speed = 2;
+    bool camera_move_enabled = false;
 
     void Update()
     {
-        Transform cam = Camera.main.transform;
-        Vector3 dir_target = spots[idx].target.position - cam.position;
-        Quaternion roti = Quaternion.LookRotation(dir_target);
-        cam.position = Vector3.Lerp(cam.position, spots[idx].transform.position, t);
-        cam.rotation = Quaternion.Slerp(cam.rotation, roti, t);
-        t += Time.deltaTime * animSpeed;
-    }
-    void OnGUI()
-    {
-        Rect rect = new Rect(10, 70, 200, 30);
-        for (uint i = 0; i < spots.Length; ++i)
+
+        if (camera_move_enabled)
         {
-            if (spots[i].showGUI)
-            {
-                if (GUI.Button(rect, "switch to " + spots[i].name))
-                {
-                    idx = i;
-                    t = 0.0f;
-                }
-                rect.y += rect.height + 5;
-            }
+            MainCamera.transform.position = Vector3.Lerp(transform.position, TargetPosition.transform.position, speed * Time.deltaTime);
+            MainCamera.transform.rotation = Quaternion.Lerp(transform.rotation, TargetPosition.transform.rotation, speed * Time.deltaTime);
         }
+
     }
-}
 
-[System.Serializable]
-public class CamSpotInfo
-{
-    public Transform transform;
-    public Transform target;
-    public string name;
-    public bool showGUI = true;
-
-
+    public void UserClickedCameraButton()
+    {
+        TargetPosition.transform.position = new Vector3(34.9f, 4.74f, -18.1f);
+        TargetPosition.transform.rotation = Quaternion.Euler(2.23f, 98.52f, 0);
+        camera_move_enabled = true;
+    }
     
+    public void UserClickedCameraButton2()
+    {
+        TargetPosition.transform.position = new Vector3(88f, 2f, -15.6999998f);
+        TargetPosition.transform.rotation = Quaternion.Euler(-12.97f, 47.5999908f, 0);
+        camera_move_enabled = true;
+    }
+ 
+    public void UserClickedCameraButton3()
+    {
+        TargetPosition.transform.position = new Vector3(52.7f, 4.1f, -8.9f);
+        TargetPosition.transform.rotation = Quaternion.Euler(-2.23f, -23.13f, 0);
+        camera_move_enabled = true;
+    }
+    
+    public void UserClickedCameraButton4()
+    {
+        //TargetPosition.transform.position = new Vector3(f, f, f);
+        TargetPosition.transform.rotation = Quaternion.Euler(2.23f, 98.52f, 0);
+        camera_move_enabled = true;
+    }
 }

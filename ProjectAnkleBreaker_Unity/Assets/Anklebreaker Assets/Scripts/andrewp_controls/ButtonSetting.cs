@@ -38,6 +38,11 @@ public class ButtonSetting : MonoBehaviour
         psm.DefendBall();
     }
 
+    void OnSpAction()
+    {
+        psm.performSPAction();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
