@@ -15,7 +15,7 @@ public class @CharacterInput : IInputActionCollection, IDisposable
     ""name"": ""CharacterInput"",
     ""maps"": [
         {
-            ""name"": ""Character"",
+            ""name"": ""Player1"",
             ""id"": ""012d33e3-b898-4d15-9efa-e87ecfce5bdb"",
             ""actions"": [
                 {
@@ -273,16 +273,282 @@ public class @CharacterInput : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Player2"",
+            ""id"": ""67129abd-d18c-40a1-9a59-31fbb4f7835a"",
+            ""actions"": [
+                {
+                    ""name"": ""Movement"",
+                    ""type"": ""Value"",
+                    ""id"": ""5e15347f-68b8-4e12-b912-3c7e58774b04"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": ""Press(behavior=2)""
+                },
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""0aecc204-c6f1-411a-ab8f-00840a857903"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Tricks"",
+                    ""type"": ""Value"",
+                    ""id"": ""8a00eddf-122c-4be2-a9c0-78e0edaf27e0"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""755f049d-0743-45f2-94d9-9ec1420d5891"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""f5d0db29-afe5-4bd7-8abe-0764a603fe6a"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""80fb537c-a842-4e03-a819-12a76c96b259"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""fa796d9e-09df-4321-8b88-cf91bd91d991"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""dadf2607-ad10-4752-a005-ac7326b4d02c"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""1cd765e6-41ff-46af-a2d9-850d967b7e73"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2d50cc32-5e61-4b1b-a2a7-0b7f11166935"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": ""StickDeadzone"",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b2ce009a-af14-439a-bb27-28a872b2d080"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ae36a4bd-79f9-4faf-8345-69403e8556ad"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6bc01c70-fed5-4e57-9c89-3e0a953b7982"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""138fffce-ab30-423f-a3c2-fe310d46252f"",
+                    ""path"": ""<Gamepad>/rightStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tricks"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1a081945-2b26-4758-9aeb-5398fcd33ded"",
+                    ""path"": ""<Gamepad>/rightStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tricks"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""aa21aa01-a421-4798-9ca2-3c6475e1b2d2"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tricks"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1cb227d3-0946-4ad8-9520-4b2b61358ef3"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tricks"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Arrows"",
+                    ""id"": ""3fdaf5f0-f951-492d-9c87-feb989ec8072"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tricks"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""0bb2c263-3f90-4d53-bbae-4325e36f424c"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tricks"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""5c49aab3-1d0c-4537-be25-f931984582d9"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tricks"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""178cc963-caec-4636-a225-7526329f284b"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tricks"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""3885c4ba-2128-4191-9982-c8d12245c249"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Tricks"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""08ca57d0-d098-4d1a-be84-b300c31d3365"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0364b25f-11c7-488f-9212-901aeef39dd0"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
 }");
-        // Character
-        m_Character = asset.FindActionMap("Character", throwIfNotFound: true);
-        m_Character_Movement = m_Character.FindAction("Movement", throwIfNotFound: true);
-        m_Character_Shoot = m_Character.FindAction("Shoot", throwIfNotFound: true);
-        m_Character_Tricks = m_Character.FindAction("Tricks", throwIfNotFound: true);
-        m_Character_Pause = m_Character.FindAction("Pause", throwIfNotFound: true);
+        // Player1
+        m_Player1 = asset.FindActionMap("Player1", throwIfNotFound: true);
+        m_Player1_Movement = m_Player1.FindAction("Movement", throwIfNotFound: true);
+        m_Player1_Shoot = m_Player1.FindAction("Shoot", throwIfNotFound: true);
+        m_Player1_Tricks = m_Player1.FindAction("Tricks", throwIfNotFound: true);
+        m_Player1_Pause = m_Player1.FindAction("Pause", throwIfNotFound: true);
+        // Player2
+        m_Player2 = asset.FindActionMap("Player2", throwIfNotFound: true);
+        m_Player2_Movement = m_Player2.FindAction("Movement", throwIfNotFound: true);
+        m_Player2_Shoot = m_Player2.FindAction("Shoot", throwIfNotFound: true);
+        m_Player2_Tricks = m_Player2.FindAction("Tricks", throwIfNotFound: true);
+        m_Player2_Pause = m_Player2.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -329,44 +595,44 @@ public class @CharacterInput : IInputActionCollection, IDisposable
         asset.Disable();
     }
 
-    // Character
-    private readonly InputActionMap m_Character;
-    private ICharacterActions m_CharacterActionsCallbackInterface;
-    private readonly InputAction m_Character_Movement;
-    private readonly InputAction m_Character_Shoot;
-    private readonly InputAction m_Character_Tricks;
-    private readonly InputAction m_Character_Pause;
-    public struct CharacterActions
+    // Player1
+    private readonly InputActionMap m_Player1;
+    private IPlayer1Actions m_Player1ActionsCallbackInterface;
+    private readonly InputAction m_Player1_Movement;
+    private readonly InputAction m_Player1_Shoot;
+    private readonly InputAction m_Player1_Tricks;
+    private readonly InputAction m_Player1_Pause;
+    public struct Player1Actions
     {
         private @CharacterInput m_Wrapper;
-        public CharacterActions(@CharacterInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Movement => m_Wrapper.m_Character_Movement;
-        public InputAction @Shoot => m_Wrapper.m_Character_Shoot;
-        public InputAction @Tricks => m_Wrapper.m_Character_Tricks;
-        public InputAction @Pause => m_Wrapper.m_Character_Pause;
-        public InputActionMap Get() { return m_Wrapper.m_Character; }
+        public Player1Actions(@CharacterInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movement => m_Wrapper.m_Player1_Movement;
+        public InputAction @Shoot => m_Wrapper.m_Player1_Shoot;
+        public InputAction @Tricks => m_Wrapper.m_Player1_Tricks;
+        public InputAction @Pause => m_Wrapper.m_Player1_Pause;
+        public InputActionMap Get() { return m_Wrapper.m_Player1; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(CharacterActions set) { return set.Get(); }
-        public void SetCallbacks(ICharacterActions instance)
+        public static implicit operator InputActionMap(Player1Actions set) { return set.Get(); }
+        public void SetCallbacks(IPlayer1Actions instance)
         {
-            if (m_Wrapper.m_CharacterActionsCallbackInterface != null)
+            if (m_Wrapper.m_Player1ActionsCallbackInterface != null)
             {
-                @Movement.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnMovement;
-                @Movement.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnMovement;
-                @Movement.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnMovement;
-                @Shoot.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnShoot;
-                @Shoot.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnShoot;
-                @Shoot.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnShoot;
-                @Tricks.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnTricks;
-                @Tricks.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnTricks;
-                @Tricks.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnTricks;
-                @Pause.started -= m_Wrapper.m_CharacterActionsCallbackInterface.OnPause;
-                @Pause.performed -= m_Wrapper.m_CharacterActionsCallbackInterface.OnPause;
-                @Pause.canceled -= m_Wrapper.m_CharacterActionsCallbackInterface.OnPause;
+                @Movement.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMovement;
+                @Movement.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMovement;
+                @Movement.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMovement;
+                @Shoot.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnShoot;
+                @Shoot.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnShoot;
+                @Shoot.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnShoot;
+                @Tricks.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnTricks;
+                @Tricks.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnTricks;
+                @Tricks.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnTricks;
+                @Pause.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPause;
             }
-            m_Wrapper.m_CharacterActionsCallbackInterface = instance;
+            m_Wrapper.m_Player1ActionsCallbackInterface = instance;
             if (instance != null)
             {
                 @Movement.started += instance.OnMovement;
@@ -384,8 +650,72 @@ public class @CharacterInput : IInputActionCollection, IDisposable
             }
         }
     }
-    public CharacterActions @Character => new CharacterActions(this);
-    public interface ICharacterActions
+    public Player1Actions @Player1 => new Player1Actions(this);
+
+    // Player2
+    private readonly InputActionMap m_Player2;
+    private IPlayer2Actions m_Player2ActionsCallbackInterface;
+    private readonly InputAction m_Player2_Movement;
+    private readonly InputAction m_Player2_Shoot;
+    private readonly InputAction m_Player2_Tricks;
+    private readonly InputAction m_Player2_Pause;
+    public struct Player2Actions
+    {
+        private @CharacterInput m_Wrapper;
+        public Player2Actions(@CharacterInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movement => m_Wrapper.m_Player2_Movement;
+        public InputAction @Shoot => m_Wrapper.m_Player2_Shoot;
+        public InputAction @Tricks => m_Wrapper.m_Player2_Tricks;
+        public InputAction @Pause => m_Wrapper.m_Player2_Pause;
+        public InputActionMap Get() { return m_Wrapper.m_Player2; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(Player2Actions set) { return set.Get(); }
+        public void SetCallbacks(IPlayer2Actions instance)
+        {
+            if (m_Wrapper.m_Player2ActionsCallbackInterface != null)
+            {
+                @Movement.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnMovement;
+                @Movement.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnMovement;
+                @Movement.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnMovement;
+                @Shoot.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnShoot;
+                @Shoot.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnShoot;
+                @Shoot.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnShoot;
+                @Tricks.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnTricks;
+                @Tricks.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnTricks;
+                @Tricks.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnTricks;
+                @Pause.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPause;
+            }
+            m_Wrapper.m_Player2ActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Movement.started += instance.OnMovement;
+                @Movement.performed += instance.OnMovement;
+                @Movement.canceled += instance.OnMovement;
+                @Shoot.started += instance.OnShoot;
+                @Shoot.performed += instance.OnShoot;
+                @Shoot.canceled += instance.OnShoot;
+                @Tricks.started += instance.OnTricks;
+                @Tricks.performed += instance.OnTricks;
+                @Tricks.canceled += instance.OnTricks;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
+            }
+        }
+    }
+    public Player2Actions @Player2 => new Player2Actions(this);
+    public interface IPlayer1Actions
+    {
+        void OnMovement(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
+        void OnTricks(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
+    }
+    public interface IPlayer2Actions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnShoot(InputAction.CallbackContext context);
