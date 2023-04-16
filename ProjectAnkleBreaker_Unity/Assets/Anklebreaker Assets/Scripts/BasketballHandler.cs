@@ -49,13 +49,19 @@ public class BasketballHandler : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         ballTrail = this.gameObject.transform.Find("Trail").gameObject;
         ballTrail.SetActive(false);
+        onAwayTeam = player.GetComponent<PlayerStateManager>().awayTeam;
     }
 
     // Update is called once per frame
     void Update()
     {
-        onAwayTeam = player.GetComponent<PlayerStateManager>().awayTeam;
         WhoHasBall();
+        /*
+        if(status == ballState.OPEN && _rb.isKinematic)
+        {
+            Debug.Log("AP DEBUG : The ball is open but Kinematic is left ON! Oh MY GOD!!");
+        }
+        */
     }
 
 
@@ -300,19 +306,19 @@ public class BasketballHandler : MonoBehaviour
         if(currentPlayer_psm.status == PlayerStateManager.playerStatus.IN_SP_ACTION)
         {
             Debug.Log("AP DEBUG : in sp action, dopping ball from the hoop.");
-            //transform.position = new Vector3(transform.position.x, [y-coordinate for the basketball hoop], transform.position.z);
+            transform.position = new Vector3(transform.position.x, -8.674677f, transform.position.z);
         }
         else
         {
             Debug.Log("AP DEBUG : Not in sp action, dopping ball normally.");
             transform.position = new Vector3(transform.position.x, 2.84f, transform.position.z);
+            status = ballState.DROPPED_BY_OFFENSE;
+            Debug.Log("AP DEBUG: ball state is Dropped by offense");
         }
         transform.parent = null;
         _rb.useGravity = true; //Do I need to use this again?
         _rb.isKinematic = false; //This is so the ball actually falls and does not defy gravity.
-        status = ballState.DROPPED_BY_OFFENSE;
         hasBall = false;
-        Debug.Log("AP DEBUG: ball state is Dropped by offense");
         attachPoint = null;
         animAlreadyPlayed = false;
     }
