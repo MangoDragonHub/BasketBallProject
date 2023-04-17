@@ -185,6 +185,7 @@ public class BasketballHandler : MonoBehaviour
         StartCoroutine(changeBallState());
         Debug.Log($"{player} has shot the ball");
         currentPlayer_psm.hasBall = false;
+        currentPlayer_psm.SpecialGaugeValue = currentPlayer_psm.SpecialGaugeValue + 5;
         currentPlayer_psm = null; //Nulls the current playerStateManager because now it does not belong to anyone.
         ball_coll.enabled = true;
     }

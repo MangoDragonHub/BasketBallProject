@@ -23,6 +23,7 @@ public partial class PlayerStateManager : MonoBehaviour
     private GameObject HomeOrAwayHoop;
     private CharacterController characterController;
     public bool isInSDarea;
+    public int SpecialGaugeValue;
 
     /// <summary>
     /// Variables pertaining to auto movement for sp action
@@ -64,7 +65,11 @@ public partial class PlayerStateManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(SpecialGaugeValue >= 100)
+        {
+            status = playerStatus.SP_READY;
+            Debug.Log("AP DEBUG : THIS IS IT!!");
+        }
     }
 
     /*
@@ -136,6 +141,7 @@ public partial class PlayerStateManager : MonoBehaviour
             targetPlayer_anim.SetBool("hasBall", false);
             basketballHandler.ReleaseFromPlayerHand();
             targetPlayer_psm.status = playerStatus.OFFENDED;
+            SpecialGaugeValue = SpecialGaugeValue + 10;
             StartCoroutine(targetPlayer_psm.changePlayerStatusToNormal());
         }
     }
@@ -215,6 +221,7 @@ public partial class PlayerStateManager : MonoBehaviour
             switch (status)
             {
                 case playerStatus.SP_READY:
+                    SpecialGaugeValue = 0;
                     status = playerStatus.IN_SP_ACTION;
                     FaceHoop();
                     float originalJumpHeight = tpc.JumpHeight;
@@ -248,7 +255,7 @@ public partial class PlayerStateManager : MonoBehaviour
         pl_input.enabled = true;
     }
 
-    IEnumerator SpAction_SlamDunk(float originalJumpHeight) //The slam dunk action
+    IEnumerator SpAction_SlamDunk(float originalJumpHeight) //The slam dunk action. Original jump height's float value is passed in here.
     {
         basketballHandler.anim.enabled = false;
         basketballHandler.ForceChangeParentToPlayerHand();
