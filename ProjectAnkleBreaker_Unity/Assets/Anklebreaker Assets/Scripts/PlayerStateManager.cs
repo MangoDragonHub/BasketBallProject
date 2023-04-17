@@ -278,7 +278,7 @@ public partial class PlayerStateManager : MonoBehaviour
         basketballHandler.ShootBall();
         animator.SetBool("hasBall", false);
         yield return new WaitForSeconds(1f);
-        if (characterController.isGrounded)
+        if (characterController.isGrounded) //re-enables input once the character controller touches the ground.
         {
             pl_input.enabled = true;
         }
