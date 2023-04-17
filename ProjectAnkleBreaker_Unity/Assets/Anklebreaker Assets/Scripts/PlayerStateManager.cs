@@ -24,6 +24,7 @@ public partial class PlayerStateManager : MonoBehaviour
     private CharacterController characterController;
     public bool isInSDarea;
     public int SpecialGaugeValue;
+    public GameObject B_ButtonPrompt;
 
     /// <summary>
     /// Variables pertaining to auto movement for sp action
@@ -46,6 +47,8 @@ public partial class PlayerStateManager : MonoBehaviour
         tpc = GetComponent<ThirdPersonController>();
         pl_input = GetComponent<PlayerInput>();
         characterController = GetComponent<CharacterController>();
+        B_ButtonPrompt = this.transform.Find("B_Button_Prompt").gameObject;
+        B_ButtonPrompt.SetActive(false);
     }
 
 
