@@ -260,6 +260,17 @@
                     "action": "SpAction",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8ce10f77-b9c4-45b8-b46b-2ad8d5a10118",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -311,6 +322,14 @@
                     "name": "Steal",
                     "type": "Button",
                     "id": "adeab498-2564-4941-b2ec-951b4baa6d22",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SpAction",
+                    "type": "Button",
+                    "id": "b94843f4-ac7c-4522-83e3-c667af699340",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -501,6 +520,28 @@
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "Steal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f38e0a60-105a-43c0-9964-fe54ea3d8d7e",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df6d54a8-de54-4162-a9fd-9c606b1427fc",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpAction",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
