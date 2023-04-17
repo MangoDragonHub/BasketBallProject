@@ -86,7 +86,7 @@ public class GameManager : Singleton<GameManager>
             //Debug.Log("The Game is Over!");
             if (_mainMenuOptions != null) 
             {
-                _mainMenuOptions.EndGameScreen();
+                StartCoroutine(GameOver());
             }
            
             
@@ -155,4 +155,11 @@ public class GameManager : Singleton<GameManager>
         scoreP2 = scoreP2 + add_score;
     }
 
+    IEnumerator GameOver()
+    {
+        yield return new WaitForSeconds(3);
+        _mainMenuOptions.EndGameScreen();
+
+
+    }
 }
