@@ -78,6 +78,10 @@ public class BasketballHandler : MonoBehaviour
                         //having a hasBall param, which makes the ball teleport to
                         //different players if they decide to Shoot.
             }
+            if (currentPlayer_psm.awayTeam)
+            {
+                onAwayTeam = true;
+            }
             ballTrail.SetActive(false); //Turns off the ball's trail.
             currentPlayer_psm.hasBall = true;
             //Connects to player's Animator to play Dribble Animation
@@ -322,6 +326,7 @@ public class BasketballHandler : MonoBehaviour
         hasBall = false;
         attachPoint = null;
         animAlreadyPlayed = false;
+        onAwayTeam = false;
     }
 
 }
