@@ -22,6 +22,7 @@ public partial class PlayerStateManager : MonoBehaviour
     private PlayerInput pl_input;
     private GameObject HomeOrAwayHoop;
     private CharacterController characterController;
+    public bool isInSDarea;
 
     /// <summary>
     /// Variables pertaining to auto movement for sp action
@@ -209,16 +210,19 @@ public partial class PlayerStateManager : MonoBehaviour
 
     public void performSPAction()
     {
-        switch (status)
+        if (isInSDarea)
         {
-            case playerStatus.SP_READY:
-                status = playerStatus.IN_SP_ACTION;
-                FaceHoop();
-                float originalJumpHeight = tpc.JumpHeight;
-                tpc.JumpHeight = 4.5f;
-                tpc.AllowJump = true;
-                StartCoroutine(SpAction_SlamDunk(originalJumpHeight));
-                break;
+            switch (status)
+            {
+                case playerStatus.SP_READY:
+                    status = playerStatus.IN_SP_ACTION;
+                    FaceHoop();
+                    float originalJumpHeight = tpc.JumpHeight;
+                    tpc.JumpHeight = 4.5f;
+                    tpc.AllowJump = true;
+                    StartCoroutine(SpAction_SlamDunk(originalJumpHeight));
+                    break;
+            }
         }
         return;
     }
