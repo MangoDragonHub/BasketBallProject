@@ -27,6 +27,7 @@ public partial class PlayerStateManager : MonoBehaviour
     public int SpecialGaugeValue;
     public GameObject B_ButtonPrompt;
     public Slider SP_slider;
+    public int SP_GaugeIncreaseValue;
 
     /// <summary>
     /// Variables pertaining to auto movement for sp action
@@ -153,7 +154,7 @@ public partial class PlayerStateManager : MonoBehaviour
                 //and the status goes back to NORMAL state.
             }
             targetPlayer_psm.status = playerStatus.OFFENDED;
-            SpecialGaugeValue = SpecialGaugeValue + 10;
+            SpecialGaugeValue = SpecialGaugeValue + (SP_GaugeIncreaseValue * 2);
             StartCoroutine(targetPlayer_psm.changePlayerStatusToNormal());
         }
     }

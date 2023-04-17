@@ -334,6 +334,9 @@ MonoBehaviour:
   animator: {fileID: 398168906}
   isInSDarea: 0
   SpecialGaugeValue: 0
+  B_ButtonPrompt: {fileID: 0}
+  SP_slider: {fileID: 0}
+  SP_GaugeIncreaseValue: 10
   status: 0
   Controller: {fileID: 8611705737180506313}
   Input: {fileID: 5472924086690746259}
