@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 //Got from the video https://www.youtube.com/watch?v=f3IYIvd-1mY
 
@@ -25,6 +26,7 @@ public partial class PlayerStateManager : MonoBehaviour
     public bool isInSDarea;
     public int SpecialGaugeValue;
     public GameObject B_ButtonPrompt;
+    public Slider SP_slider;
 
     /// <summary>
     /// Variables pertaining to auto movement for sp action
@@ -68,6 +70,7 @@ public partial class PlayerStateManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        SP_slider.value = SpecialGaugeValue;
         if(SpecialGaugeValue >= 100)
         {
             status = playerStatus.SP_READY;
@@ -225,7 +228,7 @@ public partial class PlayerStateManager : MonoBehaviour
 
     public void performSPAction()
     {
-        if (isInSDarea)
+        if (isInSDarea && hasBall)
         {
             switch (status)
             {
@@ -236,6 +239,7 @@ public partial class PlayerStateManager : MonoBehaviour
                     float originalJumpHeight = tpc.JumpHeight;
                     tpc.JumpHeight = 4.5f;
                     tpc.AllowJump = true;
+                    B_ButtonPrompt.SetActive(false);
                     StartCoroutine(SpAction_SlamDunk(originalJumpHeight));
                     break;
             }

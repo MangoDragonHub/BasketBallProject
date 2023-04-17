@@ -20,7 +20,7 @@ public class slamDunkAreaBehavior : MonoBehaviour
             player = other.gameObject;
             currentPlayer_psm = player.GetComponent<PlayerStateManager>();
             currentPlayer_psm.isInSDarea = true;
-            if(currentPlayer_psm.status == PlayerStateManager.playerStatus.SP_READY)
+            if(currentPlayer_psm.status == PlayerStateManager.playerStatus.SP_READY && currentPlayer_psm.hasBall)
             {
                 currentPlayer_psm.B_ButtonPrompt.SetActive(true);
             }
@@ -34,7 +34,7 @@ public class slamDunkAreaBehavior : MonoBehaviour
             player = other.gameObject;
             currentPlayer_psm = player.GetComponent<PlayerStateManager>();
             currentPlayer_psm.isInSDarea = false;
-            if (currentPlayer_psm.status == PlayerStateManager.playerStatus.SP_READY)
+            if (currentPlayer_psm.status == PlayerStateManager.playerStatus.SP_READY && currentPlayer_psm.hasBall)
             {
                 currentPlayer_psm.B_ButtonPrompt.SetActive(false);
             }
