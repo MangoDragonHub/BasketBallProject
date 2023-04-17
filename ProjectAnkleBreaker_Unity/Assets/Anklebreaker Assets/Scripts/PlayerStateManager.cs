@@ -28,6 +28,8 @@ public partial class PlayerStateManager : MonoBehaviour
     public GameObject B_ButtonPrompt;
     public Slider SP_slider;
     public int SP_GaugeIncreaseValue;
+    public GameObject GO_Fire;
+    private ParticleSystem FX_Fire;
 
     /// <summary>
     /// Variables pertaining to auto movement for sp action
@@ -52,6 +54,8 @@ public partial class PlayerStateManager : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         B_ButtonPrompt = this.transform.Find("B_Button_Prompt").gameObject;
         B_ButtonPrompt.SetActive(false);
+        GO_Fire = GameObject.Find("FX_Fire");
+        FX_Fire = GO_Fire.GetComponent<ParticleSystem>();
     }
 
 
@@ -72,10 +76,16 @@ public partial class PlayerStateManager : MonoBehaviour
     void Update()
     {
         SP_slider.value = SpecialGaugeValue;
-        if(SpecialGaugeValue >= 100)
+        if (SpecialGaugeValue >= 100)
         {
             status = playerStatus.SP_READY;
+            FX_Fire.Play();
             Debug.Log("AP DEBUG : THIS IS IT!!");
+        }
+        else 
+        {
+            FX_Fire.Stop();
+
         }
     }
 
