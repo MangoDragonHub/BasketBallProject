@@ -278,7 +278,10 @@ public partial class PlayerStateManager : MonoBehaviour
         basketballHandler.ShootBall();
         animator.SetBool("hasBall", false);
         yield return new WaitForSeconds(1f);
-        pl_input.enabled = true;
+        if (characterController.isGrounded)
+        {
+            pl_input.enabled = true;
+        }
         tpc.JumpHeight = originalJumpHeight;
         status = playerStatus.NORMAL;
     }
