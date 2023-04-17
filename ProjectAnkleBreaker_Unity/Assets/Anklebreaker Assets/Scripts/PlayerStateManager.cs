@@ -143,6 +143,12 @@ public partial class PlayerStateManager : MonoBehaviour
             targetPlayer_psm.hasBall = false;
             targetPlayer_anim.SetBool("hasBall", false);
             basketballHandler.ReleaseFromPlayerHand();
+            if (targetPlayer_psm.status == playerStatus.SP_READY)
+            {
+                targetPlayer_psm.SpecialGaugeValue = 0;
+                //If the opponent is in SP_READY status and gets Offended, their SP level goes to zero
+                //and the status goes back to NORMAL state.
+            }
             targetPlayer_psm.status = playerStatus.OFFENDED;
             SpecialGaugeValue = SpecialGaugeValue + 10;
             StartCoroutine(targetPlayer_psm.changePlayerStatusToNormal());
