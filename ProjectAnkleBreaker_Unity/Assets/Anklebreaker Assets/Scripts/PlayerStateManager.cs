@@ -84,7 +84,7 @@ public partial class PlayerStateManager : MonoBehaviour
         }
         else 
         {
-            //FX_Fire.Stop();
+            FX_Fire.Stop();
 
         }
     }
