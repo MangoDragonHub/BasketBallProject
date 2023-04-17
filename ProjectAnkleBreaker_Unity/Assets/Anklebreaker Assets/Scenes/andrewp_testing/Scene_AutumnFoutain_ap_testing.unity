@@ -20263,7 +20263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4113780172401582800, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_Name
-      value: GAME UI Merged
+      value: GAME UI
       objectReference: {fileID: 0}
     - target: {fileID: 4113780172401582801, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_RootOrder
