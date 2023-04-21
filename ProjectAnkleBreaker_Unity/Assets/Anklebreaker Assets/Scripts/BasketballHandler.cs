@@ -33,7 +33,7 @@ public class BasketballHandler : MonoBehaviour
     private GameObject ballTrail;
     [SerializeField]
     public enum ballState //Why tf am i using a bunch of booleans when i could have easily done this, i'm a dumbass
-    {OPEN, TAKEN, THROWN, DROPPED_BY_OFFENSE}
+    {OPEN, TAKEN, THROWN, DROPPED_BY_OFFENSE, PROTECTED}
     public ballState status = ballState.OPEN;
 
     // Start is called before the first frame update
@@ -56,12 +56,28 @@ public class BasketballHandler : MonoBehaviour
     void Update()
     {
         WhoHasBall();
+        checkProtectedStatus();
         /*
         if(status == ballState.OPEN && _rb.isKinematic)
         {
             Debug.Log("AP DEBUG : The ball is open but Kinematic is left ON! Oh MY GOD!!");
         }
         */
+    }
+
+    private void checkProtectedStatus()
+    {
+        if(status == ballState.PROTECTED)
+        {
+            if(currentPlayer_psm.status == PlayerStateManager.playerStatus.IN_DEFENSE)
+             {
+            FindRightHand();
+            }
+        }
+        else
+        {
+            return;
+        }
     }
 
 

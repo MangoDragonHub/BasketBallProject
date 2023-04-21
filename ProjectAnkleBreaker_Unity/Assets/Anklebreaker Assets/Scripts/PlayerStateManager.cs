@@ -78,6 +78,7 @@ public partial class PlayerStateManager : MonoBehaviour
         SP_slider.value = SpecialGaugeValue;
         if (SpecialGaugeValue >= 100)
         {
+            GO_Fire.SetActive(true);
             status = playerStatus.SP_READY;
             FX_Fire.Play();
             Debug.Log("AP DEBUG : THIS IS IT!!");
@@ -191,6 +192,7 @@ public partial class PlayerStateManager : MonoBehaviour
              animator.Play("defend");
              basketballHandler.anim.enabled = false;
              basketballHandler.FindRightHand();
+             basketballHandler.status = BasketballHandler.ballState.PROTECTED;
              StartCoroutine(tempDisableMovement());
          }
     }
@@ -286,6 +288,7 @@ public partial class PlayerStateManager : MonoBehaviour
         if(status == playerStatus.IN_DEFENSE)
         {
             status = playerStatus.NORMAL;
+            basketballHandler.status = BasketballHandler.ballState.TAKEN;
             basketballHandler.anim.enabled = true;
         }
     }
