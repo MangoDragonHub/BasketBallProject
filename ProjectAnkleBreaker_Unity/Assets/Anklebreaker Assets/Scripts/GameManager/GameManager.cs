@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 
 public enum GameMode
@@ -23,6 +25,7 @@ public class GameManager : Singleton<GameManager>
     private TextMeshProUGUI clockLabelRef;
     private TextMeshProUGUI finalScore;
     public GameMode setGameMode;
+    public Selectable primaryButton;
 
     // Start is called before the first frame update
     void Start()
@@ -161,5 +164,10 @@ public class GameManager : Singleton<GameManager>
         _mainMenuOptions.EndGameScreen();
 
 
+    }
+
+    void OnEnable()
+    {
+        primaryButton.Select();
     }
 }

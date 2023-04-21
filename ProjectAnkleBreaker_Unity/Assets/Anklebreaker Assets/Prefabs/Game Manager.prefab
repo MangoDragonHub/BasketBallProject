@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de2e893ca541259469884f1a1eb7e23a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameScoreCap: 0
+  gameScoreCap: 21
   gameClock: 60
-  setGameMode: 0
+  setGameMode: 2
+  primaryButton: {fileID: 0}
