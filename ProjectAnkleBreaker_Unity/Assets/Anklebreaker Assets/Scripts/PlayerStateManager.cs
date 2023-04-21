@@ -54,7 +54,7 @@ public partial class PlayerStateManager : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         B_ButtonPrompt = this.transform.Find("B_Button_Prompt").gameObject;
         B_ButtonPrompt.SetActive(false);
-        GO_Fire = GameObject.Find("FX_Fire");
+        GO_Fire = GameObject.FindGameObjectWithTag("Effects");
         FX_Fire = GO_Fire.GetComponent<ParticleSystem>();
     }
 
@@ -62,6 +62,8 @@ public partial class PlayerStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GO_Fire.SetActive(false);
+
         if (!awayTeam)
         {
             HomeOrAwayHoop = GameObject.FindGameObjectWithTag("Home");
