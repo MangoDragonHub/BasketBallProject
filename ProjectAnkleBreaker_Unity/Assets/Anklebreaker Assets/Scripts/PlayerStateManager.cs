@@ -54,7 +54,6 @@ public partial class PlayerStateManager : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         B_ButtonPrompt = this.transform.Find("B_Button_Prompt").gameObject;
         B_ButtonPrompt.SetActive(false);
-        GO_Fire = GameObject.FindGameObjectWithTag("Effects");
         FX_Fire = GO_Fire.GetComponent<ParticleSystem>();
     }
 
