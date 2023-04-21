@@ -152,6 +152,11 @@ public partial class PlayerStateManager : MonoBehaviour
         {
             Animator targetPlayer_anim = targetPlayer.GetComponent<Animator>();
             PlayerStateManager targetPlayer_psm = targetPlayer.GetComponent<PlayerStateManager>();
+            if(targetPlayer_psm.status == playerStatus.IN_DEFENSE)
+            {
+                targetPlayer_psm.SpecialGaugeValue = targetPlayer_psm.SpecialGaugeValue + 5;
+                return; //Returns immediately and the person who's defending the ball gets their SP gauge increased by 5. The player does not drop the ball.
+            }
             targetPlayer_anim.Play("Fall");
             StartCoroutine(targetPlayer_psm.tempDisableMovementOnFall());
             targetPlayer_psm.hasBall = false;
@@ -180,6 +185,14 @@ public partial class PlayerStateManager : MonoBehaviour
         //This is where "Guard frames" will apply and will allow the player to protect the ball from being stolen by the opponent.
         //There will be a set amount of time where "guard frames" will apply so the player will be invulnerable.
          Debug.Log("AP DEBUG: DEFENSE BUTTON has been pushed.");
+         if(hasBall)
+         {
+             status = playerStatus.IN_DEFENSE;
+             animator.Play("defend");
+             basketballHandler.anim.enabled = false;
+             basketballHandler.FindRightHand();
+             StartCoroutine(tempDisableMovement());
+         }
     }
 
     #endregion
@@ -270,6 +283,11 @@ public partial class PlayerStateManager : MonoBehaviour
         pl_input.enabled = false;
         yield return new WaitForSeconds(0.3f);
         pl_input.enabled = true;
+        if(status == playerStatus.IN_DEFENSE)
+        {
+            status = playerStatus.NORMAL;
+            basketballHandler.anim.enabled = true;
+        }
     }
 
     IEnumerator tempDisableMovementOnFall()
