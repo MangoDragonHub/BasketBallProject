@@ -28,14 +28,14 @@ public class AudioScoreBehavior : MonoBehaviour
    public void PlaySoundScore()
     {
         source.clip = BasketballScore[AudioRand(BasketballScore)];
-        Debug.Log(source.clip);
+        //Debug.Log(source.clip);
         source.Play();
     }
 
    public void PlaySoundMissed()
     {
         source.clip = BasketballScore[AudioRand(BasketBallMissed)];
-        Debug.Log(source.clip);
+        //Debug.Log(source.clip);
         source.Play();
     }
 
