@@ -56,7 +56,15 @@ public class MainMenuOptions : MonoBehaviour
     public void EndGameScreen() 
     {
         Time.timeScale = 0;
-        GameplayCanvas.SetActive(false);
+        if (GameplayCanvas != null)
+        {
+            GameplayCanvas.SetActive(false);
+
+        }
+        else
+        {
+            Debug.Log("why you blow up my GameplayCanvas?");
+        }
         PauseCanvas.SetActive(false);
         EndGameCanvas.SetActive(true);
         GameObject myEventSystem = GameObject.Find("EventSystem");

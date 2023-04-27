@@ -53,8 +53,8 @@ public partial class PlayerStateManager : MonoBehaviour
         pl_input = GetComponent<PlayerInput>();
         characterController = GetComponent<CharacterController>();
         B_ButtonPrompt = this.transform.Find("B_Button_Prompt").gameObject;
+        SP_slider = GameObject.Find("Special Meter").GetComponent<Slider>();
         B_ButtonPrompt.SetActive(false);
-        GO_Fire = GameObject.Find("FX_Fire");
         FX_Fire = GO_Fire.GetComponent<ParticleSystem>();
     }
 
@@ -62,6 +62,8 @@ public partial class PlayerStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GO_Fire.SetActive(false);
+
         if (!awayTeam)
         {
             HomeOrAwayHoop = GameObject.FindGameObjectWithTag("Home");
@@ -75,18 +77,31 @@ public partial class PlayerStateManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SP_slider.value = SpecialGaugeValue;
-        if (SpecialGaugeValue >= 100)
+        if (SpecialGaugeValue != null && SpecialGaugeValue >= 0)
         {
-            GO_Fire.SetActive(true);
-            status = playerStatus.SP_READY;
-            FX_Fire.Play();
-            Debug.Log("AP DEBUG : THIS IS IT!!");
-        }
-        else 
-        {
-            FX_Fire.Stop();
+            if (SP_slider != null)
+            {
+                SP_slider.value = SpecialGaugeValue;
+            }
+            else
+            {
+                
+                Debug.Log("SP_slider is null");
+            }
 
+
+            if (SpecialGaugeValue >= 100)
+            {
+                GO_Fire.SetActive(true);
+                status = playerStatus.SP_READY;
+                FX_Fire.Play();
+                Debug.Log("AP DEBUG : THIS IS IT!!");
+            }
+            else
+            {
+                FX_Fire.Stop();
+
+            }
         }
     }
 
