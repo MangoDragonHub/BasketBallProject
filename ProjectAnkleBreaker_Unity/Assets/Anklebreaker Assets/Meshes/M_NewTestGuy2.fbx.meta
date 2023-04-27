@@ -3,7 +3,32 @@ guid: 25363ee63c55bf948a9e4a0f26d6eb84
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anklebreakerbase_High-poly_Eye_brown
+    second: {fileID: 2100000, guid: 3095ea64b9fdd7a219241ec743570b3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anklebreakerbase_Male_muscle_13290_Defaultskin
+    second: {fileID: 2100000, guid: 181974c1931dfb762830b82e3459b2be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jersey
+    second: {fileID: 2100000, guid: ef6bf7b4cd5778da1be8f9c6a96d1f1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JoggingPants
+    second: {fileID: 2100000, guid: 69d473be2ba7533a19973d88e1cc0863, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shoes
+    second: {fileID: 2100000, guid: 162d70b2494ef77399445001c3e9dbf1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -15,8 +40,7 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: "Avatar creation failed:\n\tTransform 'Anklebreakerbase' not
-      found in HumanDescription.\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
