@@ -25,9 +25,19 @@ public class MainMenuOptions : MonoBehaviour
         
     }
 
+    public void Awake()
+    {
+        Time.timeScale = 1;
+    }
+
     public void Options() 
     { 
     
+    }
+
+    public void Reload_level()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void QuitGame() 
