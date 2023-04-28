@@ -42,7 +42,7 @@ public class Boundaries : MonoBehaviour
 
     void reset_basket_ball()
     {
-        Debug.Log("the ball got out and now back to the start point (Brain said 'uh oh')");
+        //Debug.Log("the ball got out and now back to the start point (Brain said 'uh oh')");
         basket_ball.transform.position = origin;
     }
 }
