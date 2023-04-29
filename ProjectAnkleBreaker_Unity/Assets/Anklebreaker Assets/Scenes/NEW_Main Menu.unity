@@ -24625,7 +24625,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Scene_Score Attack_Autumn Foutain
+          m_StringArgument: Scene_ScoreAttack_AutumnFoutain
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1251135355}
@@ -60886,7 +60886,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1975957932}
+      - m_Target: {fileID: 850317892}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
