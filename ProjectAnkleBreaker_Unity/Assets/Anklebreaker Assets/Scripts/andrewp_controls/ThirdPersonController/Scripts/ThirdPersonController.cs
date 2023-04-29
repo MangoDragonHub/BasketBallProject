@@ -154,7 +154,7 @@ public class ThirdPersonController : MonoBehaviour
 			Debug.LogError( "Starter Assets package is missing dependencies. Please use Tools/Starter Assets/Reinstall Dependencies to fix it");
 #endif
 
-        AssignAnimationIDs();
+        AssignAnimations();
 
         // reset our timeouts on start
         _jumpTimeoutDelta = JumpTimeout;
@@ -177,11 +177,15 @@ public class ThirdPersonController : MonoBehaviour
     }
 
 
-    private void AssignAnimationIDs()
+    private void AssignAnimations()
     {
+        _animator.SetFloat("Speed", 0f);
+        _animator.SetFloat("MotionSpeed", 0f);
+
+        /*
         _animIDSpeed = Animator.StringToHash("Speed");
         _animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
-        /*
+        -----------------------------------------------------------------
             _animIDGrounded = Animator.StringToHash("Grounded");
             _animIDJump = Animator.StringToHash("Jump");
             _animIDFreeFall = Animator.StringToHash("FreeFall");
@@ -261,8 +265,8 @@ public class ThirdPersonController : MonoBehaviour
         // update animator if using character
         if (_hasAnimator)
         {
-            _animator.SetFloat(_animIDSpeed, _animationBlend);
-            _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
+            _animator.SetFloat("Speed", _animationBlend);
+            _animator.SetFloat("MotionSpeed", inputMagnitude);
         }
     }
     private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
