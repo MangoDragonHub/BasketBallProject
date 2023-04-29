@@ -27,22 +27,30 @@ public class GameManager : Singleton<GameManager>
     public GameMode setGameMode;
     public Selectable primaryButton;
 
-    // Start is called before the first frame update
-    void Start()
+
+    void Awake()
     {
-        ModeSelection(setGameMode);
+
+        
         scoreP1 = 0;
         scoreP2 = 0;
         remainingTime = gameClock;
         _mainMenuOptions = GameObject.Find("GAME UI").GetComponent<MainMenuOptions>();
+
+    }
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        ModeSelection(setGameMode);
+        
         if (clockLabelRef == null)
         {
 
             clockLabelRef = GameObject.Find("Clock").GetComponent<TextMeshProUGUI>();
         }
         //finalScore = GameObject.Find("FinalScore").GetComponent<TextMeshProUGUI>();
-
-
 
 
 
