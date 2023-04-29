@@ -98,6 +98,10 @@ public class BasketballHandler : MonoBehaviour
             {
                 onAwayTeam = true;
             }
+            else
+            {
+                onAwayTeam = false;
+            }
             ballTrail.SetActive(false); //Turns off the ball's trail.
             currentPlayer_psm.hasBall = true;
             //Connects to player's Animator to play Dribble Animation
