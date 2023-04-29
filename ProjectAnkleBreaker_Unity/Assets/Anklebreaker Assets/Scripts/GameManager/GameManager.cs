@@ -22,23 +22,35 @@ public class GameManager : Singleton<GameManager>
     private float remainingTime;
     private MainMenuOptions _mainMenuOptions;
     //private TextMeshProUGUI finalScore;
-    private TextMeshProUGUI clockLabelRef;
+    public TextMeshProUGUI clockLabelRef;
     private TextMeshProUGUI finalScore;
     public GameMode setGameMode;
     public Selectable primaryButton;
+
+
+    void Awake()
+    {
+
+        
+        scoreP1 = 0;
+        scoreP2 = 0;
+        remainingTime = gameClock;
+        _mainMenuOptions = GameObject.Find("GAME UI").GetComponent<MainMenuOptions>();
+
+    }
+
 
     // Start is called before the first frame update
     void Start()
     {
         ModeSelection(setGameMode);
-        scoreP1 = 0;
-        scoreP2 = 0;
-        remainingTime = gameClock;
-        _mainMenuOptions = GameObject.Find("GAME UI").GetComponent<MainMenuOptions>();
-        clockLabelRef = GameObject.Find("Clock").GetComponent<TextMeshProUGUI>();
+        
+        if (clockLabelRef == null)
+        {
+
+            clockLabelRef = GameObject.Find("Clock").GetComponent<TextMeshProUGUI>();
+        }
         //finalScore = GameObject.Find("FinalScore").GetComponent<TextMeshProUGUI>();
-
-
 
 
 
@@ -128,8 +140,15 @@ public class GameManager : Singleton<GameManager>
         {
             gameClock = 60;
             remainingTime -= Time.deltaTime;
-            
-            clockLabelRef.text = remainingTime.ToString("F0");
+
+            if (clockLabelRef != null)
+            {
+                clockLabelRef.text = remainingTime.ToString("F0");
+            }
+            else
+            {
+                Debug.Log("clockLabelRef is null");
+            }
 
         }
 
@@ -140,8 +159,15 @@ public class GameManager : Singleton<GameManager>
             {
                 _mainMenuOptions.EndGameScreen();
             }
-            
-            finalScore.text = scoreP1.ToString();
+
+            if (finalScore != null)
+            {
+                finalScore.text = scoreP1.ToString();
+            }
+            else
+            {
+                Debug.Log("Final_Score.tesxt is null");
+            }
         }
 
     }
