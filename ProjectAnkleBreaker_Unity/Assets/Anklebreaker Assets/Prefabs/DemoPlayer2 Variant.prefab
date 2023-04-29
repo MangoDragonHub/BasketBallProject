@@ -23,10 +23,6 @@ PrefabInstance:
       propertyPath: CinemachineCameraTarget
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 398168906, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 895241637, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
