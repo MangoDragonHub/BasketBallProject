@@ -45831,7 +45831,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameScoreCap: 21
   gameClock: 0
-  setGameMode: 0
+  clockLabelRef: {fileID: 0}
+  setGameMode: 1
   primaryButton: {fileID: 0}
 --- !u!1 &5941702566163118146
 GameObject:
