@@ -31,10 +31,6 @@ public class GameManager : Singleton<GameManager>
     void Awake()
     {
 
-        
-        scoreP1 = 0;
-        scoreP2 = 0;
-        remainingTime = gameClock;
         _mainMenuOptions = GameObject.Find("GAME UI").GetComponent<MainMenuOptions>();
 
     }
@@ -44,6 +40,9 @@ public class GameManager : Singleton<GameManager>
     void Start()
     {
         ModeSelection(setGameMode);
+        scoreP1 = 0;
+        scoreP2 = 0;
+        remainingTime = gameClock;
         
         if (clockLabelRef == null)
         {
@@ -68,22 +67,13 @@ public class GameManager : Singleton<GameManager>
         switch (modeSelection) 
         {
             case GameMode.ScoreAttack:
-                if (gameScoreCap == 0)
-                {
-                    gameScoreCap = 999;
-                }
+                gameScoreCap = 999;
                 break;
             case GameMode.Competitive:
-                if (gameScoreCap == 0) 
-                {
-                    gameScoreCap = 21;
-                }
+                gameScoreCap = 21;
                 break;
             case GameMode.Practice:
-                if (gameScoreCap == 0)
-                {
-                    gameScoreCap = 9999;
-                }
+                gameScoreCap = 9999;
                 break;
             default:
                 if (gameScoreCap == null || gameScoreCap == 0)
