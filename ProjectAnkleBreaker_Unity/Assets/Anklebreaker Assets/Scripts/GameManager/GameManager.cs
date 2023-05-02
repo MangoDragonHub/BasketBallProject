@@ -23,7 +23,7 @@ public class GameManager : Singleton<GameManager>
     private MainMenuOptions _mainMenuOptions;
     //private TextMeshProUGUI finalScore;
     public TextMeshProUGUI clockLabelRef;
-    private TextMeshProUGUI finalScore;
+    public TextMeshProUGUI finalScore;
     public GameMode setGameMode;
     public Selectable primaryButton;
 
@@ -49,7 +49,13 @@ public class GameManager : Singleton<GameManager>
 
             clockLabelRef = GameObject.Find("Clock").GetComponent<TextMeshProUGUI>();
         }
-        //finalScore = GameObject.Find("FinalScore").GetComponent<TextMeshProUGUI>();
+        
+        if(finalScore == null)
+        {
+            finalScore = GameObject.Find("FinalScore").GetComponent<TextMeshProUGUI>();
+        }
+
+        
 
 
 
