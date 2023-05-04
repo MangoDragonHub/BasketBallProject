@@ -20,7 +20,7 @@ public class GameManager : Singleton<GameManager>
     public int gameScoreCap;
     public int gameClock;
     private float remainingTime;
-    public MainMenuOptions _mainMenuOptions;
+    private MainMenuOptions _mainMenuOptions;
     //private TextMeshProUGUI finalScore;
     public TextMeshProUGUI clockLabelRef;
     public TextMeshProUGUI finalScore;
@@ -32,13 +32,25 @@ public class GameManager : Singleton<GameManager>
     {
         //Check where the main menu is
         if (_mainMenuOptions == null)
-        { 
+        {
+            _mainMenuOptions = GameObject.Find("GAME UI").GetComponent<MainMenuOptions>();
             if (_mainMenuOptions != GameObject.Find("GAME UI").GetComponent<MainMenuOptions>())
             {
                 _mainMenuOptions = GameObject.Find("ap_dbg_GAME UI").GetComponent<MainMenuOptions>();
             }
-            _mainMenuOptions = GameObject.Find("GAME UI").GetComponent<MainMenuOptions>();
+
         }
+
+        //_mainMenuOptions = FindObjectOfType<MainMenuOptions>();
+        //foreach (MainMenuOptions menus in _mainMenuOptions)
+        //{
+        //    if (_mainMenuOptions.gameObject.name == "MyGameObject")
+        //    {
+        //        // Found the script on the desired object
+        //        // Do something with it here
+        //    }
+        //}
+
     }
 
 
