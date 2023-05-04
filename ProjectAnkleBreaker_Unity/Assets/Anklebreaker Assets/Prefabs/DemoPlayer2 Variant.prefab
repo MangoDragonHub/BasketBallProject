@@ -23,6 +23,10 @@ PrefabInstance:
       propertyPath: CinemachineCameraTarget
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 398168906, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 213b1b8c8ce80034eaa6d555b9e64474, type: 3}
     - target: {fileID: 895241637, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -95,6 +99,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f45c9a5d18ea8f64bb5018cd8eaad28b, type: 2}
+    - target: {fileID: 5737208378669060313, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 213b1b8c8ce80034eaa6d555b9e64474, type: 3}
     - target: {fileID: 5844057213192724821, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
       propertyPath: m_IsActive
       value: 0

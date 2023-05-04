@@ -45832,6 +45832,7 @@ MonoBehaviour:
   gameScoreCap: 21
   gameClock: 0
   clockLabelRef: {fileID: 0}
+  finalScore: {fileID: 0}
   setGameMode: 1
   primaryButton: {fileID: 0}
 --- !u!1 &5941702566163118146
