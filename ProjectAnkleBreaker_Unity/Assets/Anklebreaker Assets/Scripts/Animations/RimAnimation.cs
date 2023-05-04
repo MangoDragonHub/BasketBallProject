@@ -5,14 +5,21 @@ using UnityEngine;
 public class RimAnimation : MonoBehaviour
 {
     public Animator animator;
-    private GameObject basketBall;
-    //private GameObject player;
     public bool isDunking;
+    public GameObject fx_Sparks;
+
+
+    private GameObject basketBall;
+    private GameManager gameManager;
+    //private GameObject player;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         basketBall = GameObject.Find("Basketball Model");
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        fx_Sparks.SetActive(false);
         //player = 
         
     }
@@ -28,6 +35,13 @@ public class RimAnimation : MonoBehaviour
         {
             StartCoroutine(PlayRegularAnimation());
         }
+        if (gameManager.scoreP1 >= gameManager.gameScoreCap || gameManager.scoreP2 >= gameManager.gameScoreCap) 
+        {
+            fx_Sparks.SetActive(true);
+        
+        }
+
+
         //Play Stealing Ball
         
     }
