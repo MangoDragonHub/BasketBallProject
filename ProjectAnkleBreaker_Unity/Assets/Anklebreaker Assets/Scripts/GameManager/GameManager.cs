@@ -20,7 +20,7 @@ public class GameManager : Singleton<GameManager>
     public int gameScoreCap;
     public int gameClock;
     private float remainingTime;
-    private MainMenuOptions _mainMenuOptions;
+    public MainMenuOptions _mainMenuOptions;
     //private TextMeshProUGUI finalScore;
     public TextMeshProUGUI clockLabelRef;
     public TextMeshProUGUI finalScore;
@@ -28,22 +28,31 @@ public class GameManager : Singleton<GameManager>
     public Selectable primaryButton;
 
 
-    void Awake()
+    public override void Awake()
     {
-
-        _mainMenuOptions = GameObject.Find("GAME UI").GetComponent<MainMenuOptions>();
-
+        //Check where the main menu is
+        if (_mainMenuOptions == null)
+        { 
+            if (_mainMenuOptions != GameObject.Find("GAME UI").GetComponent<MainMenuOptions>())
+            {
+                _mainMenuOptions = GameObject.Find("ap_dbg_GAME UI").GetComponent<MainMenuOptions>();
+            }
+            _mainMenuOptions = GameObject.Find("GAME UI").GetComponent<MainMenuOptions>();
+        }
     }
 
 
     // Start is called before the first frame update
     void Start()
     {
+        
+
         ModeSelection(setGameMode);
         scoreP1 = 0;
         scoreP2 = 0;
         remainingTime = gameClock;
         
+
         if (clockLabelRef == null)
         {
 
@@ -108,11 +117,10 @@ public class GameManager : Singleton<GameManager>
         //Double check if score resets and not affect the game.
         if (setGameMode == GameMode.Competitive) 
         {
-            if (scoreP1 >= 21 || scoreP2 >= 21)
-            {
-                scoreP1 = 0;
-                scoreP2 = 0;
-            }
+            //if (scoreP1 >= 21 || scoreP2 >= 21)
+            //{
+                
+            //}
 
         }
         if (setGameMode == GameMode.Practice)

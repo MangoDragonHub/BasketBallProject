@@ -45548,6 +45548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameScoreCap: 21
   gameClock: 0
+  _mainMenuOptions: {fileID: 0}
   clockLabelRef: {fileID: 0}
   finalScore: {fileID: 0}
   setGameMode: 1
