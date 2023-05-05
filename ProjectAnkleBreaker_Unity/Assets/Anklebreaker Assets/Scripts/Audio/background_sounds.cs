@@ -20,9 +20,10 @@ public class background_sounds : MonoBehaviour
     {
 
         Create_list();
-        background_sound_source.clip = audio_background_clips[clip_num];
-        Invoke("Next_music", (background_sound_source.clip.length));
-        play_sound();
+        Next_music();
+        //background_sound_source.clip = audio_background_clips[clip_num];
+        //Invoke("Next_music", (background_sound_source.clip.length));
+        //play_sound();
 
     }
 
