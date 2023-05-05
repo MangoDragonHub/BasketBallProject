@@ -56,7 +56,7 @@ public partial class PlayerStateManager : MonoBehaviour
         pl_input = GetComponent<PlayerInput>();
         characterController = GetComponent<CharacterController>();
         B_ButtonPrompt = this.transform.Find("B_Button_Prompt").gameObject;
-        SP_slider = GameObject.Find("Special Meter").GetComponent<Slider>();
+        //SP_slider = GameObject.Find("Special Meter").GetComponent<Slider>();
         B_ButtonPrompt.SetActive(false);
         FX_Fire = GO_Fire.GetComponent<ParticleSystem>();
         SpecialGaugeValue = 0;
