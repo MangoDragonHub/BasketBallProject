@@ -91,6 +91,13 @@ public partial class PlayerStateManager : MonoBehaviour
                 Debug.Log("SP_slider is null");
             }
 
+        if (B_ButtonPrompt.activeSelf)
+        {
+            if(SpecialGaugeValue < 100)
+            {
+                B_ButtonPrompt.SetActive(false);
+            }
+        }
 
             if (SpecialGaugeValue >= 100)
             {
