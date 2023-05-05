@@ -6004,6 +6004,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!95 &139115049 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1919646712275636965, guid: c57b4dd7575775847844a44ee3da83ed, type: 3}
+  m_PrefabInstance: {fileID: 3301767417430103763}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &145823347
 Mesh:
   m_ObjectHideFlags: 0
@@ -45697,6 +45702,10 @@ PrefabInstance:
       propertyPath: GO_Fire
       value: 
       objectReference: {fileID: 289795423}
+    - target: {fileID: 2442843269041279563, guid: c57b4dd7575775847844a44ee3da83ed, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 139115049}
     - target: {fileID: 2442843269041279563, guid: c57b4dd7575775847844a44ee3da83ed, type: 3}
       propertyPath: SP_slider
       value: 
