@@ -24,7 +24,7 @@ public partial class PlayerStateManager : MonoBehaviour
     public Animator animator;
     private ThirdPersonController tpc;
     public PlayerInput pl_input;
-    private GameObject HomeOrAwayHoop;
+    [SerializeField] private GameObject HomeOrAwayHoop;
     private CharacterController characterController;
     public bool isInSDarea;
     public int SpecialGaugeValue;
