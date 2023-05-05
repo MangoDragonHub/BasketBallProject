@@ -5,6 +5,9 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.HID;
+using UnityEngine.InputSystem.Users;
+using UnityEngine.InputSystem.XInput;
 using UnityEngine.UI;
 
 //Got from the video https://www.youtube.com/watch?v=f3IYIvd-1mY

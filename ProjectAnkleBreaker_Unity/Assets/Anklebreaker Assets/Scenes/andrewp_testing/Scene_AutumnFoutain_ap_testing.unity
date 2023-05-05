@@ -18895,7 +18895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5472924086690746259, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
       propertyPath: m_DefaultControlScheme
-      value: KeyboardMouse
+      value: Gamepad
       objectReference: {fileID: 0}
     - target: {fileID: 5472924086690746259, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
       propertyPath: m_NeverAutoSwitchControlSchemes
@@ -46098,6 +46098,10 @@ PrefabInstance:
       propertyPath: m_Actions
       value: 
       objectReference: {fileID: -944628639613478452, guid: c8d6f421ba960c84fba8a8b2a85d492f, type: 3}
+    - target: {fileID: 5859271034417811004, guid: c57b4dd7575775847844a44ee3da83ed, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5859271034417811004, guid: c57b4dd7575775847844a44ee3da83ed, type: 3}
       propertyPath: m_DefaultActionMap
       value: Player1
