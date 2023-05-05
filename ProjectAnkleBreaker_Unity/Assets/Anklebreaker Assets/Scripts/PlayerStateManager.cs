@@ -23,7 +23,7 @@ public partial class PlayerStateManager : MonoBehaviour
     private int playerID;
     public Animator animator;
     private ThirdPersonController tpc;
-    private PlayerInput pl_input;
+    public PlayerInput pl_input;
     private GameObject HomeOrAwayHoop;
     private CharacterController characterController;
     public bool isInSDarea;
