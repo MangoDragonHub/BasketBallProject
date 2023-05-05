@@ -7,6 +7,8 @@ using UnityEngine.XR;
 
 public class ControlSchemeEnforcer : MonoBehaviour
 {
+    //Feel free to disable this Component via inspector in case you need to test using the Keyboard.
+
     public PlayerStateManager player1psm;
     public PlayerStateManager player2psm;
     // Start is called before the first frame update
