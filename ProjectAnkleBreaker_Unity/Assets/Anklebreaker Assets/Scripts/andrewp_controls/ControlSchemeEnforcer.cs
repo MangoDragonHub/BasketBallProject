@@ -22,7 +22,7 @@ public class ControlSchemeEnforcer : MonoBehaviour
 
     private void EnforceSchemes()
     {
-        player1psm.pl_input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows"));
-        player2psm.pl_input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows1"));
+            player1psm.pl_input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows"));
+            player2psm.pl_input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows1"));
     }
 }
