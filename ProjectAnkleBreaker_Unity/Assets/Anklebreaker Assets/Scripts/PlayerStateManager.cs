@@ -305,8 +305,9 @@ public partial class PlayerStateManager : MonoBehaviour
 
     IEnumerator tempDisableMovement()
     {
+        animator.applyRootMotion = true;
         pl_input.enabled = false;
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.7f);
         pl_input.enabled = true;
         if(status == playerStatus.IN_DEFENSE)
         {
@@ -314,6 +315,7 @@ public partial class PlayerStateManager : MonoBehaviour
             basketballHandler.status = BasketballHandler.ballState.TAKEN;
             basketballHandler.anim.enabled = true;
         }
+        animator.applyRootMotion = false;
     }
 
     IEnumerator tempDisableMovementOnFall()
