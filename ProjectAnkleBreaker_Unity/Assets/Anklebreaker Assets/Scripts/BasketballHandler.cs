@@ -17,8 +17,8 @@ public class BasketballHandler : MonoBehaviour
     [SerializeField] private int respawnWaitTime;
 
     [SerializeField]
-    Transform _target;
-    Rigidbody _rb;
+    private Transform _target;
+    private Rigidbody _rb;
 
     [SerializeField]
     float initialAngle, scoreDistance, maxXFailure, maxYFailure, maxZFailure,  threeChance, twoChance;
@@ -55,7 +55,6 @@ public class BasketballHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        WhoHasBall();
         checkProtectedStatus();
         /*
         if(status == ballState.OPEN && _rb.isKinematic)
@@ -104,6 +103,7 @@ public class BasketballHandler : MonoBehaviour
             }
             ballTrail.SetActive(false); //Turns off the ball's trail.
             currentPlayer_psm.hasBall = true;
+            WhoHasBall();
             //Connects to player's Animator to play Dribble Animation
             Animator playerAnims = player.GetComponent<Animator>();
             attachPoint = player.transform.Find("AttachPoint").gameObject;
