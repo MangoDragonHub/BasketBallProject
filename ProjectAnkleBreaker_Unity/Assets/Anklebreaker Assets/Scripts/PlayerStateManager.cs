@@ -59,6 +59,7 @@ public partial class PlayerStateManager : MonoBehaviour
         SP_slider = GameObject.Find("Special Meter").GetComponent<Slider>();
         B_ButtonPrompt.SetActive(false);
         FX_Fire = GO_Fire.GetComponent<ParticleSystem>();
+        SpecialGaugeValue = 0;
     }
 
 
@@ -80,8 +81,6 @@ public partial class PlayerStateManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SpecialGaugeValue != null && SpecialGaugeValue >= 0)
-        {
             if (SP_slider != null)
             {
                 SP_slider.value = SpecialGaugeValue;
@@ -105,7 +104,6 @@ public partial class PlayerStateManager : MonoBehaviour
                 FX_Fire.Stop();
 
             }
-        }
     }
 
     /*
