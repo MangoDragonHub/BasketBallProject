@@ -167,23 +167,8 @@ public class BasketballHandler : MonoBehaviour
 
     public void FindRightHand()
     {
-        //I made this weird way of seeing if TestGuy3 game object is enabled or not in the player. If it's not enabled, then it reads data from TestGuy2.
-        //Both player prefabs have TestGuy 2 and 3. One has 2 enabled and 3 disabled, and vice versa. This is to accommodate that.
-        bool tempBool = false;
-        if (player.transform.Find("M_TestGuy3").gameObject.activeSelf)
-        {
-            tempBool = true;
-        }
-        if (tempBool)
-        {
-            Transform temp = player.transform.Find("M_TestGuy3").transform.Find("Anklebreakerguy2").transform.Find("hips").transform.Find("spine").transform.Find("chest").transform.Find("chest1").transform.Find("shoulder.R").transform.Find("upper_arm.R").transform.Find("forearm.R").transform.Find("hand.R");
-            playerHand = temp;
-        }
-        else
-        {
-            Transform temp = player.transform.Find("M_NewTestGuy2").transform.Find("Anklebreakerbase").transform.Find("hips").transform.Find("spine").transform.Find("chest").transform.Find("chest1").transform.Find("shoulder.R").transform.Find("upper_arm.R").transform.Find("forearm.R").transform.Find("hand.R");
-            playerHand = temp;
-        }
+        Transform temp = player.transform.Find("r_hand_shadowcopy");
+        playerHand = temp;
         transform.position = playerHand.position;
     }
 

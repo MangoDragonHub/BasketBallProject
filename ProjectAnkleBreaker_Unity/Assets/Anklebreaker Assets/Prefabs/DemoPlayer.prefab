@@ -146,6 +146,50 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &3857276202275384375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3757539138046975659}
+  - component: {fileID: 9210177060672699789}
+  m_Layer: 0
+  m_Name: r_hand_shadowcopy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3757539138046975659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3857276202275384375}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.5336938, y: 1.5304056, z: 3.0644429}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7199739846227023676}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9210177060672699789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3857276202275384375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ab469d36866c848971c1eadfb29006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightHandToCopy: {fileID: 2787747039697647382}
 --- !u!1 &4545033903476195461
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +327,7 @@ Transform:
   - {fileID: 7207106884325494646}
   - {fileID: 618665050037829117}
   - {fileID: 7698564451927926837}
+  - {fileID: 3757539138046975659}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -352,6 +397,8 @@ MonoBehaviour:
   hasBall: 0
   awayTeam: 0
   animator: {fileID: 398168906}
+  pl_input: {fileID: 0}
+  HomeOrAwayHoop: {fileID: 0}
   isInSDarea: 0
   SpecialGaugeValue: 0
   B_ButtonPrompt: {fileID: 0}
@@ -649,6 +696,11 @@ PrefabInstance:
 --- !u!4 &7207106884325494646 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 25363ee63c55bf948a9e4a0f26d6eb84, type: 3}
+  m_PrefabInstance: {fileID: 7173795482953787549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2787747039697647382 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4989532992349151115, guid: 25363ee63c55bf948a9e4a0f26d6eb84, type: 3}
   m_PrefabInstance: {fileID: 7173795482953787549}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7199739847676911384

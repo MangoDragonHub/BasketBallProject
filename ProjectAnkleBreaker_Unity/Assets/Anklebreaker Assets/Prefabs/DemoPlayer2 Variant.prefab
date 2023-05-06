@@ -157,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7199739846227023679, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
       propertyPath: m_Name
-      value: DemoPlayer2
+      value: DemoPlayer2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7199739846227023679, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
       propertyPath: m_TagString
@@ -175,11 +175,20 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37b2c672aa6e3a7a7be3338eb2e971ec, type: 2}
+    - target: {fileID: 9210177060672699789, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
+      propertyPath: rightHandToCopy
+      value: 
+      objectReference: {fileID: 6240035224249548613}
     m_RemovedComponents:
     - {fileID: 3638917944014103177, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
 --- !u!95 &6142166742536999286 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5737208378669060313, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
+  m_PrefabInstance: {fileID: 1919646712030560687}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6240035224249548613 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5492978098020663018, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
   m_PrefabInstance: {fileID: 1919646712030560687}
   m_PrefabAsset: {fileID: 0}
