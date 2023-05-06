@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class BasketballHandler : MonoBehaviour
 {
@@ -166,8 +167,21 @@ public class BasketballHandler : MonoBehaviour
 
     public void FindRightHand()
     {
-        Transform temp = player.transform.Find("M_NewTestGuy2").transform.Find("Anklebreakerbase").transform.Find("hips").transform.Find("spine").transform.Find("chest").transform.Find("chest1").transform.Find("shoulder.R").transform.Find("upper_arm.R").transform.Find("forearm.R").transform.Find("hand.R");
-        playerHand = temp;
+        bool tempBool = false;
+        if (player.transform.Find("M_TestGuy3").gameObject.activeSelf)
+        {
+            tempBool = true;
+        }
+        if (tempBool)
+        {
+            Transform temp = player.transform.Find("M_TestGuy3").transform.Find("Anklebreakerguy2").transform.Find("hips").transform.Find("spine").transform.Find("chest").transform.Find("chest1").transform.Find("shoulder.R").transform.Find("upper_arm.R").transform.Find("forearm.R").transform.Find("hand.R");
+            playerHand = temp;
+        }
+        else
+        {
+            Transform temp = player.transform.Find("M_NewTestGuy2").transform.Find("Anklebreakerbase").transform.Find("hips").transform.Find("spine").transform.Find("chest").transform.Find("chest1").transform.Find("shoulder.R").transform.Find("upper_arm.R").transform.Find("forearm.R").transform.Find("hand.R");
+            playerHand = temp;
+        }
         transform.position = playerHand.position;
     }
 
