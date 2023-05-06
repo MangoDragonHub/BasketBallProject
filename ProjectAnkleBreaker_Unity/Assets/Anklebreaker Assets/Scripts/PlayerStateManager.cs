@@ -137,7 +137,15 @@ public partial class PlayerStateManager : MonoBehaviour
     public void PauseGame()
     {
         GameObject PauseMenu = GameObject.Find("GAME UI");
-        PauseMenu.GetComponent<MainMenuOptions>().PauseGame();
+        if (PauseMenu != null)
+        {
+            PauseMenu.GetComponent<MainMenuOptions>().PauseGame();
+        }
+        else 
+        {
+            Debug.Log("Pause Menu is not found...");
+        }
+        
     }
 
     public void StealBall()
