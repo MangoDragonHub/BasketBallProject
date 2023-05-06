@@ -26,6 +26,7 @@ public class GameManager : Singleton<GameManager>
     public TextMeshProUGUI finalScore;
     public GameMode setGameMode;
     public Selectable primaryButton;
+    public bool GrannyMode;
 
 
     public override void Awake()

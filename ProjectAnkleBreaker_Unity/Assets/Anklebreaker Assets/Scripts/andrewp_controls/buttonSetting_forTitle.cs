@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class buttonSetting_forTitle : MonoBehaviour
 {
     private PlayerInput pl_input;
+    private GameManager gameManager;
     private List<string> konamiCodeInputs;
     private List<string> userButtonInputs;
     [SerializeField] private AudioSource success_sound;
@@ -15,6 +16,7 @@ public class buttonSetting_forTitle : MonoBehaviour
     void Start()
     {
         pl_input = GetComponent<PlayerInput>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         konamiCodeInputs = new List<string>(){"u", "u", "d", "d", "l", "r", "l", "r", "b", "a"};
         userButtonInputs = new List<string>();
     }
@@ -30,6 +32,7 @@ public class buttonSetting_forTitle : MonoBehaviour
         {
             //play the success sound, turn on granny mode in the game manager.
             success_sound.Play();
+            gameManager.GrannyMode = true;
             Debug.Log("K O N A M I   C O D E   A C T I V A T E D .\nCharacters will become grannies until next scene change.");
         }
     }
