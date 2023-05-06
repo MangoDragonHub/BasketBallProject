@@ -33,7 +33,6 @@ public class buttonSetting_forTitle : MonoBehaviour
         {
             //play the success sound, turn on granny mode in the game manager.
             success_sound.Play();
-            gameManager.GrannyMode = true;
             Debug.Log("K O N A M I   C O D E   A C T I V A T E D .\nCharacters will become grannies until next scene change.");
         }
     }
