@@ -11,6 +11,7 @@ public class buttonSetting_forTitle : MonoBehaviour
     private List<string> konamiCodeInputs;
     private List<string> userButtonInputs;
     [SerializeField] private AudioSource success_sound;
+	public bool grannyModeActivated;
 
     // Start is called before the first frame update
     void Start()
