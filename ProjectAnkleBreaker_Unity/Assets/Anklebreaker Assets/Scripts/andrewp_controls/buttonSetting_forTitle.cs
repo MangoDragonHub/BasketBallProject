@@ -28,9 +28,9 @@ public class buttonSetting_forTitle : MonoBehaviour
     {
         if(userButtonInputs.SequenceEqual(konamiCodeInputs))
         {
-            //play the success sound, turn on granny mode.
+            //play the success sound, turn on granny mode in the game manager.
             success_sound.Play();
-            Debug.Log("K O N A M I   C O D E   A C T I V A T E D .\nCharacters will become grannies until returning to the Title menu.");
+            Debug.Log("K O N A M I   C O D E   A C T I V A T E D .\nCharacters will become grannies until next scene change.");
         }
     }
 
