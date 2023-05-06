@@ -24,7 +24,11 @@ public class ControlSchemeEnforcer : MonoBehaviour
 
     private void EnforceSchemes()
     {
-            player1psm.pl_input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows"));
-            player2psm.pl_input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows1"));
+        if (!player1psm.pl_input.enabled || !player2psm.pl_input.enabled)
+        {
+            return; //so null user errors aren't sharted out when you guard or shoot.
+        }
+        player1psm.pl_input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows"));
+        player2psm.pl_input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows1"));
     }
 }
