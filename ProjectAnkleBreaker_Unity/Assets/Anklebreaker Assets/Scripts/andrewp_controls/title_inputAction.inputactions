@@ -1,0 +1,147 @@
+{
+    "name": "title_inputAction",
+    "maps": [
+        {
+            "name": "title_player1",
+            "id": "96cc232e-eeea-40e5-9bd9-f5d30ec40bdb",
+            "actions": [
+                {
+                    "name": "kc_up",
+                    "type": "Button",
+                    "id": "02b28cfa-f273-46cb-a78e-60614ac48f09",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "kc_down",
+                    "type": "Button",
+                    "id": "ed47513a-79d1-4da0-ad29-b9512a5bb2fc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "kc_left",
+                    "type": "Button",
+                    "id": "8a077bb7-2dcc-4a0a-aa07-116b813328a8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "kc_right",
+                    "type": "Button",
+                    "id": "026ddd0d-3a70-4d8e-8ae2-d89222d9474b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "kc_a",
+                    "type": "Button",
+                    "id": "22ef0dc2-1dca-4b48-96eb-ecd4ea986b8d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "kc_b",
+                    "type": "Button",
+                    "id": "a8d87871-839a-4ba4-ad72-ee41e6e26182",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "redo_kc",
+                    "type": "Button",
+                    "id": "e7013003-29d0-4aae-8d4d-a19b165890ae",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "74a73277-a248-40d5-b7be-c97915b6c2a4",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "kc_up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4de6b86e-5379-424c-973d-e9d6c4a47e3a",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "kc_down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2f258aca-3ef9-4146-b36a-8521f23f363d",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "kc_left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e9584709-4174-4ef0-b50f-6e106c1573f9",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "kc_right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "378841b4-f513-43b5-8454-bce974988439",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "kc_a",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0c94ca3b-fc84-4bfa-b18a-d45004412ba7",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "kc_b",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c88bbd38-1c3b-4ed0-994c-65bcb3facd3a",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "redo_kc",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
