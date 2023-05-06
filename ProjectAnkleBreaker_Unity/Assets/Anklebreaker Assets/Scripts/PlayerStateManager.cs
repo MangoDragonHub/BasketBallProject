@@ -313,7 +313,10 @@ public partial class PlayerStateManager : MonoBehaviour
 
     IEnumerator tempDisableMovement()
     {
-        animator.applyRootMotion = true;
+        if(status != playerStatus.IN_DEFENSE)
+        {
+            animator.applyRootMotion = true; //this is to prevent the camera from skewing awkwardly when doing a defense.
+        }
         pl_input.enabled = false;
         yield return new WaitForSeconds(0.7f);
         pl_input.enabled = true;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class slamDunkAreaBehavior : MonoBehaviour
 {
-    private GameObject player;
+    [SerializeField]private GameObject player;
     private PlayerStateManager currentPlayer_psm;
 
     // Start is called before the first frame update
@@ -15,9 +15,9 @@ public class slamDunkAreaBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Player2"))
+        if (other.gameObject == player)
         {
-            player = other.gameObject;
+            //player = other.gameObject;
             currentPlayer_psm = player.GetComponent<PlayerStateManager>();
             currentPlayer_psm.isInSDarea = true;
             if(currentPlayer_psm.status == PlayerStateManager.playerStatus.SP_READY && currentPlayer_psm.hasBall)
@@ -29,9 +29,9 @@ public class slamDunkAreaBehavior : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Player2"))
+        if (other.gameObject == player)
         {
-            player = other.gameObject;
+            //player = other.gameObject;
             currentPlayer_psm = player.GetComponent<PlayerStateManager>();
             currentPlayer_psm.isInSDarea = false;
             if (currentPlayer_psm.status == PlayerStateManager.playerStatus.SP_READY && currentPlayer_psm.hasBall)

@@ -34611,7 +34611,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2442843269041279563, guid: c57b4dd7575775847844a44ee3da83ed, type: 3}
   m_PrefabInstance: {fileID: 3301767417430103763}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 3301767417430103766}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72b0fc97336657047b229ac36b28b69e, type: 3}
@@ -46670,6 +46670,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   opponent_psm: {fileID: 398168906}
+--- !u!1 &3301767417430103766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8739632812447127184, guid: c57b4dd7575775847844a44ee3da83ed, type: 3}
+  m_PrefabInstance: {fileID: 3301767417430103763}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3888254881198396822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46803,6 +46808,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1943066123}
+    - target: {fileID: 2599188804184284002, guid: 5c5f07ecbbe2b144086e3e3c27895c93, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 3301767417430103766}
+    - target: {fileID: 2613781416582275949, guid: 5c5f07ecbbe2b144086e3e3c27895c93, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 398168898}
     - target: {fileID: 3717485290305303871, guid: 5c5f07ecbbe2b144086e3e3c27895c93, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -48603,6 +48616,22 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 1613
       objectReference: {fileID: 0}
+    - target: {fileID: 6640162451799122698, guid: 5c5f07ecbbe2b144086e3e3c27895c93, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 3301767417430103766}
+    - target: {fileID: 6661581112955591429, guid: 5c5f07ecbbe2b144086e3e3c27895c93, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 398168898}
+    - target: {fileID: 7509824172889849717, guid: 5c5f07ecbbe2b144086e3e3c27895c93, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 3301767417430103766}
+    - target: {fileID: 7524504939285530490, guid: 5c5f07ecbbe2b144086e3e3c27895c93, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 398168898}
     - target: {fileID: 7657179360077704439, guid: 5c5f07ecbbe2b144086e3e3c27895c93, type: 3}
       propertyPath: m_Mesh
       value: 
