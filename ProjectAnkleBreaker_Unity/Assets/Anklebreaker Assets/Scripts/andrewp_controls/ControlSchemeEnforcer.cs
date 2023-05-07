@@ -11,6 +11,7 @@ public class ControlSchemeEnforcer : MonoBehaviour
 
     public PlayerInput player1Input;
     public PlayerInput player2Input;
+    private bool p1UsingXInput;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +29,27 @@ public class ControlSchemeEnforcer : MonoBehaviour
         {
             return; //so null user errors aren't sharted out when you guard or shoot.
         }
-        player1Input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows"));
-        player2Input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows1"));
+        if (InputSystem.GetDevice("XInputControllerWindows") != null)
+        {
+            player1Input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows"));
+            p1UsingXInput = true;
+        }
+        if (p1UsingXInput)
+        {
+            if (InputSystem.GetDevice("XInputControllerWindows1") != null)
+            {
+                player2Input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows1"));
+            }
+            else
+            {
+                if (InputSystem.GetDevice("DualShock4GamepadHID") != null)
+                {
+                    player2Input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("DualShock4GamepadHID"));
+                }
+                return;
+            }
+            return;
+        }
+        return;
     }
 }
