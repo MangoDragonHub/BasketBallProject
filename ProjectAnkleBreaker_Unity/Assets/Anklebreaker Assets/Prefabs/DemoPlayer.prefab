@@ -684,6 +684,10 @@ PrefabInstance:
       value: M_NewTestGuy2
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 25363ee63c55bf948a9e4a0f26d6eb84, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 25363ee63c55bf948a9e4a0f26d6eb84, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 1184b0041cc2a604493d0dcb3939f010, type: 2}
