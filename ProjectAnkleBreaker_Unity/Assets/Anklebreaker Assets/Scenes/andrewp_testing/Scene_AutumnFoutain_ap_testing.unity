@@ -18898,7 +18898,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 398168908, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
       propertyPath: m_Constraints
-      value: 4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3667308138127922444, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4270905038647120868, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
       propertyPath: GO_Fire
@@ -46239,7 +46243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6142166742536999286, guid: c57b4dd7575775847844a44ee3da83ed, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6143155398691518823, guid: c57b4dd7575775847844a44ee3da83ed, type: 3}
       propertyPath: m_Layer
