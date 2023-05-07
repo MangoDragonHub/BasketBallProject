@@ -23022,6 +23022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   success_sound: {fileID: 2104095854}
+  grannyModeActivated: 0
 --- !u!114 &483866951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82570,7 +82571,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e314841bdb6d95d4e8dd992489ea47fb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 60e3d1ca5ee10b34e9d7e37f59f022c2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
