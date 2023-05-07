@@ -33,6 +33,7 @@ public partial class PlayerStateManager : MonoBehaviour
     public int SP_GaugeIncreaseValue;
     public GameObject GO_Fire;
     private ParticleSystem FX_Fire;
+    private StarterAssetsInputs pl_sai;
     private bool RootMotionEnabled;
 
     /// <summary>
@@ -60,6 +61,7 @@ public partial class PlayerStateManager : MonoBehaviour
         //SP_slider = GameObject.Find("Special Meter").GetComponent<Slider>();
         B_ButtonPrompt.SetActive(false);
         FX_Fire = GO_Fire.GetComponent<ParticleSystem>();
+        pl_sai = GetComponent<StarterAssetsInputs>();
         SpecialGaugeValue = 0;
     }
 
@@ -260,6 +262,8 @@ public partial class PlayerStateManager : MonoBehaviour
             basketballHandler.anim.enabled = false;
             basketballHandler.ForceChangeParentToPlayerHand();
             pl_input.enabled = false; //Disables the player input completely for a set amount of time. This is so that the player character does not move unrealistically when they shoot. For now, this also disables pausing.
+            pl_sai.MoveInput(Vector2.zero);
+            //Since we're working with Passthrough movement input, this will force the input vector2 to 0 so movement doesn't linger after pl_input gets disabled.
             animator.SetBool("isShooting", true);
             FaceHoop();
             yield return new WaitForSeconds(0.3f);
@@ -326,6 +330,7 @@ public partial class PlayerStateManager : MonoBehaviour
             RootMotionEnabled = true;
         }
         pl_input.enabled = false;
+        pl_sai.MoveInput(Vector2.zero);
         yield return new WaitForSeconds(0.7f);
         pl_input.enabled = true;
         if(status == playerStatus.IN_DEFENSE)
@@ -341,6 +346,7 @@ public partial class PlayerStateManager : MonoBehaviour
     IEnumerator tempDisableMovementOnFall()
     {
         pl_input.enabled = false;
+        pl_sai.MoveInput(Vector2.zero);
         yield return new WaitForSeconds(1f);
         pl_input.enabled = true;
     }
@@ -350,6 +356,7 @@ public partial class PlayerStateManager : MonoBehaviour
         basketballHandler.anim.enabled = false;
         basketballHandler.ForceChangeParentToPlayerHand();
         pl_input.enabled = false;
+        pl_sai.MoveInput(Vector2.zero);
         animator.Play("SP_SlamDunk1");
         yield return new WaitForSeconds(0.5f);
         basketballHandler.ShootBall();

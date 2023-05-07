@@ -24,13 +24,10 @@ public class ControlSchemeEnforcer : MonoBehaviour
 
     private void EnforceSchemes()
     {
-        /*
-        if (!player1psm.pl_input.enabled || !player2psm.pl_input.enabled)
+        if (!player1Input.enabled || !player2Input.enabled)
         {
             return; //so null user errors aren't sharted out when you guard or shoot.
         }
-        */
-
         player1Input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows"));
         player2Input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows1"));
     }
