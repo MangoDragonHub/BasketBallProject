@@ -20260,6 +20260,14 @@ PrefabInstance:
       propertyPath: basketballHandler
       value: 
       objectReference: {fileID: 7892224820741861543}
+    - target: {fileID: 5141205398014679884, guid: dadc0000569443e44801fd848c254547, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Gamepad
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141205398014679884, guid: dadc0000569443e44801fd848c254547, type: 3}
+      propertyPath: m_NeverAutoSwitchControlSchemes
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8016439612149564384, guid: dadc0000569443e44801fd848c254547, type: 3}
       propertyPath: m_Name
       value: DemoPlayer2
@@ -29854,6 +29862,14 @@ PrefabInstance:
       propertyPath: basketballHandler
       value: 
       objectReference: {fileID: 7892224820741861543}
+    - target: {fileID: 5472924086690746259, guid: 2afc939168a4fdf4aaf2907bd29ef399, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Gamepad
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472924086690746259, guid: 2afc939168a4fdf4aaf2907bd29ef399, type: 3}
+      propertyPath: m_NeverAutoSwitchControlSchemes
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7199739846227023676, guid: 2afc939168a4fdf4aaf2907bd29ef399, type: 3}
       propertyPath: m_RootOrder
       value: 8
