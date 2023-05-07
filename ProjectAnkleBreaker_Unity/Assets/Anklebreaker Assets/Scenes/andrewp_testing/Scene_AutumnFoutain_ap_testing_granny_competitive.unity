@@ -21585,8 +21585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33da5a379642a34cb95374b38d94d93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1Input: {fileID: 0}
-  player2Input: {fileID: 0}
+  player1Input: {fileID: 527544968}
+  player2Input: {fileID: 847228609}
 --- !u!43 &1170901808
 Mesh:
   m_ObjectHideFlags: 0
