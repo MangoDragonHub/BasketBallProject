@@ -33,6 +33,7 @@ public partial class PlayerStateManager : MonoBehaviour
     public int SP_GaugeIncreaseValue;
     public GameObject GO_Fire;
     private ParticleSystem FX_Fire;
+    private bool RootMotionEnabled;
 
     /// <summary>
     /// Variables pertaining to auto movement for sp action
@@ -111,6 +112,12 @@ public partial class PlayerStateManager : MonoBehaviour
                 FX_Fire.Stop();
 
             }
+
+        if (RootMotionEnabled)
+        {
+            Vector3 position = transform.position;
+            position.y = 2.54f;
+        }
     }
 
     /*
@@ -316,6 +323,7 @@ public partial class PlayerStateManager : MonoBehaviour
         if(status != playerStatus.IN_DEFENSE)
         {
             animator.applyRootMotion = true; //this is to prevent the camera from skewing awkwardly when doing a defense.
+            RootMotionEnabled = true;
         }
         pl_input.enabled = false;
         yield return new WaitForSeconds(0.7f);
@@ -327,6 +335,7 @@ public partial class PlayerStateManager : MonoBehaviour
             basketballHandler.anim.enabled = true;
         }
         animator.applyRootMotion = false;
+        RootMotionEnabled = false;
     }
 
     IEnumerator tempDisableMovementOnFall()

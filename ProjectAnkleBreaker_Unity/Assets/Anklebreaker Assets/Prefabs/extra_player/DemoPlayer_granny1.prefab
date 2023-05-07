@@ -122,7 +122,7 @@ MeshCollider:
   m_GameObject: {fileID: 895241634}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -581,6 +581,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 1184b0041cc2a604493d0dcb3939f010, type: 2}
+    - target: {fileID: 5866666021909216657, guid: a9e528c2e7c57b14ab645742fd7f2b5c, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9e528c2e7c57b14ab645742fd7f2b5c, type: 3}
 --- !u!4 &336038372944097803 stripped
