@@ -197,17 +197,6 @@
                 },
                 {
                     "name": "",
-                    "id": "f64ce87f-1abd-4efd-9645-781ca08e4ee0",
-                    "path": "<Keyboard>/enter",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse;Gamepad",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "3e91ccd4-e633-4103-8e5f-80e619accc97",
                     "path": "<XInputController>/buttonWest",
                     "interactions": "",
@@ -253,10 +242,10 @@
                 {
                     "name": "",
                     "id": "e30c37e4-e10c-41ce-a869-803a58752be4",
-                    "path": "<Keyboard>/l",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardMouse",
+                    "groups": "KeyboardMouse;Gamepad",
                     "action": "Defense",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -297,10 +286,10 @@
                 {
                     "name": "",
                     "id": "4aae01be-8292-4ec8-8656-4526478af6c1",
-                    "path": "<Keyboard>/m",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardMouse",
+                    "groups": "KeyboardMouse;Gamepad",
                     "action": "Steal",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -427,7 +416,7 @@
                 {
                     "name": "up",
                     "id": "7de0d398-d51f-42c7-8524-e20613f44a6e",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -438,7 +427,7 @@
                 {
                     "name": "down",
                     "id": "a6e0310a-7da5-4867-a94f-ead1ef508a39",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -449,7 +438,7 @@
                 {
                     "name": "left",
                     "id": "cea8096d-b2f2-4ce7-b67e-2116a9365744",
-                    "path": "<Keyboard>/a",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -460,7 +449,7 @@
                 {
                     "name": "right",
                     "id": "da4e5d0b-7c71-47bf-930c-2856b81340dc",
-                    "path": "<Keyboard>/d",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -536,17 +525,6 @@
                 },
                 {
                     "name": "",
-                    "id": "3247721f-d78d-4e32-8871-94d65a3b53cd",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse;Gamepad",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "e6f7a51f-ed4f-451c-b20c-4e456b313c52",
                     "path": "<Keyboard>/enter",
                     "interactions": "",
@@ -606,7 +584,7 @@
                     "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardMouse",
+                    "groups": "KeyboardMouse;Gamepad",
                     "action": "Defense",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -650,7 +628,7 @@
                     "path": "<Keyboard>/m",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardMouse",
+                    "groups": "KeyboardMouse;Gamepad",
                     "action": "Steal",
                     "isComposite": false,
                     "isPartOfComposite": false
