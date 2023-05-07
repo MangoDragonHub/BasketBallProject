@@ -30,6 +30,7 @@ public class ControlSchemeEnforcer : MonoBehaviour
             return; //so null user errors aren't sharted out when you guard or shoot.
         }
         */
+
         player1Input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows"));
         player2Input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows1"));
     }
