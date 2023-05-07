@@ -9,8 +9,8 @@ public class ControlSchemeEnforcer : MonoBehaviour
 {
     //Feel free to disable this Component via inspector in case you need to test using the Keyboard.
 
-    public PlayerStateManager player1psm;
-    public PlayerStateManager player2psm;
+    public PlayerInput player1Input;
+    public PlayerInput player2Input;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +30,7 @@ public class ControlSchemeEnforcer : MonoBehaviour
             return; //so null user errors aren't sharted out when you guard or shoot.
         }
         */
-        player1psm.pl_input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows"));
-        player2psm.pl_input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows1"));
+        player1Input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows"));
+        player2Input.SwitchCurrentControlScheme("Gamepad", InputSystem.GetDevice("XInputControllerWindows1"));
     }
 }
