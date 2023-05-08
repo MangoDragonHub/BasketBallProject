@@ -22072,6 +22072,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 398168902}
     - target: {fileID: 4270905038647120868, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
+      propertyPath: SP_slider
+      value: 
+      objectReference: {fileID: 1046112465}
+    - target: {fileID: 4270905038647120868, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
       propertyPath: basketballHandler
       value: 
       objectReference: {fileID: 1362738570}
@@ -23004,6 +23008,17 @@ PrefabInstance:
       objectReference: {fileID: 2097485488}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+--- !u!114 &1046112465 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 904452658505385275, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+  m_PrefabInstance: {fileID: 1046112464}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1054903243
 Mesh:
   m_ObjectHideFlags: 0
@@ -30970,7 +30985,7 @@ MonoBehaviour:
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
   m_Priority: 10
-  m_StandbyUpdate: 1
+  m_StandbyUpdate: 2
   m_LookAt: {fileID: 1229539699}
   m_Follow: {fileID: 0}
   m_Lens:
