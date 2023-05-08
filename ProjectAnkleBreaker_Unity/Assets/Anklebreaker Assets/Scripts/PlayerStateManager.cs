@@ -32,6 +32,7 @@ public partial class PlayerStateManager : MonoBehaviour
     public Slider SP_slider;
     public int SP_GaugeIncreaseValue;
     public GameObject GO_Fire;
+    public GameObject GO_FireBall;
     private ParticleSystem FX_Fire;
     private StarterAssetsInputs pl_sai;
     private bool RootMotionEnabled;
@@ -56,10 +57,12 @@ public partial class PlayerStateManager : MonoBehaviour
         Input = GetComponent<PlayerInput>();
         tpc = GetComponent<ThirdPersonController>();
         pl_input = GetComponent<PlayerInput>();
+        GO_FireBall = GameObject.Find("FX_FireBall");
         characterController = GetComponent<CharacterController>();
         B_ButtonPrompt = this.transform.Find("B_Button_Prompt").gameObject;
         //SP_slider = GameObject.Find("Special Meter").GetComponent<Slider>();
         B_ButtonPrompt.SetActive(false);
+        GO_FireBall.SetActive(false);
         FX_Fire = GO_Fire.GetComponent<ParticleSystem>();
         pl_sai = GetComponent<StarterAssetsInputs>();
         SpecialGaugeValue = 0;
@@ -357,6 +360,7 @@ public partial class PlayerStateManager : MonoBehaviour
         basketballHandler.ForceChangeParentToPlayerHand();
         pl_input.enabled = false;
         pl_sai.MoveInput(Vector2.zero);
+        GO_FireBall.SetActive(true);
         animator.Play("SP_SlamDunk1");
         yield return new WaitForSeconds(0.5f);
         basketballHandler.ShootBall();
@@ -367,6 +371,7 @@ public partial class PlayerStateManager : MonoBehaviour
             pl_input.enabled = true;
         }
         tpc.JumpHeight = originalJumpHeight;
+        GO_FireBall.SetActive(false);
         status = playerStatus.NORMAL;
     }
 
