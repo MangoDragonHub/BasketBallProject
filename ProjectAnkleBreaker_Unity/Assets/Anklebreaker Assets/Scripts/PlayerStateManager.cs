@@ -34,7 +34,7 @@ public partial class PlayerStateManager : MonoBehaviour
     public GameObject GO_Fire;
     public GameObject GO_FireBall;
     private ParticleSystem FX_Fire;
-    private StarterAssetsInputs pl_sai;
+    [SerializeField] private StarterAssetsInputs pl_sai;
     private bool RootMotionEnabled;
 
     /// <summary>
@@ -265,10 +265,9 @@ public partial class PlayerStateManager : MonoBehaviour
             basketballHandler.anim.enabled = false;
             basketballHandler.ForceChangeParentToPlayerHand();
             pl_input.enabled = false; //Disables the player input completely for a set amount of time. This is so that the player character does not move unrealistically when they shoot. For now, this also disables pausing.
-            pl_sai.MoveInput(Vector2.zero);
-            //Since we're working with Passthrough movement input, this will force the input vector2 to 0 so movement doesn't linger after pl_input gets disabled.
             animator.SetBool("isShooting", true);
             FaceHoop();
+            StartCoroutine(tempDisableMovement());
             yield return new WaitForSeconds(0.3f);
             tpc.AllowJump = true; //Do not call JumpAction() as its already in the update. This bool variable can handle when the character jumps.
             yield return new WaitForSeconds(0.4f);
@@ -333,7 +332,7 @@ public partial class PlayerStateManager : MonoBehaviour
             RootMotionEnabled = true;
         }
         pl_input.enabled = false;
-        pl_sai.MoveInput(Vector2.zero);
+        pl_sai.ForceMoveVectorToZero = true;
         yield return new WaitForSeconds(0.7f);
         pl_input.enabled = true;
         if(status == playerStatus.IN_DEFENSE)
@@ -344,14 +343,16 @@ public partial class PlayerStateManager : MonoBehaviour
         }
         animator.applyRootMotion = false;
         RootMotionEnabled = false;
+        pl_sai.ForceMoveVectorToZero = false;
     }
 
     IEnumerator tempDisableMovementOnFall()
     {
         pl_input.enabled = false;
-        pl_sai.MoveInput(Vector2.zero);
+        pl_sai.ForceMoveVectorToZero = true;
         yield return new WaitForSeconds(1f);
         pl_input.enabled = true;
+        pl_sai.ForceMoveVectorToZero = false;
     }
 
     IEnumerator SpAction_SlamDunk(float originalJumpHeight) //The slam dunk action. Original jump height's float value is passed in here.
@@ -359,7 +360,7 @@ public partial class PlayerStateManager : MonoBehaviour
         basketballHandler.anim.enabled = false;
         basketballHandler.ForceChangeParentToPlayerHand();
         pl_input.enabled = false;
-        pl_sai.MoveInput(Vector2.zero);
+        pl_sai.ForceMoveVectorToZero = true;
         GO_FireBall.SetActive(true);
         animator.Play("SP_SlamDunk1");
         yield return new WaitForSeconds(0.5f);
@@ -373,6 +374,7 @@ public partial class PlayerStateManager : MonoBehaviour
         tpc.JumpHeight = originalJumpHeight;
         GO_FireBall.SetActive(false);
         status = playerStatus.NORMAL;
+        pl_sai.ForceMoveVectorToZero = false;
     }
 
     #endregion

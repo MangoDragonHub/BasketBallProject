@@ -11,6 +11,7 @@ using UnityEngine.InputSystem;
 		public Vector2 look;
 		public bool jump;
 		public bool sprint;
+	public bool ForceMoveVectorToZero;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -19,10 +20,25 @@ using UnityEngine.InputSystem;
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
 
-#if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
-		public void OnMove(InputValue value)
+    private void Update()
+    {
+		if (ForceMoveVectorToZero)
 		{
-			MoveInput(value.Get<Vector2>());
+			move = Vector2.zero;
+		}
+    }
+
+#if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
+    public void OnMove(InputValue value)
+		{
+			if (ForceMoveVectorToZero)
+			{
+				return;
+			}
+			else
+			{
+				MoveInput(value.Get<Vector2>());
+			}
 		}
 
 		public void OnLook(InputValue value)

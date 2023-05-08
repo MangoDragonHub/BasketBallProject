@@ -406,6 +406,8 @@ MonoBehaviour:
   SP_slider: {fileID: 0}
   SP_GaugeIncreaseValue: 10
   GO_Fire: {fileID: 0}
+  GO_FireBall: {fileID: 0}
+  pl_sai: {fileID: 398168900}
   status: 0
   Controller: {fileID: 8611705737180506313}
   Input: {fileID: 5472924086690746259}
@@ -495,6 +497,7 @@ MonoBehaviour:
   look: {x: 0, y: 0}
   jump: 0
   sprint: 0
+  ForceMoveVectorToZero: 0
   analogMovement: 1
   cursorLocked: 0
   cursorInputForLook: 0
