@@ -19815,6 +19815,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 636810395}
     - target: {fileID: 4270905038647120868, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
+      propertyPath: HomeOrAwayHoop
+      value: 
+      objectReference: {fileID: 6100875913657205084}
+    - target: {fileID: 4270905038647120868, guid: 0117866003115f5408cf465d02e4c9e0, type: 3}
       propertyPath: basketballHandler
       value: 
       objectReference: {fileID: 1362738570}
@@ -48820,6 +48824,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2133726593}
     - target: {fileID: 2442843269041279563, guid: c57b4dd7575775847844a44ee3da83ed, type: 3}
+      propertyPath: HomeOrAwayHoop
+      value: 
+      objectReference: {fileID: 6100875913657205083}
+    - target: {fileID: 2442843269041279563, guid: c57b4dd7575775847844a44ee3da83ed, type: 3}
       propertyPath: basketballHandler
       value: 
       objectReference: {fileID: 1362738570}
@@ -51715,6 +51723,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5f07ecbbe2b144086e3e3c27895c93, type: 3}
+--- !u!1 &6100875913657205083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6124476004361704981, guid: 5c5f07ecbbe2b144086e3e3c27895c93, type: 3}
+  m_PrefabInstance: {fileID: 6100875913657205082}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6100875913657205084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6100875914207751706, guid: 5c5f07ecbbe2b144086e3e3c27895c93, type: 3}
+  m_PrefabInstance: {fileID: 6100875913657205082}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7892224820741861542
 PrefabInstance:
   m_ObjectHideFlags: 0
