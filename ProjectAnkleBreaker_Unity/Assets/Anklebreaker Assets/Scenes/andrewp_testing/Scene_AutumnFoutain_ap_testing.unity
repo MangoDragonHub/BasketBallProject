@@ -20773,6 +20773,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Scene_AutumnFoutain_ap_testing
       objectReference: {fileID: 0}
+    - target: {fileID: 4113780171537469611, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4113780171732057937, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_IsActive
       value: 0
