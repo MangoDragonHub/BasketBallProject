@@ -168,25 +168,24 @@ public class GameManager : Singleton<GameManager>
             }
 
         }
-
-        if (remainingTime <= 0)
+        //Checks if the end game menu is available
+        if (_mainMenuOptions != null)
         {
-            //Checks if the end game menu is available
-            if (_mainMenuOptions != null)
+            if (remainingTime <= 0)
             {
+                
                 _mainMenuOptions.EndGameScreen();
-            }
 
-            if (finalScore != null)
-            {
-                finalScore.text = scoreP1.ToString() + " Points";
-            }
-            else
-            {
-                Debug.Log("Final_Score.tesxt is null");
+                if (finalScore != null)
+                {
+                    finalScore.text = scoreP1.ToString() + " Points";
+                }
+                else
+                {
+                    Debug.Log("Final_Score.tesxt is null");
+                }
             }
         }
-
     }
     public void Score_player_one(int add_score)
     {
