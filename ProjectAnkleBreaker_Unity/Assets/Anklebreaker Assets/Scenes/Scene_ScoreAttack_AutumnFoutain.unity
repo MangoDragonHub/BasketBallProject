@@ -16276,7 +16276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5941702566609197493, guid: 3a0debfa7390f324dbd43dec6c4e71a7, type: 3}
       propertyPath: gameClock
-      value: 3
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5941702566609197493, guid: 3a0debfa7390f324dbd43dec6c4e71a7, type: 3}
       propertyPath: finalScore
