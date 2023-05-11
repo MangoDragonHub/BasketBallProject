@@ -15,6 +15,8 @@ public class SettingsMenu : MonoBehaviour
 
     Resolution[] resolutions;
 
+    public Toggle vsyncTog;
+
     public void SetQuality (int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
@@ -30,6 +32,16 @@ public class SettingsMenu : MonoBehaviour
         List<string> options = new List<string>();
 
         int currentResolutionIndex = 0;
+
+        if (QualitySettings.vSyncCount == 0)
+        {
+            vsyncTog.isOn = false;
+        }
+        else
+        {
+            vsyncTog.isOn = true;
+        }
+
 
         for (int i = 0; i < resolutions.Length; i++)
         {

@@ -6492,7 +6492,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.778157, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6508,7 +6508,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131740833}
-  m_LocalRotation: {x: -0.0136974435, y: -0.059159882, z: -0.00081183756, w: 0.9981542}
+  m_LocalRotation: {x: -0.013697428, y: -0.059181098, z: -0.0008121288, w: 0.998153}
   m_LocalPosition: {x: 31.623259, y: 4.25, z: -25.833778}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -22922,10 +22922,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 2097485488}
-    - target: {fileID: 4113780171537469611, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4113780171906295505, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -31001,7 +30997,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.778157, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

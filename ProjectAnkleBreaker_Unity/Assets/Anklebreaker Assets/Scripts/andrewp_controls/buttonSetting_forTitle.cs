@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class buttonSetting_forTitle : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class buttonSetting_forTitle : MonoBehaviour
     private List<string> userButtonInputs;
     [SerializeField] private AudioSource success_sound;
 	public bool grannyModeActivated;
+    public Button startDemo;
+    public Button startGrannyMode;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,21 @@ public class buttonSetting_forTitle : MonoBehaviour
 
     void Update()
     {
+            if(grannyModeActivated == true)
+            {
+                  startDemo.enabled = false;
+                  startGrannyMode.enabled = true;
+                  
+            }
+            else
+            {
+                startGrannyMode.enabled = false;
+                startDemo.enabled = true;
+
+            }
+            
+        
+
         //Debug.Log($"kc: {konamiCodeInputs.Count}, user: {userButtonInputs.Count}");
     }
 
@@ -36,6 +54,9 @@ public class buttonSetting_forTitle : MonoBehaviour
             Debug.Log("K O N A M I   C O D E   A C T I V A T E D .\nCharacters will become grannies until next scene change.");
             grannyModeActivated = true;
         }
+
+       
+       
     }
 
     void OnKc_up()
