@@ -76,8 +76,30 @@
                 },
                 {
                     "name": "",
+                    "id": "1e0ca82d-f87c-46cc-9eaf-606f716f48f3",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "kc_up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "4de6b86e-5379-424c-973d-e9d6c4a47e3a",
                     "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "kc_down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "71805cd9-5b64-4a05-955a-099888f21650",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -98,8 +120,30 @@
                 },
                 {
                     "name": "",
+                    "id": "1d54a85f-f90c-4872-b933-9b659cdc0266",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "kc_left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e9584709-4174-4ef0-b50f-6e106c1573f9",
                     "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "kc_right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c1df8a9e-d8a8-4137-a4a9-c3e790aa9919",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -120,6 +164,17 @@
                 },
                 {
                     "name": "",
+                    "id": "308333b6-a83a-47f2-ac82-008cb7f9c0fa",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "kc_a",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "0c94ca3b-fc84-4bfa-b18a-d45004412ba7",
                     "path": "<Gamepad>/buttonEast",
                     "interactions": "",
@@ -131,8 +186,30 @@
                 },
                 {
                     "name": "",
+                    "id": "9477e4f7-fa36-422e-a237-86c1446c1134",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "kc_b",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c88bbd38-1c3b-4ed0-994c-65bcb3facd3a",
                     "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "redo_kc",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "85e79b47-65ab-4cd9-aabf-9bc6c330bc7d",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
