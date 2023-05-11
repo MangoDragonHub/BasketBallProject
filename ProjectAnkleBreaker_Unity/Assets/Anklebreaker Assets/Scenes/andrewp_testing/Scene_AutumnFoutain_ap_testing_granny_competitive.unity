@@ -5667,7 +5667,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131740833}
-  m_LocalRotation: {x: -0.053036384, y: 0.00010201992, z: 0.0000054183934, w: 0.9985926}
+  m_LocalRotation: {x: -0.053036384, y: 0.00010202081, z: 0.0000054184407, w: 0.9985926}
   m_LocalPosition: {x: 31.623259, y: 4.25, z: -25.833778}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19759,10 +19759,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Scene_AutumnFoutain_ap_testing
       objectReference: {fileID: 0}
+    - target: {fileID: 4113780171345950892, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4113780171537469611, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4113780171611414454, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_margin.x
+      value: -320.57513
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113780171611414454, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_margin.z
+      value: -320.43536
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113780171611414454, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: fa9e9bb9aafbc8d4e80ff67bc250aa05, type: 2}
+    - target: {fileID: 4113780171611414454, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113780171611414454, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -7943520297258774546, guid: fa9e9bb9aafbc8d4e80ff67bc250aa05, type: 2}
     - target: {fileID: 4113780172401582800, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_Name
       value: GAME UI
@@ -19813,6 +19837,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4113780172401582801, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113780172676861727, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9106106754413033974, guid: c04b6d61f5efe0a4f8c1382077c6be07, type: 3}

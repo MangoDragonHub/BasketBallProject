@@ -179,7 +179,7 @@ public class GameManager : Singleton<GameManager>
 
             if (finalScore != null)
             {
-                finalScore.text = scoreP1.ToString();
+                finalScore.text = scoreP1.ToString() + " Points";
             }
             else
             {
