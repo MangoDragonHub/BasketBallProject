@@ -15,7 +15,7 @@ public class CrowdCheerTrigger : MonoBehaviour
     void Update()
     {
         BasketballHandler bh = basketBall.GetComponent<BasketballHandler>();
-        if (bh.shotEntered) 
+        if (bh.shotEntered == true) 
         {
             CrowdCheerSound.Play();
         }

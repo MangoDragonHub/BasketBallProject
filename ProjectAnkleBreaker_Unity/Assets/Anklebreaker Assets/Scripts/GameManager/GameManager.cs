@@ -116,11 +116,7 @@ public class GameManager : Singleton<GameManager>
         if(scoreP1 >= gameScoreCap || scoreP2 >= gameScoreCap)
         {
             StartCoroutine(GameOver());
-            //Debug.Log("The Game is Over!");
-            //if (_mainMenuOptions != null) 
-            //{
-            //    StartCoroutine(GameOver());
-            //}
+            
            
             
         }
