@@ -13,8 +13,8 @@ public class buttonSetting_forTitle : MonoBehaviour
     private List<string> userButtonInputs;
     [SerializeField] private AudioSource success_sound;
 	public bool grannyModeActivated;
-    public Button startDemo;
-    public Button startGrannyMode;
+    public GameObject startDemo;
+    public GameObject startGrannyMode;
 
     // Start is called before the first frame update
     void Start()
@@ -29,16 +29,10 @@ public class buttonSetting_forTitle : MonoBehaviour
     {
             if(grannyModeActivated == true)
             {
-                  startDemo.enabled = false;
-                  startGrannyMode.enabled = true;
-                  
+                  startDemo.gameObject.SetActive(false);
+                  startGrannyMode.gameObject.SetActive(true);
             }
-            else
-            {
-                startGrannyMode.enabled = false;
-                startDemo.enabled = true;
-
-            }
+            
             
         
 
