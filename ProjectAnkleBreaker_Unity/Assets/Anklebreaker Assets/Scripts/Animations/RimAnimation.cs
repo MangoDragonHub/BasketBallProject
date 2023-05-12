@@ -7,6 +7,7 @@ public class RimAnimation : MonoBehaviour
     public Animator animator;
     public bool isDunking;
     public GameObject fx_Sparks;
+    public AudioSource sfx_Fireworks;
 
 
     private GameObject basketBall;
@@ -38,6 +39,7 @@ public class RimAnimation : MonoBehaviour
         if (gameManager.scoreP1 >= gameManager.gameScoreCap || gameManager.scoreP2 >= gameManager.gameScoreCap) 
         {
             fx_Sparks.SetActive(true);
+            sfx_Fireworks.Play();
         
         }
 
