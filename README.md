@@ -3,7 +3,7 @@
 Just a streetball visual concept.
 
 ### Disclaimer about Competitive Mode
-It is recommended that you use XInput-compatible USB controllers. If you do not have an XInput-compatible controller, you can use an XInput wrapper such as [X360ce (https://github.com/x360ce/x360ce)] to play the game.
+It is recommended that you use XInput-compatible USB controllers. If you do not have an XInput-compatible controller, you can use an XInput wrapper such as X360ce (https://github.com/x360ce/x360ce) to play the game.
 
 # CREDITS
 
