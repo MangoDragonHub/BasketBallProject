@@ -14,6 +14,7 @@ public class MainMenuOptions : MonoBehaviour
     [SerializeField] GameObject GameplayCanvas;
     [SerializeField] GameObject EndGameCanvas;
     [SerializeField] GameObject gamePlayClock;
+    [SerializeField] GameObject dropDownMenu;
     GameMode gameMode;
 
     #region Main Modes
